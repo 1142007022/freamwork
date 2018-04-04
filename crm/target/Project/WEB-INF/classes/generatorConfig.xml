@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!-- jar包的位置 -->
+    <classPathEntry location="D:/kaishengJAVA/jars/bendicang/maven_libs/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar"/>
+    <context id="myConfig" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql:///project"
+                        userId="root" password="625255"/>
+        <!-- POJO -->
+        <javaModelGenerator targetPackage="kaisheng.project.entity" targetProject="src/main/java"/>
+        <!--XML映射文件-->
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
+        <!--Mapper接口-->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="kaisheng.project.mapper"
+                             targetProject="src/main/java"/>
+        <table tableName="user" domainObjectName="User" />
+    </context>
+
+</generatorConfiguration>
