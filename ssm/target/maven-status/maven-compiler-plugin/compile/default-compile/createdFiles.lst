@@ -1,0 +1,5 @@
+com\kaishengit\service\ProductService.class
+com\kaishengit\controller\ProductController.class
+com\kaishengit\enitys\Product.class
+com\kaishengit\service\impl\ProductServiceImpl.class
+com\kaishengit\mapper\ProductMapper.class

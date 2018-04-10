@@ -90,7 +90,7 @@ public class AccountService {
     public Page<Account> findByPage(String deptId, int pNum, HttpServletRequest req) {
 
         HttpSession session = req.getSession();
-        Account acc = (Account) session.getAttribute("account");
+        Account acc = (Account) session.getAttribute("acc");
 
         int accId = acc.getId();
         int allNum = getAllNumByDeptId(deptId, accId);
