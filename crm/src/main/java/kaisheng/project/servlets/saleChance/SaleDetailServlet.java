@@ -33,10 +33,7 @@ public class SaleDetailServlet extends SuperServlet{
 		SaleChance salechance = service.findSaleChanceById(saleID);
 		List<SaleChanceRecord> recordLists = recordService.findRecordById(saleID);
 		
-		/*for(int i = 0;i < recordLists.size();i++) {
-			System.out.println("getContent------------"+recordLists.get(i).getContent());
-		}*/
-		
+
 		
 		req.setAttribute("recordLists", recordLists);
 		req.setAttribute("processList", lists);

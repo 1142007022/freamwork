@@ -103,7 +103,7 @@ under the License.
         <SOURCES/>
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry scope="TEST" type="module-library">
       <library>
         <CLASSES>
           <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/"/>
@@ -162,6 +162,46 @@ under the License.
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-context/4.3.5.RELEASE/spring-context-4.3.5.RELEASE.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-aop/4.3.5.RELEASE/spring-aop-4.3.5.RELEASE.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-beans/4.3.5.RELEASE/spring-beans-4.3.5.RELEASE.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-core/4.3.5.RELEASE/spring-core-4.3.5.RELEASE.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-expression/4.3.5.RELEASE/spring-expression-4.3.5.RELEASE.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
           <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar!/"/>
         </CLASSES>
         <SOURCES/>
@@ -171,6 +211,14 @@ under the License.
       <library>
         <CLASSES>
           <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/commons-io/commons-io/2.4/commons-io-2.4.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/oracle/ojdbc14/10.2.0.4.0/ojdbc14-10.2.0.4.0.jar!/"/>
         </CLASSES>
         <SOURCES/>
       </library>
@@ -242,7 +290,7 @@ under the License.
       <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/google/code/gson/gson/2.7/gson-2.7.jar!/</url>
     </containerElement>
     <containerElement type="library" level="module">
-      <attribute name="method" value="1"/>
+      <attribute name="method" value="0"/>
       <attribute name="URI" value="/WEB-INF/lib/mysql-connector-java-5.1.38.jar"/>
       <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/</url>
     </containerElement>
@@ -278,6 +326,31 @@ under the License.
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/spring-context-4.3.5.RELEASE.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-context/4.3.5.RELEASE/spring-context-4.3.5.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/spring-aop-4.3.5.RELEASE.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-aop/4.3.5.RELEASE/spring-aop-4.3.5.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/spring-beans-4.3.5.RELEASE.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-beans/4.3.5.RELEASE/spring-beans-4.3.5.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/spring-core-4.3.5.RELEASE.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-core/4.3.5.RELEASE/spring-core-4.3.5.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/spring-expression-4.3.5.RELEASE.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-expression/4.3.5.RELEASE/spring-expression-4.3.5.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
       <attribute name="URI" value="/WEB-INF/lib/commons-lang3-3.5.jar"/>
       <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar!/</url>
     </containerElement>
@@ -295,6 +368,11 @@ under the License.
       <attribute name="method" value="1"/>
       <attribute name="URI" value="/WEB-INF/lib/jstl-1.2.jar"/>
       <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/jstl/jstl/1.2/jstl-1.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/ojdbc14-10.2.0.4.0.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/oracle/ojdbc14/10.2.0.4.0/ojdbc14-10.2.0.4.0.jar!/</url>
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>

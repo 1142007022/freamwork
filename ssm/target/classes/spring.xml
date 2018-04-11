@@ -34,8 +34,21 @@
                 <property name="mapUnderscoreToCamelCase" value="true"/>
             </bean>
         </property>
+        <!--分页插件-->
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <property name="properties">
+                        <value>
+                            helperDialect=mysql
+                        </value>
+                    </property>
+                </bean>
+            </array>
+        </property>
     </bean>
 
+    <!--自动扫描mapper接口-->
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.kaishengit.mapper"/>
     </bean>

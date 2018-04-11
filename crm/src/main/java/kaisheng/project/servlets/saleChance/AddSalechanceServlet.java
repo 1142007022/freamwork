@@ -34,7 +34,7 @@ public class AddSalechanceServlet extends SuperServlet{
 		
 		HttpSession session = req.getSession();
 		
-		Account acc = (Account) session.getAttribute("account");
+		Account acc = (Account) session.getAttribute("acc");
 		int id = acc.getId();
 		List<Customer> custLists = service.findCustNumByAccouId(id);
 		

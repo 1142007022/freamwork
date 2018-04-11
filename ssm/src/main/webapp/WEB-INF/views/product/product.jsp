@@ -9,9 +9,31 @@
 <html>
 <head>
     <title>Title</title>
+    <link href="../../../static/bootstrap/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-    <h3>商品</h3>
-    <h3>名称：${pro.productName}</h3>
+
+
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>商品名称</th>
+                <th>价格</th>
+                <th>数量</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="datarow">
+                <td>${pro.productName}</td>
+                <td>${pro.price}</td>
+                <td>${pro.commentNum}</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
 </body>
 </html>

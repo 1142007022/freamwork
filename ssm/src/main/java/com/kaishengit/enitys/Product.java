@@ -5,10 +5,36 @@ public class Product {
     private Integer id;
     private String productName;
     private double price;
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", productName='" + productName + '\'' +
+                ", price=" + price +
+                ", marketPrice=" + marketPrice +
+                ", place='" + place + '\'' +
+                ", commentNum=" + commentNum +
+                ", typeId=" + typeId +
+                ", productType=" + productType +
+                '}';
+    }
+
     private double marketPrice;
     private String place;
     private Integer commentNum;
     private Integer typeId;
+    public static final Integer default_comment_num = 100;
+
+    public ProductType getProductType() {
+        return productType;
+    }
+
+    public void setProductType(ProductType productType) {
+        this.productType = productType;
+    }
+
+    private ProductType productType;
 
     public Integer getId() {
         return id;
