@@ -15,14 +15,21 @@
 
     <modules>
         <module>./tms-commons</module>
-        <module>./tms-finance-web</module>
         <module>./tms-service</module>
-        <module>./tms-manager-web</module>
         <module>./tms-service-impl</module>
+        <module>./tms-manager-web</module>
+
     </modules>
 
     <dependencyManagement>
         <dependencies>
+            <!--依赖md5加密-->
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.10</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context</artifactId>

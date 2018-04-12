@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.kaishengit</groupId>
-    <artifactId>tms-service-impl</artifactId>
+    <artifactId>tms-com.kaishengit.service-impl</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <packaging>jar</packaging>
@@ -18,6 +18,29 @@
     </parent>
 
     <dependencies>
+
+
+        <dependency>
+            <groupId>com.kaishengit</groupId>
+            <artifactId>tms-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.kaishengit</groupId>
+            <artifactId>tms-commons</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>

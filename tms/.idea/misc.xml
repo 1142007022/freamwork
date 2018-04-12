@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/tms-finance-web" />
+    <file type="web" url="file://$PROJECT_DIR$/tms-finances-web" />
     <file type="web" url="file://$PROJECT_DIR$/tms-manager-web" />
   </component>
   <component name="MavenProjectsManager">
