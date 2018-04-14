@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!-- 顶部导航栏部分 -->
@@ -27,7 +26,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="/static/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">${acc.username}</span>
+              <span class="hidden-xs">${acc.accName}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -35,8 +34,7 @@
                 <img src="/static/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  ${acc.username}
-                  <small>${acc.deptName}</small>
+                  ${acc.accName}
                 </p>
               </li>
               <!-- Menu Footer-->
@@ -45,7 +43,7 @@
                   <a href="/changeMyMessages" class="btn btn-default ">设置</a>
                 </div>
                 <div class="pull-right">
-                  <a href="/exit" class="btn btn-default ">退出</a>
+                  <a href="/manager/exit" class="btn btn-default ">退出</a>
                 </div>
               </li>
             </ul>

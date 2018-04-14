@@ -1,4 +1,10 @@
+com\kaishengit\mapper\RolesPowerMapper.class
 com\kaishengit\service\impl\AccountLoginLogServiceServiceImpl.class
-com\kaishengit\service\impl\AccountServiceImpl.class
-com\kaishengit\mapper\AccountLoginLogMapper.class
+com\kaishengit\mapper\RolesMapper.class
+com\kaishengit\mapper\PowerMapper.class
+com\kaishengit\service\impl\PowerServiceImpl.class
 com\kaishengit\mapper\AccountMapper.class
+com\kaishengit\service\impl\AccountServiceImpl.class
+com\kaishengit\service\impl\RolesServiceImpl.class
+com\kaishengit\mapper\AccountLoginLogMapper.class
+com\kaishengit\mapper\AccountRolesMapper.class

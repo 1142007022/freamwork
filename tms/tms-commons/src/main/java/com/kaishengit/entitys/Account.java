@@ -6,16 +6,19 @@ import java.io.Serializable;
  * @author 
  */
 public class Account implements Serializable {
-    private Integer id;
 
     public static final String Status_Normal = "正常";
     public static final String Status_Bad = "禁用";
-    public static final String Status_Locking = "锁定";
+    public static final String Status_= "锁定";
+    private Integer id;
+
     private String mobile;
 
     private String password;
 
     private String status;
+
+    private String accName;
 
     private static final long serialVersionUID = 1L;
 
@@ -51,6 +54,14 @@ public class Account implements Serializable {
         this.status = status;
     }
 
+    public String getAccName() {
+        return accName;
+    }
+
+    public void setAccName(String accName) {
+        this.accName = accName;
+    }
+
     @Override
     public boolean equals(Object that) {
         if (this == that) {
@@ -66,7 +77,8 @@ public class Account implements Serializable {
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getMobile() == null ? other.getMobile() == null : this.getMobile().equals(other.getMobile()))
             && (this.getPassword() == null ? other.getPassword() == null : this.getPassword().equals(other.getPassword()))
-            && (this.getStatus() == null ? other.getStatus() == null : this.getStatus().equals(other.getStatus()));
+            && (this.getStatus() == null ? other.getStatus() == null : this.getStatus().equals(other.getStatus()))
+            && (this.getAccName() == null ? other.getAccName() == null : this.getAccName().equals(other.getAccName()));
     }
 
     @Override
@@ -77,6 +89,7 @@ public class Account implements Serializable {
         result = prime * result + ((getMobile() == null) ? 0 : getMobile().hashCode());
         result = prime * result + ((getPassword() == null) ? 0 : getPassword().hashCode());
         result = prime * result + ((getStatus() == null) ? 0 : getStatus().hashCode());
+        result = prime * result + ((getAccName() == null) ? 0 : getAccName().hashCode());
         return result;
     }
 
@@ -90,6 +103,7 @@ public class Account implements Serializable {
         sb.append(", mobile=").append(mobile);
         sb.append(", password=").append(password);
         sb.append(", status=").append(status);
+        sb.append(", accName=").append(accName);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

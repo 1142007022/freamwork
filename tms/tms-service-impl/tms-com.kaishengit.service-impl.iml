@@ -52,6 +52,14 @@ under the License.
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
           <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/commons-codec/commons-codec/1.10/commons-codec-1.10.jar!/"/>
         </CLASSES>
         <SOURCES/>

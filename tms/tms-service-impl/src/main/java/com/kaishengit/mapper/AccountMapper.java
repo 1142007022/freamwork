@@ -2,14 +2,11 @@ package com.kaishengit.mapper;
 
 import com.kaishengit.entitys.Account;
 import com.kaishengit.entitys.AccountExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface AccountMapper {
     long countByExample(AccountExample example);
-
-
 
     int deleteByExample(AccountExample example);
 

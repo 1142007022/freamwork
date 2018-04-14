@@ -6,6 +6,7 @@
     <result column="mobile" jdbcType="VARCHAR" property="mobile" />
     <result column="password" jdbcType="VARCHAR" property="password" />
     <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="acc_name" jdbcType="VARCHAR" property="accName" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -66,7 +67,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, mobile, password, status
+    id, mobile, password, status, acc_name
   </sql>
   <select id="selectByExample" parameterType="com.kaishengit.entitys.AccountExample" resultMap="BaseResultMap">
     select
@@ -108,9 +109,9 @@
   </delete>
   <insert id="insert" parameterType="com.kaishengit.entitys.Account">
     insert into account (id, mobile, password, 
-      status)
+      status, acc_name)
     values (#{id,jdbcType=INTEGER}, #{mobile,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{status,jdbcType=VARCHAR})
+      #{status,jdbcType=VARCHAR}, #{accName,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.kaishengit.entitys.Account">
     insert into account
@@ -127,6 +128,9 @@
       <if test="status != null">
         status,
       </if>
+      <if test="accName != null">
+        acc_name,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -140,6 +144,9 @@
       </if>
       <if test="status != null">
         #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="accName != null">
+        #{accName,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -164,6 +171,9 @@
       <if test="record.status != null">
         status = #{record.status,jdbcType=VARCHAR},
       </if>
+      <if test="record.accName != null">
+        acc_name = #{record.accName,jdbcType=VARCHAR},
+      </if>
     </set>
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -174,7 +184,8 @@
     set id = #{record.id,jdbcType=INTEGER},
       mobile = #{record.mobile,jdbcType=VARCHAR},
       password = #{record.password,jdbcType=VARCHAR},
-      status = #{record.status,jdbcType=VARCHAR}
+      status = #{record.status,jdbcType=VARCHAR},
+      acc_name = #{record.accName,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -191,6 +202,9 @@
       <if test="status != null">
         status = #{status,jdbcType=VARCHAR},
       </if>
+      <if test="accName != null">
+        acc_name = #{accName,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -198,7 +212,8 @@
     update account
     set mobile = #{mobile,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
-      status = #{status,jdbcType=VARCHAR}
+      status = #{status,jdbcType=VARCHAR},
+      acc_name = #{accName,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

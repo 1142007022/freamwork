@@ -9,9 +9,9 @@
         <ul class="sidebar-menu">
             <li class="${param.menu == 'home' ? 'active' : ''}"><a href="/home"><i class="fa fa-home"></i> <span>首页</span></a></li>
             <li class="header">系统管理</li>
-            <li><a href="/home"><i class="fa fa-circle-o"></i> <span>账号管理</span></a></li>
-            <li><a href="/home"><i class="fa fa-circle-o"></i> <span>角色管理</span></a></li>
-            <li><a href="/home"><i class="fa fa-circle-o"></i> <span>权限管理</span></a></li>
+            <li class="${param.menu == 'manager_account' ? 'active' : ''}"><a href="/home"><i class="fa fa-circle-o"></i> <span>账号管理</span></a></li>
+            <li class="${param.menu == 'manager_roles' ? 'active' : ''}"><a href="/manager/roles"><i class="fa fa-circle-o"></i> <span>角色管理</span></a></li>
+            <li class="${param.menu == 'manager_power' ? 'active' : ''}"><a href="/manager/power"><i class="fa fa-circle-o"></i> <span>权限管理</span></a></li>
 
             <%--<!-- 普通菜单 -->
             <li class="treeview">

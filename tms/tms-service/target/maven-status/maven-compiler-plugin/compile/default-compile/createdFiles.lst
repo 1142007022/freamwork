@@ -1,2 +1,4 @@
-com\kaishengit\service\AccountLoginLogService.class
 com\kaishengit\service\AccountService.class
+com\kaishengit\service\RolesService.class
+com\kaishengit\service\PowerService.class
+com\kaishengit\service\AccountLoginLogService.class

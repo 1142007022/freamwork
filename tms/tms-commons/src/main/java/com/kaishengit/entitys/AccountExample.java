@@ -393,6 +393,76 @@ public class AccountExample {
             addCriterion("status not between", value1, value2, "status");
             return (Criteria) this;
         }
+
+        public Criteria andAccNameIsNull() {
+            addCriterion("acc_name is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andAccNameIsNotNull() {
+            addCriterion("acc_name is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andAccNameEqualTo(String value) {
+            addCriterion("acc_name =", value, "accName");
+            return (Criteria) this;
+        }
+
+        public Criteria andAccNameNotEqualTo(String value) {
+            addCriterion("acc_name <>", value, "accName");
+            return (Criteria) this;
+        }
+
+        public Criteria andAccNameGreaterThan(String value) {
+            addCriterion("acc_name >", value, "accName");
+            return (Criteria) this;
+        }
+
+        public Criteria andAccNameGreaterThanOrEqualTo(String value) {
+            addCriterion("acc_name >=", value, "accName");
+            return (Criteria) this;
+        }
+
+        public Criteria andAccNameLessThan(String value) {
+            addCriterion("acc_name <", value, "accName");
+            return (Criteria) this;
+        }
+
+        public Criteria andAccNameLessThanOrEqualTo(String value) {
+            addCriterion("acc_name <=", value, "accName");
+            return (Criteria) this;
+        }
+
+        public Criteria andAccNameLike(String value) {
+            addCriterion("acc_name like", value, "accName");
+            return (Criteria) this;
+        }
+
+        public Criteria andAccNameNotLike(String value) {
+            addCriterion("acc_name not like", value, "accName");
+            return (Criteria) this;
+        }
+
+        public Criteria andAccNameIn(List<String> values) {
+            addCriterion("acc_name in", values, "accName");
+            return (Criteria) this;
+        }
+
+        public Criteria andAccNameNotIn(List<String> values) {
+            addCriterion("acc_name not in", values, "accName");
+            return (Criteria) this;
+        }
+
+        public Criteria andAccNameBetween(String value1, String value2) {
+            addCriterion("acc_name between", value1, value2, "accName");
+            return (Criteria) this;
+        }
+
+        public Criteria andAccNameNotBetween(String value1, String value2) {
+            addCriterion("acc_name not between", value1, value2, "accName");
+            return (Criteria) this;
+        }
     }
 
     /**

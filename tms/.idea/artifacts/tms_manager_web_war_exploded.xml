@@ -10,6 +10,7 @@
           <element id="archive" name="tms-manager-web-1.0-SNAPSHOT.jar">
             <element id="module-output" name="tms-manager-web" />
           </element>
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.5" />
           <element id="archive" name="tms-com.kaishengit.service-impl-1.0-SNAPSHOT.jar">
             <element id="module-output" name="tms-service-impl" />
           </element>
@@ -20,6 +21,9 @@
           <element id="archive" name="tms-commons-1.0-SNAPSHOT.jar">
             <element id="module-output" name="tms-commons" />
           </element>
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.4" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.14.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-test:4.3.14.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.14.RELEASE" />
