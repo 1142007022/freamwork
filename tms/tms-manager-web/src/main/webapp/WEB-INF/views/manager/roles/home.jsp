@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="/static/plugins/treegrid/css/jquery.treegrid.css">
     <style>
         #roles{
-            background-color: #3C8DBC;
+            background-color:#ECF0F5;
+        }
+        .td-left{
+            border-radius: 7px 0px 0px 7px;
+        }
+        .td-right{
+            border-radius: 0px 7px 7px 0px;
         }
     </style>
 </head>
@@ -50,15 +56,12 @@
                     <table class="table tree">
                         <tbody>
                         <c:forEach items="${rolesList}" var="roles">
-                            <tr id="roles">
-                                <td>角色名称：<strong>${roles.rolesName}</strong></td>
-                            </tr>
-                            <tr>
-                                <td>
+                            <tr id="roles" >
+                                <td class="td-left">角色名称：<strong>${roles.rolesName}</strong></td>
+                                <td class="td-right">
                                     <c:forEach items="${roles.power}" var="power">
                                         <i class="fa fa-circle"></i> ${power.powerName}
                                     </c:forEach>
-
                                 </td>
                             </tr>
                         </c:forEach>

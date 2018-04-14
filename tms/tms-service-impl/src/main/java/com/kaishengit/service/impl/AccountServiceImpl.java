@@ -44,4 +44,24 @@ public class AccountServiceImpl implements AccountService {
             throw new ServiceException("帐号不存在");
         }
     }
+
+    public void addAccount(Account account) {
+        AccountExample accountExample = new AccountExample();
+        accountExample.createCriteria().andMobileEqualTo(account.getMobile());
+
+        List<Account> accountList = accountMapper.selectByExample(accountExample);
+        if(accountList != null && accountList.size() != 0) {
+            throw new ServiceException("手机号已存在！");
+        }
+
+        String password = DigestUtils.md5Hex(account.getPassword());
+
+        account.setPassword(password);
+
+        accountMapper.insert(account);
+    }
+
+    public List<Account> findAll() {
+        return accountMapper.selectByExample(null);
+    }
 }

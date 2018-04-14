@@ -1,6 +1,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!-- 左侧菜单栏 -->
-<aside class="main-sidebar">
+<style>
+/*    #sidebar{
+        background-color:#4AAF51;
+    }*/
+</style>
+<aside class="main-sidebar" id="sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
 
@@ -9,7 +14,7 @@
         <ul class="sidebar-menu">
             <li class="${param.menu == 'home' ? 'active' : ''}"><a href="/home"><i class="fa fa-home"></i> <span>首页</span></a></li>
             <li class="header">系统管理</li>
-            <li class="${param.menu == 'manager_account' ? 'active' : ''}"><a href="/home"><i class="fa fa-circle-o"></i> <span>账号管理</span></a></li>
+            <li class="${param.menu == 'manager_account' ? 'active' : ''}"><a href="/manager/account"><i class="fa fa-circle-o"></i> <span>账号管理</span></a></li>
             <li class="${param.menu == 'manager_roles' ? 'active' : ''}"><a href="/manager/roles"><i class="fa fa-circle-o"></i> <span>角色管理</span></a></li>
             <li class="${param.menu == 'manager_power' ? 'active' : ''}"><a href="/manager/power"><i class="fa fa-circle-o"></i> <span>权限管理</span></a></li>
 

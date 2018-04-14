@@ -67,7 +67,7 @@
                                     <c:when test="${power.parentId == 0}">
                                         <tr class="treegrid-${power.id} treegrid-expanded">
                                             <th>
-                                                <input type="checkbox" name="permissionId" value="${power.id}">
+                                                <input type="checkbox" name="powerIds" rel="${power.id}" value="${power.id}" class="checked">
                                             </th>
                                             <td>${power.powerName}</td>
                                             <td>${power.powerCode}</td>
@@ -79,7 +79,7 @@
                                     <c:otherwise>
                                         <tr class="treegrid-${power.id} treegrid-expanded treegrid-parent-${power.parentId}">
                                             <th>
-                                                <input type="checkbox" name="powerIds"  value="${power.id}">
+                                                <input type="checkbox" name="powerIds" id="${power.parentId}" value="${power.id}" ">
                                             </th>
                                             <td>${power.powerName}</td>
                                             <td>${power.powerCode}</td>
@@ -110,10 +110,22 @@
 <script src="/static/plugins/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
 <script>
     $(function () {
+        var i = 1;
         $("#saveBtn").click(function () {
             $("#saveForm").submit();
         });
         $('.tree').treegrid();
+        $(".checked").click(function () {
+            var id = $(this).attr("rel");
+         if (i%2 == 0){
+             $("#"+id).prop("checked",false);
+
+         }else{
+             $("#"+id).prop("checked",true);
+         }
+            i++;
+
+        })
     })
 </script>
 </body>
