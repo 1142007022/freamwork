@@ -19,7 +19,6 @@
         INNER JOIN roles_power ON roles.id = roles_power.roles_id
         ) AS t ON power.id = t.power_id;
     </select>
-
     <resultMap id="findAllRoles" type="Roles">
         <result column="roles_name" property="rolesName"/>
         <result column="roles_code" property="rolesCode"/>
@@ -27,8 +26,6 @@
             <result column="power_name" property="powerName"/>
         </collection>
     </resultMap>
-
-
     <resultMap id="BaseResultMap" type="com.kaishengit.entitys.Roles">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="roles_name" jdbcType="VARCHAR" property="rolesName" />

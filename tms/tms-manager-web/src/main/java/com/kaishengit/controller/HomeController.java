@@ -44,7 +44,8 @@ public class HomeController {
         try {
             Account account = accountService.login(mobile, password, loginIp);
             if (account != null) {
-                model.addAttribute("acc", account);
+                session.setAttribute("acc",account);
+                //model.addAttribute("acc", account);
                 return "home";
             }
         } catch (ServiceException e) {

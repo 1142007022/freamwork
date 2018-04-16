@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:08:41:03 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-80-exec-1 142
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:08:41:03 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-80-exec-3 9
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:08:41:05 +0800] "GET / HTTP/1.1" 200 8154 http-bio-80-exec-2 1481
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:08:41:10 +0800] "POST / HTTP/1.1" 200 7019 http-bio-80-exec-8 912
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:08:41:12 +0800] "GET /manager/roles HTTP/1.1" 200 7297 http-bio-80-exec-9 232
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:08:41:13 +0800] "GET /manager/account HTTP/1.1" 200 7462 http-bio-80-exec-10 172
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:08:41:14 +0800] "GET /manager/power HTTP/1.1" 200 11080 http-bio-80-exec-10 223
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:08:42:08 +0800] "GET /manager/account HTTP/1.1" 200 7462 http-bio-80-exec-3 8
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:08:42:09 +0800] "GET /manager/roles HTTP/1.1" 200 7297 http-bio-80-exec-3 7
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:08:42:12 +0800] "GET /manager/account HTTP/1.1" 200 7462 http-bio-80-exec-3 6
