@@ -17,6 +17,11 @@
           <element id="archive" name="tms-service-1.0-SNAPSHOT.jar">
             <element id="module-output" name="tms-service" />
           </element>
+          <element id="library" level="project" name="Maven: com.google.guava:guava:23.0" />
+          <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:1.3.9" />
+          <element id="library" level="project" name="Maven: com.google.errorprone:error_prone_annotations:2.0.18" />
+          <element id="library" level="project" name="Maven: com.google.j2objc:j2objc-annotations:1.1" />
+          <element id="library" level="project" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.14" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
           <element id="archive" name="tms-commons-1.0-SNAPSHOT.jar">
             <element id="module-output" name="tms-commons" />

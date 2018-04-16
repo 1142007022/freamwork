@@ -20,10 +20,12 @@ public class RolesServiceImpl implements RolesService {
     @Autowired
     private RolesPowerMapper rolesPowerMapper;
 
+    @Override
     public void addRoles(Roles roles) {
 
     }
 
+    @Override
     @Transactional(rollbackFor = RuntimeException.class)
     public void addRolesAndPowers(Roles roles, Integer[] powerIds) {
         rolesMapper.insert(roles);
@@ -36,6 +38,7 @@ public class RolesServiceImpl implements RolesService {
 
     }
 
+    @Override
     public List<Roles> findAllRoles() {
         return rolesMapper.findAllRoles();
     }

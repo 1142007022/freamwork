@@ -1,5 +1,7 @@
 package com.kaishengit.service.impl;
 
+import com.google.common.collect.Collections2;
+import com.google.common.collect.Lists;
 import com.kaishengit.entitys.Power;
 import com.kaishengit.entitys.PowerExample;
 import com.kaishengit.entitys.RolesPowerExample;
@@ -12,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -22,14 +25,30 @@ public class PowerServiceImpl implements PowerService {
     @Autowired
     private RolesPowerMapper rolesPowerMapper;
 
+    @Override
     public void addPower(Power power) {
         powerMapper.insert(power);
     }
 
+    @Override
     public List<Power> findAllPower() {
-        return powerMapper.selectByExample(null);
+        List<Power> powerList = powerMapper.selectByExample(null);
+        List<Power> resList = new ArrayList<>();
+        toTreeList(powerList,resList,0);
+        return resList;
     }
 
+
+    private void toTreeList(List<Power> sourceList, List<Power> endList, int parentId) {
+        List<Power> tempList = Lists.newArrayList(Collections2.filter(sourceList, power -> power.getParentId().equals(parentId)));
+
+        for(Power power : tempList) {
+            endList.add(power);
+            toTreeList(sourceList,endList,power.getId());
+        }
+    }
+
+    @Override
     @Transactional(rollbackFor = RuntimeException.class)
     public void delPowerById(Integer id){
         RolesPowerExample rolesPowerExample = new RolesPowerExample();

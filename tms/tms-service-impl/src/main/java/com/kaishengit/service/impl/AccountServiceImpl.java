@@ -21,6 +21,7 @@ public class AccountServiceImpl implements AccountService {
     @Autowired
     private AccountLoginLogMapper accountLoginLogMapper;
 
+    @Override
     public Account login(String mobile, String password, String loginIp) {
         AccountExample accountExample = new AccountExample();
         accountExample.createCriteria().andMobileEqualTo(mobile);
@@ -45,6 +46,7 @@ public class AccountServiceImpl implements AccountService {
         }
     }
 
+    @Override
     public void addAccount(Account account) {
         AccountExample accountExample = new AccountExample();
         accountExample.createCriteria().andMobileEqualTo(account.getMobile());
@@ -61,6 +63,7 @@ public class AccountServiceImpl implements AccountService {
         accountMapper.insert(account);
     }
 
+    @Override
     public List<Account> findAll() {
         return accountMapper.selectByExample(null);
     }

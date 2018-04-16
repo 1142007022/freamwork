@@ -48,7 +48,7 @@ public class AddCustomerServlet extends SuperServlet {
 		String mark = req.getParameter("mark");
 		String source = req.getParameter("source");
 		HttpSession session = req.getSession();
-		Account acc = (Account) session.getAttribute("account");
+		Account acc = (Account) session.getAttribute("acc");
 		int acoountId = acc.getId();
 
 		//获取当前登录的accountName
