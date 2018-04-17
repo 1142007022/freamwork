@@ -24,7 +24,6 @@ com\kaishengit\entitys\Power.class
 com\kaishengit\entitys\RolesPowerExample$GeneratedCriteria.class
 com\kaishengit\dto\Result.class
 com\kaishengit\entitys\AccountExample$Criteria.class
-com\kaishengit\shiro\ShiroRealm.class
 com\kaishengit\entitys\PowerExample.class
 com\kaishengit\entitys\Account.class
 com\kaishengit\entitys\AccountExample.class

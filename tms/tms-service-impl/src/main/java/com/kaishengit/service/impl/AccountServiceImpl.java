@@ -90,4 +90,10 @@ public class AccountServiceImpl implements AccountService {
     public List<Account> findAccountWithParam(Map<String, Object> map) {
         return accountMapper.findAccountWithParam(map);
     }
+
+    @Override
+    public Account findByMobile(String mobile) {
+        accountExample.createCriteria().andMobileEqualTo(mobile);
+        return accountMapper.selectByExample(accountExample).get(0);
+    }
 }

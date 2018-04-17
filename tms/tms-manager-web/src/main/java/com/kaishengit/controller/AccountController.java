@@ -40,7 +40,7 @@ public class AccountController {
     public String update(Account account,Integer[] rolesIds){
         accountService.update(account);
         accountRolesKeyService.update(account,rolesIds);
-        logger.info("更新用户{}",account);
+        logger.info("鏇存柊鐢ㄦ埛{}",account);
         return "redirect:/manager/account";
     }
 
@@ -59,7 +59,7 @@ public class AccountController {
     @Transactional(rollbackFor = RuntimeException.class)
     public Result delById(@PathVariable Integer id){
         Account account = accountService.findById(id);
-        logger.info("删除用户{}",account);
+        logger.info("鍒犻櫎鐢ㄦ埛{}",account);
         accountService.delById(id);
         accountRolesKeyService.delByAccountId(id);
         Result result  = Result.success();
@@ -100,7 +100,7 @@ public class AccountController {
             Account accountNew = accountService.addAccount(account);
             accountRolesKeyService.addAccountRoles(accountNew,rolesIds);
             Result result = Result.success();
-            logger.info("添加用户{}",account);
+            logger.info("锟斤拷锟斤拷没锟絳}",account);
             return result;
         }catch (ServiceException e){
             Result result = Result.error(e.getMessage());

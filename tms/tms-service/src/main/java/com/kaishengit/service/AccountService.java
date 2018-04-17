@@ -20,4 +20,6 @@ public interface AccountService {
     void update(Account account);
 
     List<Account> findAccountWithParam(Map<String, Object> map);
+
+    Account findByMobile(String mobile);
 }

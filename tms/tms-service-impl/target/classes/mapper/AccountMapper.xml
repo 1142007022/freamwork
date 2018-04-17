@@ -2,6 +2,19 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kaishengit.mapper.AccountMapper">
 
+  <select id="findByMobile" parameterType="string" resultMap="BaseAccountWithRoles">
+      SELECT
+          id AS account_id,
+          mobile,
+          `password`,
+          `status`,
+          acc_name
+      FROM
+          account
+      WHERE
+          mobile = #{mobile}
+  </select>
+
   <select id="findAccountWithParam" parameterType="map" resultMap="BaseAccountWithRoles">
         SELECT
         account_id,
@@ -12,7 +25,6 @@
         roles_name,
         roles_id,
         roles_code
-
         FROM
         account
         INNER JOIN (
