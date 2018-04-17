@@ -1,6 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kaishengit.mapper.AccountMapper">
+
+  <select id="findAccountWithParam" parameterType="map" resultMap="BaseAccountWithRoles">
+        SELECT
+        account_id,
+        mobile,
+        `password`,
+        `status`,
+        acc_name,
+        roles_name,
+        roles_id,
+        roles_code
+        FROM
+        account
+        INNER JOIN (
+        SELECT
+        *
+        FROM
+        account_roles
+        INNER JOIN roles ON account_roles.roles_id = roles.id
+        ) AS t ON t.account_id = account.id
+    <where>
+      <if test="mobile != null and mobile != ''">
+        mobile = #{mobile}
+      </if>
+      <if test="rolesId != null and rolesId != '' ">
+        AND roles_id = #{rolesId}
+      </if>
+    </where>
+  </select>
+
+
+  <resultMap id="BaseAccountWithRoles" type="Account">
+    <id column="account_id"  property="id" />
+    <result column="mobile" property="mobile" />
+    <result column="password"  property="password" />
+    <result column="status"  property="status" />
+    <result column="acc_name"  property="accName" />
+    <collection property="roles" ofType="Roles">
+      <id property="id" column="roles_id"/>
+      <result property="rolesName" column="roles_name"/>
+      <result property="rolesCode" column="roles_code"/>
+    </collection>
+  </resultMap>
+
+
+    <select id="findById" resultMap="AccountWithRoles">
+         SELECT
+            account.id,
+            mobile,
+          `password`,
+            `status`,
+            acc_name,
+            roles_name
+        FROM
+            account
+        INNER JOIN (
+            SELECT
+                *
+            FROM
+                account_roles
+            INNER JOIN roles ON account_roles.roles_id = roles.id
+        ) AS t ON t.account_id = account.id where account.id = #{id}
+    </select>
+
+  <select id="findAll" resultMap="AccountWithRoles" parameterType="int">
+         SELECT
+                account.id,
+                mobile,
+              `password`,
+                `status`,
+                acc_name,
+                roles_name
+            FROM
+                account
+            INNER JOIN (
+                SELECT
+                    *
+                FROM
+                    account_roles
+                INNER JOIN roles ON account_roles.roles_id = roles.id
+            ) AS t ON t.account_id = account.id
+  </select>
+
+
+<resultMap id="AccountWithRoles" type="com.kaishengit.entitys.Account">
+  <id property="id" column="id"/>
+  <result property="mobile" column="mobile"/>
+  <result property="password" column="password"/>
+  <result property="status" column="status"/>
+  <result property="accName" column="acc_name"/>
+  <collection property="roles" ofType="Roles">
+     <result property="rolesName" column="roles_name"/>
+  </collection>
+</resultMap>
+
+
   <resultMap id="BaseResultMap" type="com.kaishengit.entitys.Account">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="mobile" jdbcType="VARCHAR" property="mobile" />
@@ -91,7 +187,7 @@
       </if>
     </if>
   </select>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="AccountWithRoles">
     select 
     <include refid="Base_Column_List" />
     from account
@@ -107,7 +203,7 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.kaishengit.entitys.Account">
+  <insert id="insert" parameterType="com.kaishengit.entitys.Account" useGeneratedKeys="true" keyProperty="id">
     insert into account (id, mobile, password, 
       status, acc_name)
     values (#{id,jdbcType=INTEGER}, #{mobile,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 

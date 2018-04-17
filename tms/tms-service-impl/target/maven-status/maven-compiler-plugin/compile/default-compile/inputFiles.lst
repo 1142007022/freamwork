@@ -1,4 +1,5 @@
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\mapper\PowerMapper.java
+D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\service\impl\RolesPowerKeyServiceImpl.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\mapper\AccountLoginLogMapper.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\mapper\AccountMapper.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\service\impl\AccountLoginLogServiceServiceImpl.java
@@ -6,5 +7,6 @@ D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\mapper\RolesMapper.jav
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\mapper\RolesPowerMapper.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\mapper\AccountRolesMapper.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\service\impl\RolesServiceImpl.java
+D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\service\impl\AccountRolesKeyServiceImpl.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\service\impl\AccountServiceImpl.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\service\impl\PowerServiceImpl.java

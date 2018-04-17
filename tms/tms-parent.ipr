@@ -101,7 +101,7 @@ under the License.
       <module filepath="$PROJECT_DIR$/tms-parent.iml"/>
       <module filepath="$PROJECT_DIR$/tms-commons/tms-commons.iml"/>
       <module filepath="$PROJECT_DIR$/tms-service/tms-service.iml"/>
-      <module filepath="$PROJECT_DIR$/tms-service-impl/tms-com.kaishengit.service-impl.iml"/>
+      <module filepath="$PROJECT_DIR$/tms-service-impl/tms-service-impl.iml"/>
       <module filepath="$PROJECT_DIR$/tms-manager-web/tms-manager-web.iml"/>
     </modules> 
   </component>  

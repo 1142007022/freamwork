@@ -3,6 +3,7 @@ package com.kaishengit.mapper;
 import com.kaishengit.entitys.Account;
 import com.kaishengit.entitys.AccountExample;
 import java.util.List;
+import java.util.Map;
 import org.apache.ibatis.annotations.Param;
 
 public interface AccountMapper {
@@ -27,4 +28,10 @@ public interface AccountMapper {
     int updateByPrimaryKeySelective(Account record);
 
     int updateByPrimaryKey(Account record);
+
+    List<Account> findAll();
+
+    Account findById(Integer id);
+
+    List<Account> findAccountWithParam(Map<String, Object> map);
 }

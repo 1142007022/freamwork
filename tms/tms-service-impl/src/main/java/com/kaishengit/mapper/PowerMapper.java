@@ -31,4 +31,5 @@ public interface PowerMapper {
     int updateByPrimaryKey(Power record);
 
 
+    List<Power> findMyPowerById(Integer id);
 }

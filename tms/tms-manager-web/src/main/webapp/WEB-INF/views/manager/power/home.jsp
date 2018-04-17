@@ -109,9 +109,14 @@
                         "id": id
                     },
                     success : function (data) {
-                        layer.confirm(data.message,function () {
+                        if(data.state == 'success'){
                             history.go(0);
-                        })
+                        }else{
+                            layer.confirm(data.message,function () {
+                                history.go(0);
+                            })
+                        }
+
                     },
                     error : function(){
                         alert("系统繁忙")

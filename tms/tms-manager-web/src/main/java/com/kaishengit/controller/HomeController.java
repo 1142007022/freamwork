@@ -21,14 +21,13 @@ import java.util.List;
 
 
 @Controller
-@RequestMapping("/")
 public class HomeController {
 
 
     @Autowired
     public AccountService accountService;
 
-    @GetMapping
+    @GetMapping("/")
     public String home(HttpServletRequest req, HttpServletResponse resp) {
         String checked = isRemember(req, resp).get(0);
         String username = isRemember(req, resp).get(1);
@@ -37,7 +36,12 @@ public class HomeController {
         return "login";
     }
 
-    @PostMapping
+    @GetMapping("/home")
+    public String home() {
+        return "home";
+    }
+
+    @PostMapping("/")
     public String login(String mobile, String password, HttpServletRequest request, HttpServletResponse response, HttpSession session, RedirectAttributes redirectAttributes, Model model, String remember) {
         String loginIp = request.getRemoteAddr();
         Cookie(remember, mobile, request, response);
@@ -46,7 +50,7 @@ public class HomeController {
             if (account != null) {
                 session.setAttribute("acc",account);
                 //model.addAttribute("acc", account);
-                return "home";
+                return "redirect:/home";
             }
         } catch (ServiceException e) {
             redirectAttributes.addFlashAttribute("message", e.getMessage());

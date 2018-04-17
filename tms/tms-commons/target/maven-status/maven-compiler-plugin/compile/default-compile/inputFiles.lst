@@ -3,6 +3,7 @@ D:\code\tms\tms-commons\src\main\java\com\kaishengit\exception\ServiceException.
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\RolesExample.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\AccountExample.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\RolesPowerKey.java
+D:\code\tms\tms-commons\src\main\java\com\kaishengit\shiro\ShiroRealm.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\dto\Result.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\AccountRolesKey.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\RolesPowerExample.java

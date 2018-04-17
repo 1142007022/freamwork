@@ -64,6 +64,16 @@
                             <label>用户手机号</label>
                             <input type="text" name="mobile" class="form-control">
                         </div>
+                        <div class="form-group">
+                            <label>角色</label>
+                            <div>
+                                <c:forEach items="${rolesList}" var="roles">
+                                    <div class="checkbox-inline">
+                                        <input type="checkbox" value="${roles.id}" name="rolesIds"> ${roles.rolesName}
+                                    </div>
+                                </c:forEach>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <div class="box-footer">

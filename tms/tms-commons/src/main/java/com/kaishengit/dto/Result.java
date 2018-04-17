@@ -5,13 +5,28 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Result {
 
-    private static final String STATE_SUCCESS = "success";
-    private static final String STATE_ERROR = "error";
+    public static final String STATE_SUCCESS = "success";
+    public static final String STATE_ERROR = "error";
 
     public static Result success(Object data){
         Result res = new Result();
         res.state = STATE_SUCCESS;
         res.setData(data);
+        return res;
+    }
+
+    public Result(String message) {
+        this.message = message;
+    }
+
+    public Result() {
+        super();
+    }
+    public static Result success(Object data, String message){
+        Result res = new Result();
+        res.state = STATE_SUCCESS;
+        res.setData(data);
+        res.setMessage(message);
         return res;
     }
 

@@ -1,6 +1,7 @@
 package com.kaishengit.entitys;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * @author 
@@ -19,6 +20,16 @@ public class Account implements Serializable {
     private String status;
 
     private String accName;
+
+    private List<Roles> roles;
+
+    public List<Roles> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Roles> roles) {
+        this.roles = roles;
+    }
 
     private static final long serialVersionUID = 1L;
 

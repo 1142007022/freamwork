@@ -12,4 +12,10 @@ public interface PowerService {
     void delPowerById(Integer id);
 
     List<Power> findAllPower();
+
+    Power findPowerById(Integer id);
+
+    void update(Power power);
+
+    List<Power> findMyPowerById(Integer id);
 }

@@ -38,6 +38,21 @@ public class PowerServiceImpl implements PowerService {
         return resList;
     }
 
+    @Override
+    public Power findPowerById(Integer id) {
+        return powerMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public void update(Power power) {
+        powerMapper.updateByPrimaryKeySelective(power);
+    }
+
+    @Override
+    public List<Power> findMyPowerById(Integer id) {
+        return powerMapper.findMyPowerById(id);
+    }
+
 
     private void toTreeList(List<Power> sourceList, List<Power> endList, int parentId) {
         List<Power> tempList = Lists.newArrayList(Collections2.filter(sourceList, power -> power.getParentId().equals(parentId)));
@@ -60,10 +75,12 @@ public class PowerServiceImpl implements PowerService {
             PowerExample powerExample = new PowerExample();
             powerExample.createCriteria().andParentIdEqualTo(id);
             List<Power> powerList = powerMapper.selectByExample(powerExample);
-
-            for (Power power : powerList) {
-                delPowerById(power.getId());
+            if (powerList != null){
+                for (Power power : powerList) {
+                    delPowerById(power.getId());
+                }
             }
+            powerMapper.deleteByPrimaryKey(id);
         }
     }
 

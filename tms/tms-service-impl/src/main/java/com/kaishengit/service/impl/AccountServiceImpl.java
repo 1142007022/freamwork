@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class AccountServiceImpl implements AccountService {
@@ -21,6 +22,7 @@ public class AccountServiceImpl implements AccountService {
     @Autowired
     private AccountLoginLogMapper accountLoginLogMapper;
 
+    private AccountExample accountExample = new AccountExample();
     @Override
     public Account login(String mobile, String password, String loginIp) {
         AccountExample accountExample = new AccountExample();
@@ -47,7 +49,7 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    public void addAccount(Account account) {
+    public Account addAccount(Account account) {
         AccountExample accountExample = new AccountExample();
         accountExample.createCriteria().andMobileEqualTo(account.getMobile());
 
@@ -61,10 +63,31 @@ public class AccountServiceImpl implements AccountService {
         account.setPassword(password);
 
         accountMapper.insert(account);
+        return account;
     }
 
     @Override
     public List<Account> findAll() {
-        return accountMapper.selectByExample(null);
+        return accountMapper.findAll();
+    }
+
+    @Override
+    public void delById(Integer id) {
+        accountMapper.deleteByPrimaryKey(id);
+    }
+
+    @Override
+    public Account findById(Integer id) {
+        return accountMapper.findById(id);
+    }
+
+    @Override
+    public void update(Account account) {
+        accountMapper.updateByPrimaryKeySelective(account);
+    }
+
+    @Override
+    public List<Account> findAccountWithParam(Map<String, Object> map) {
+        return accountMapper.findAccountWithParam(map);
     }
 }

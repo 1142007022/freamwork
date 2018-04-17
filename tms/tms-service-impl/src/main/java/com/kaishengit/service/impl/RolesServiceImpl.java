@@ -1,8 +1,8 @@
 package com.kaishengit.service.impl;
 
-import com.kaishengit.entitys.Power;
-import com.kaishengit.entitys.Roles;
-import com.kaishengit.entitys.RolesPowerKey;
+import com.kaishengit.entitys.*;
+import com.kaishengit.exception.ServiceException;
+import com.kaishengit.mapper.AccountRolesMapper;
 import com.kaishengit.mapper.RolesMapper;
 import com.kaishengit.mapper.RolesPowerMapper;
 import com.kaishengit.service.RolesService;
@@ -19,7 +19,8 @@ public class RolesServiceImpl implements RolesService {
     private RolesMapper rolesMapper;
     @Autowired
     private RolesPowerMapper rolesPowerMapper;
-
+    @Autowired
+    private AccountRolesMapper accountRolesMapper;
     @Override
     public void addRoles(Roles roles) {
 
@@ -41,5 +42,25 @@ public class RolesServiceImpl implements RolesService {
     @Override
     public List<Roles> findAllRoles() {
         return rolesMapper.findAllRoles();
+    }
+
+    @Override
+    public void delById(Integer id) {
+        AccountRolesExample accountRolesExample = new AccountRolesExample();
+        accountRolesExample.createCriteria().andRolesIdEqualTo(id);
+        List<AccountRolesKey> accountRolesKeysList = accountRolesMapper.selectByExample(accountRolesExample);
+        if (accountRolesKeysList != null && accountRolesKeysList.size() != 0) {
+            throw new ServiceException("该角色有用户正在使用删除失败！");
+        } else {
+            RolesPowerExample rolesPowerExample = new RolesPowerExample();
+            rolesPowerExample.createCriteria().andRolesIdEqualTo(id);
+            rolesPowerMapper.deleteByExample(rolesPowerExample);
+            rolesMapper.deleteByPrimaryKey(id);
+        }
+    }
+
+    @Override
+    public Roles findById(Integer id) {
+        return rolesMapper.selectByPrimaryKey(id);
     }
 }

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置secutrityManger-->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="cacheManager" ref="cacheManager"/>
+        <property name="realm" ref="myShiroReaml"/>
+    </bean>
+
+    <!--配置缓存管理器-->
+    <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+        <!--指定ehcache的配置文件-->
+        <property name="cacheManagerConfigFile" value="classpath:ehcache.xml"/>
+    </bean>
+
+    <!--配置自定以的Realm-->
+    <bean id="myShiroReaml" class="com.kaishengit.shiro.ShiroRealm"/>
+
+    <!--配置生命周期处理器-->
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+
+    <!--开启基于注解的shiro角色以及权限判断 -->
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
+          depends-on="lifecycleBeanPostProcessor"/>
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager"/>
+    </bean>
+
+    <!--配置ShiroFilter id必须和web.xml中的filter节点的filter-name相同-->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <!--配置登录的URL-->
+        <property name="loginUrl" value="/"/>
+        <!--登录成功后的URL-->
+        <property name="successUrl" value="/home"/>
+        <!--访问没有权限的资源跳转的URL-->
+        <property name="unauthorizedUrl" value="/"/>
+        <property name="filterChainDefinitions">
+            <value>
+                /favicon.ico = anon
+                /static/** = anon
+                /** = authc
+            </value>
+        </property>
+    </bean>
+
+</beans>

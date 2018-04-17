@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.kaishengit</groupId>
-    <artifactId>tms-com.kaishengit.service-impl</artifactId>
+    <artifactId>tms-service-impl</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -36,6 +36,17 @@
             <groupId>com.kaishengit</groupId>
             <artifactId>tms-service</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-all</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.2</version>
         </dependency>
 
         <dependency>

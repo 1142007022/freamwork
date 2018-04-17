@@ -13,4 +13,7 @@ public interface RolesService {
 
     List<Roles> findAllRoles();
 
+    void delById(Integer id);
+
+    Roles findById(Integer id);
 }

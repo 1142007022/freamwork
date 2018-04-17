@@ -63,6 +63,10 @@
                                         <i class="fa fa-circle"></i> ${power.powerName}
                                     </c:forEach>
                                 </td>
+                                <td>
+                                    <a href="/manager/roles/update/${roles.id}">修改</a>
+                                    <a href="javascript:;" class="del" rel="${roles.id}">删除</a>
+                                </td>
                             </tr>
                         </c:forEach>
                         </tbody>
@@ -83,6 +87,32 @@
     $(function () {
         $('.tree').treegrid();
     });
+    $(".del").click(function () {
+        var id = $(this).attr("rel");
+        layer.confirm("你确定要删除么？",function (){
+            $.ajax({
+                url : "/manager/roles/del/"+id,
+                type : "get",
+                data : {
+                    "id": id
+                },
+                success : function (data) {
+                    if(data.state == 'success'){
+                        history.go(0);
+                    }else{
+                        layer.confirm(data.message,function () {
+                            history.go(0);
+                        })
+                    }
+
+                },
+                error : function(){
+                    alert("系统繁忙")
+                }
+            })
+        })
+    })
+
 </script>
 </body>
 </html>

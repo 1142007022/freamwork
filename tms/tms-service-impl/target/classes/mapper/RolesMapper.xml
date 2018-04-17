@@ -6,11 +6,13 @@
         SELECT
         power_name,
         roles_name,
-        roles_code
+        roles_code,
+		roles_id
         FROM
         power
         INNER JOIN (
         SELECT
+		roles.id AS roles_id,
         roles.roles_name,
         roles.roles_code,
         roles_power.power_id
@@ -20,6 +22,7 @@
         ) AS t ON power.id = t.power_id;
     </select>
     <resultMap id="findAllRoles" type="Roles">
+        <result column="roles_id" property="id"/>
         <result column="roles_name" property="rolesName"/>
         <result column="roles_code" property="rolesCode"/>
         <collection property="power" ofType="Power">

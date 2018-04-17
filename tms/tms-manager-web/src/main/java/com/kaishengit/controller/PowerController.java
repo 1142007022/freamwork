@@ -4,6 +4,8 @@ import com.kaishengit.dto.Result;
 import com.kaishengit.entitys.Power;
 import com.kaishengit.exception.ServiceException;
 import com.kaishengit.service.PowerService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +21,23 @@ public class PowerController {
 
     @Autowired
     private PowerService powerService;
+
+    private Logger logger = LoggerFactory.getLogger(PowerController.class);
+
+    @PostMapping("/power/update/{id}")
+    public String update(Power power){
+        powerService.update(power);
+        return "redirect:/manager/power";
+    }
+
+    @GetMapping("/power/update/{id}")
+    public String update(@PathVariable Integer id,Model model){
+        Power power = powerService.findPowerById(id);
+        model.addAttribute("power",power);
+        List<Power> powerList = powerService.findAllPower();
+        model.addAttribute("powerList",powerList);
+        return "manager/power/update";
+    }
 
     @GetMapping("/exit")
     public String exit(HttpServletRequest request){
@@ -48,11 +67,6 @@ public class PowerController {
         return "redirect:/manager/power";
     }
 
-    @GetMapping("/power/update/{id}")
-    public String update(@PathVariable String id){
-        System.out.println("-----"+id);
-        return "";
-    }
 
     @GetMapping("/power/del/{id}")
     @ResponseBody
@@ -67,5 +81,6 @@ public class PowerController {
             return result;
         }
     }
+
 
 }

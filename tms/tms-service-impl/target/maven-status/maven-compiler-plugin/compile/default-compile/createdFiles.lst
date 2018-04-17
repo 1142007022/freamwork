@@ -4,6 +4,8 @@ com\kaishengit\mapper\RolesMapper.class
 com\kaishengit\mapper\PowerMapper.class
 com\kaishengit\service\impl\PowerServiceImpl.class
 com\kaishengit\mapper\AccountMapper.class
+com\kaishengit\service\impl\RolesPowerKeyServiceImpl.class
+com\kaishengit\service\impl\AccountRolesKeyServiceImpl.class
 com\kaishengit\service\impl\AccountServiceImpl.class
 com\kaishengit\service\impl\RolesServiceImpl.class
 com\kaishengit\mapper\AccountLoginLogMapper.class

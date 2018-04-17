@@ -39,6 +39,20 @@
 
         <!-- Main content -->
         <section class="content">
+            <div class="box no-border">
+                <div class="box-body">
+                    <form class="form-inline">
+                        <input type="text" name="mobile" placeholder="手机号码" class="form-control" value="${param.mobile}">
+                        <select name="rolesId" class="form-control">
+                            <option value="">所有账号</option>
+                            <c:forEach items="${rolesList}" var="roles">
+                                <option value="${roles.id}" ${param.relesId == roles.id ? 'selected' : ''}>${roles.rolesName}</option>
+                            </c:forEach>
+                        </select>
+                        <button class="btn btn-default">搜索</button>
+                    </form>
+                </div>
+            </div>
             <div class="box">
                 <div class="box-header">
                     <h3 class="box-title">帐号列表</h3>
@@ -53,7 +67,14 @@
                                 <tr id="roles">
                                     <td>用户名称：<strong>${account.accName}</strong></td>
                                     <td>用户手机号：<strong>${account.mobile}</strong></td>
+                                    <td>角色:
+                                        <c:forEach items="${account.roles}" var="roles">
+                                            <strong>${roles.rolesName}</strong>
+                                        </c:forEach>
+                                    </td>
                                     <td>用户状态：<strong>${account.status}</strong></td>
+                                    <td><strong><a href="javascript:;" class="del" rel="${account.id}">删除</a></strong></td>
+                                    <td><strong><a href="/manager/account/update/${account.id}">修改</a></strong></td>
                                 </tr>
                             </c:forEach>
                         </tbody>
@@ -74,6 +95,33 @@
     $(function () {
         $('.tree').treegrid();
     });
+
+    $(".del").click(function () {
+        var id = $(this).attr("rel");
+        layer.confirm("你确定要删除么？",function (){
+            $.ajax({
+                url : "/manager/account/del/"+id,
+                type : "get",
+                data : {
+                    "id": id
+                },
+                success : function (data) {
+                    if(data.state == 'success'){
+                        history.go(0);
+                    }else{
+                        layer.confirm(data.message,function () {
+                            history.go(0);
+                        })
+                    }
+
+                },
+                error : function(){
+                    alert("系统繁忙")
+                }
+            })
+        })
+    })
+
 </script>
 </body>
 </html>

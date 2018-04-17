@@ -3,6 +3,25 @@
 <mapper namespace="com.kaishengit.mapper.PowerMapper">
 
 
+  <select id="findMyPowerById" resultType="Power" parameterType="int">
+      SELECT
+          power_name,
+          power_code,
+          power_type,
+          parent_id
+      FROM
+          power
+      INNER JOIN (
+          SELECT
+              *
+          FROM
+              roles
+          INNER JOIN roles_power ON roles.id = roles_power.roles_id
+          WHERE
+              roles.id = #{id}
+      ) AS t ON t.power_id = power.id;
+  </select>
+
 
   <resultMap id="BaseResultMap" type="com.kaishengit.entitys.Power">
     <id column="id" jdbcType="INTEGER" property="id" />
