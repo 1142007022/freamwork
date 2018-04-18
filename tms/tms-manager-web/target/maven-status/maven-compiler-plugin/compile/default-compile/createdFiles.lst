@@ -5,3 +5,4 @@ com\kaishengit\controller\HomeController.class
 com\kaishengit\shiro\ShiroRealm.class
 com\kaishengit\controller\RolesController.class
 com\kaishengit\controller\PowerController.class
+com\kaishengit\shiro\CustomerFilterChainDefinition.class

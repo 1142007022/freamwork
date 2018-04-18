@@ -4,6 +4,7 @@ package com.kaishengit.service.impl;
 import com.kaishengit.entitys.Account;
 import com.kaishengit.entitys.AccountExample;
 import com.kaishengit.entitys.AccountLoginLog;
+import com.kaishengit.entitys.Roles;
 import com.kaishengit.exception.ServiceException;
 import com.kaishengit.mapper.AccountLoginLogMapper;
 import com.kaishengit.mapper.AccountMapper;
@@ -93,7 +94,11 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public Account findByMobile(String mobile) {
-        accountExample.createCriteria().andMobileEqualTo(mobile);
-        return accountMapper.selectByExample(accountExample).get(0);
+        return accountMapper.findByMobile(mobile);
+    }
+
+    @Override
+    public List<Roles> findRolesOfAccountByAcctId(Integer id) {
+        return accountMapper.findRolesOfAccountByAcctId(id);
     }
 }

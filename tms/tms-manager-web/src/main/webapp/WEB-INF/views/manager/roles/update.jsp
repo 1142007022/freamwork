@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TMS - 系统管理 - 新增角色</title>
+    <title>TMS - 系统管理 - 修改角色</title>
     <%@include file="../../include/css.jsp" %>
     <link rel="stylesheet" href="/static/plugins/treegrid/css/jquery.treegrid.css">
 </head>
@@ -45,6 +45,7 @@
                     <form method="post" id="saveForm">
                         <div class="form-group">
                             <label>角色名称</label>
+                            <input type="hidden" value="${roles.id}" name="id" class="form-control">
                             <input type="text" value="${roles.rolesName}" name="rolesName" class="form-control">
                         </div>
                         <div class="form-group">

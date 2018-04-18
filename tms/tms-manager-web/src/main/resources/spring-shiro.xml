@@ -32,30 +32,27 @@
     <!--配置生命周期处理器-->
     <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
 
-    <!--开启基于注解的shiro角色以及权限判断 -->
-    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
-          depends-on="lifecycleBeanPostProcessor"/>
-    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
-        <property name="securityManager" ref="securityManager"/>
-    </bean>
-
     <!--配置ShiroFilter id必须和web.xml中的filter节点的filter-name相同-->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
-        <!--配置登录的URL-->
+        <!--登录的URL-->
         <property name="loginUrl" value="/"/>
         <!--登录成功后的URL-->
         <property name="successUrl" value="/home"/>
-        <!--访问没有权限的资源跳转的URL-->
+        <!--没有权限的资源跳转的URL-->
         <property name="unauthorizedUrl" value="/401"/>
+    </bean>
+
+    <bean id="filterChainDefinition" class="com.kaishengit.shiro.CustomerFilterChainDefinition">
+        <property name="shiroFilter" ref="shiroFilter"/>
         <property name="filterChainDefinitions">
             <value>
-                /favicon.ico = anon
-                /static/** = anon
-                /logout = logout
-                /** = user
+                /favicon.ico=anon
+                /static/**=anon
+                /logout=logout
             </value>
         </property>
+
     </bean>
 
 </beans>

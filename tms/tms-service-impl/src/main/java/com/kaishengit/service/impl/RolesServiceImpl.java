@@ -30,11 +30,13 @@ public class RolesServiceImpl implements RolesService {
     @Transactional(rollbackFor = RuntimeException.class)
     public void addRolesAndPowers(Roles roles, Integer[] powerIds) {
         rolesMapper.insert(roles);
-        for(Integer powerId:powerIds){
-            RolesPowerKey rolesPowerKey = new RolesPowerKey();
-            rolesPowerKey.setPowerId(powerId);
-            rolesPowerKey.setRolesId(roles.getId());
-            rolesPowerMapper.insert(rolesPowerKey);
+        if(powerIds != null){
+            for(Integer powerId:powerIds){
+                RolesPowerKey rolesPowerKey = new RolesPowerKey();
+                rolesPowerKey.setPowerId(powerId);
+                rolesPowerKey.setRolesId(roles.getId());
+                rolesPowerMapper.insert(rolesPowerKey);
+            }
         }
 
     }

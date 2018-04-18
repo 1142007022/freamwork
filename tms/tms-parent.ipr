@@ -103,6 +103,7 @@ under the License.
       <module filepath="$PROJECT_DIR$/tms-service/tms-service.iml"/>
       <module filepath="$PROJECT_DIR$/tms-service-impl/tms-service-impl.iml"/>
       <module filepath="$PROJECT_DIR$/tms-manager-web/tms-manager-web.iml"/>
+      <module filepath="$PROJECT_DIR$/tms-finance-web/tms-finance-web.iml"/>
     </modules> 
   </component>  
   <UsedPathMacros> 

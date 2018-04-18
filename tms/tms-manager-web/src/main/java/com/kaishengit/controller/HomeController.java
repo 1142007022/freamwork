@@ -3,6 +3,7 @@ package com.kaishengit.controller;
 import com.kaishengit.entitys.Account;
 import com.kaishengit.exception.ServiceException;
 import com.kaishengit.service.AccountService;
+import com.kaishengit.shiro.CustomerFilterChainDefinition;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
@@ -28,13 +29,14 @@ import java.util.List;
 
 @Controller
 public class HomeController {
-
+    @Autowired
+    private CustomerFilterChainDefinition customerFilterChainDefinition;
 
     @Autowired
     public AccountService accountService;
 
     @GetMapping("/401")
-    public String errorPage(){
+    public String errorPage() {
         return "error/401";
     }
 
@@ -42,25 +44,18 @@ public class HomeController {
     public String home(HttpServletRequest req, HttpServletResponse resp) {
 
         Subject subject = SecurityUtils.getSubject();
-        System.out.println("isAuthenticated()?" + subject.isAuthenticated());
-        System.out.println("isRemembered()?" + subject.isRemembered());
-        if(subject.isAuthenticated()){
+        if (subject.isAuthenticated()) {
             //如果成立的话代表用户是登陆过的 是想退出登录
             System.out.println("安全退出");
             subject.logout();
         }
 
-        if (subject.isRemembered()){
+        if (subject.isRemembered()) {
             //如果成立的话代表用户是点击了记住我  那么此处就应该直接跳转到主页
             System.out.println("直接进入主页");
             return "redirect:/home";
         }
-
         //以上两者都不成立的话  正常登录
-        String checked = isRemember(req, resp).get(0);
-        String username = isRemember(req, resp).get(1);
-        req.setAttribute("checked", checked);
-        req.setAttribute("username", username);
         return "login";
     }
 
@@ -70,10 +65,10 @@ public class HomeController {
     }
 
     @PostMapping("/")
-    public String login(String mobile, String password, HttpServletRequest request, RedirectAttributes redirectAttributes,String remember) {
+    public String login(String mobile, String password, HttpServletRequest request, RedirectAttributes redirectAttributes, String remember) {
         Subject subject = SecurityUtils.getSubject();
         String ip = request.getRemoteAddr();
-        UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken(mobile, DigestUtils.md5Hex(password),remember!=null,ip);
+        UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken(mobile, DigestUtils.md5Hex(password), remember != null, ip);
         try {
             subject.login(usernamePasswordToken);
             SavedRequest savedRequest = WebUtils.getSavedRequest(request);
@@ -92,71 +87,6 @@ public class HomeController {
             redirectAttributes.addFlashAttribute("message", "账户或密码错误");
         }
         return "redirect:/";
-    }
-
-
-
-/*    @PostMapping("/")
-    public String login(String mobile, String password, HttpServletRequest request, HttpServletResponse response, HttpSession session, RedirectAttributes redirectAttributes, Model model, String remember) {
-        String loginIp = request.getRemoteAddr();
-        Cookie(remember, mobile, request, response);
-        try {
-            Account account = accountService.login(mobile, password, loginIp);
-            if (account != null) {
-                session.setAttribute("acc",account);
-                //model.addAttribute("acc", account);
-                return "redirect:/home";
-            }
-        } catch (ServiceException e) {
-            redirectAttributes.addFlashAttribute("message", e.getMessage());
-        }
-        redirectAttributes.addFlashAttribute("mobile", mobile);
-        return "redirect:/";
-    }*/
-
-
-    public void Cookie(String checked, String mobile, HttpServletRequest req, HttpServletResponse resp) {
-        if (StringUtils.isNotEmpty(checked)) {
-            Cookie cookie = new Cookie("mobile", mobile);
-            cookie.setHttpOnly(true);
-            cookie.setMaxAge(60 * 60 * 60 * 60);
-            cookie.setDomain("19.168.1.73");
-            cookie.setPath("/");
-            resp.addCookie(cookie);
-        } else {
-            Cookie[] cookies = req.getCookies();
-            for (Cookie cookie : cookies) {
-                if ("mobile".equals(cookie.getName())) {
-                    cookie.setDomain("localhost");
-                    cookie.setPath("/");
-                    cookie.setMaxAge(0);
-
-                    resp.addCookie(cookie);
-                }
-            }
-        }
-    }
-
-
-    public List<String> isRemember(HttpServletRequest req, HttpServletResponse resp) {
-        String checked = "";
-        String username = "";
-        Cookie[] cookies = req.getCookies();
-        if (cookies != null){
-            for (Cookie cookie : cookies) {
-                if ("mobile".equals(cookie.getName())) {
-                    username = cookie.getValue();
-                    checked = "checked";
-                    break;
-                }
-            }
-        }
-
-
-        List<String> lists = new ArrayList<>();
-        lists.add(checked);
-        lists.add(username);
-        return lists;
     }
 
 

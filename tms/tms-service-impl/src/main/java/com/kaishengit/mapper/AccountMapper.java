@@ -4,6 +4,8 @@ import com.kaishengit.entitys.Account;
 import com.kaishengit.entitys.AccountExample;
 import java.util.List;
 import java.util.Map;
+
+import com.kaishengit.entitys.Roles;
 import org.apache.ibatis.annotations.Param;
 
 public interface AccountMapper {
@@ -34,4 +36,8 @@ public interface AccountMapper {
     Account findById(Integer id);
 
     List<Account> findAccountWithParam(Map<String, Object> map);
+
+    List<Roles> findRolesOfAccountByAcctId(Integer id);
+
+    Account findByMobile(String mobile);
 }

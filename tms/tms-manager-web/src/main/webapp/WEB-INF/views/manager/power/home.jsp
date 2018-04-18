@@ -73,10 +73,13 @@
                                         <td>${power.powerCode}</td>
                                         <td>${power.url}</td>
                                         <td>${power.powerType}</td>
-                                        <td>
-                                            <a href="/manager/power/update/${power.id}">修改</a>
-                                            <a a href="javascript:;" class="del" rel="${power.id}">删除</a>
-                                        </td>
+                                        <shiro:hasPermission name="manager:param">
+                                            <td>
+                                                <a href="/manager/power/update/${power.id}">修改</a>
+                                                <a a href="javascript:;" class="del" rel="${power.id}">删除</a>
+                                            </td>
+                                        </shiro:hasPermission>
+
                                     </tr>
                                 </c:otherwise>
                             </c:choose>

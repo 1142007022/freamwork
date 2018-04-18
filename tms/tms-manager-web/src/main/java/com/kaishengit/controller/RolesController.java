@@ -37,6 +37,7 @@ public class RolesController {
     @PostMapping("/roles/update/{id}")
     @Transactional(rollbackFor = RuntimeException.class)
     public String update(Roles roles,Integer[] powerIds){
+        System.out.println("---------"+roles.getId());
        roles.setUpdateTime(new Date());
         rolesPowerKeyService.update(powerIds,roles);
        return "redirect:/manager/roles";

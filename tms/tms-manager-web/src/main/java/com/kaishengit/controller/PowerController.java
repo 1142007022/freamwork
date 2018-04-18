@@ -4,6 +4,7 @@ import com.kaishengit.dto.Result;
 import com.kaishengit.entitys.Power;
 import com.kaishengit.exception.ServiceException;
 import com.kaishengit.service.PowerService;
+import com.kaishengit.shiro.CustomerFilterChainDefinition;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,11 +23,15 @@ public class PowerController {
     @Autowired
     private PowerService powerService;
 
+    @Autowired
+    private CustomerFilterChainDefinition customerFilterChainDefinition;
+
     private Logger logger = LoggerFactory.getLogger(PowerController.class);
 
     @PostMapping("/power/update/{id}")
     public String update(Power power){
         powerService.update(power);
+
         return "redirect:/manager/power";
     }
 
@@ -64,6 +69,7 @@ public class PowerController {
     @PostMapping("/power/add")
     public String addPower(Power power){
         powerService.addPower(power);
+        customerFilterChainDefinition.update();
         return "redirect:/manager/power";
     }
 
@@ -75,6 +81,7 @@ public class PowerController {
         try {
             powerService.delPowerById(id);
             Result result = Result.success();
+            customerFilterChainDefinition.update();
             return result;
         }catch (ServiceException e){
             Result result = Result.error(e.getMessage());

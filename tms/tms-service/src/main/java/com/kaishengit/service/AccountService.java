@@ -1,6 +1,7 @@
 package com.kaishengit.service;
 
 import com.kaishengit.entitys.Account;
+import com.kaishengit.entitys.Roles;
 
 import java.util.List;
 import java.util.Map;
@@ -22,4 +23,6 @@ public interface AccountService {
     List<Account> findAccountWithParam(Map<String, Object> map);
 
     Account findByMobile(String mobile);
+
+    List<Roles> findRolesOfAccountByAcctId(Integer id);
 }

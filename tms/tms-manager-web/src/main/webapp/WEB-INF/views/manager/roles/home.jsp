@@ -48,9 +48,12 @@
             <div class="box">
                 <div class="box-header">
                     <h3 class="box-title">角色列表</h3>
-                    <div class="box-tools">
-                        <a href="/manager/roles/add" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> 新增角色</a>
-                    </div>
+                    <shiro:hasPermission name="roles:add">
+                        <div class="box-tools">
+                            <a href="/manager/roles/add" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> 新增角色</a>
+                        </div>
+                    </shiro:hasPermission>
+
                 </div>
                 <div class="box-body">
                     <table class="table tree">
@@ -58,14 +61,22 @@
                         <c:forEach items="${rolesList}" var="roles">
                             <tr id="roles" >
                                 <td class="td-left">角色名称：<strong>${roles.rolesName}</strong></td>
+                                <td>
+                                    <shiro:hasPermission name="roles:del">
+                                        <a href="javascript:;" class="del" rel="${roles.id}">删除</a>
+                                    </shiro:hasPermission>
+                                    <shiro:hasPermission name="roles:update">
+                                        <a href="/manager/roles/update/${roles.id}">修改</a>
+                                    </shiro:hasPermission>
+
+
+                                </td>
+                            </tr>
+                            <tr>
                                 <td class="td-right">
                                     <c:forEach items="${roles.power}" var="power">
                                         <i class="fa fa-circle"></i> ${power.powerName}
                                     </c:forEach>
-                                </td>
-                                <td>
-                                    <a href="/manager/roles/update/${roles.id}">修改</a>
-                                    <a href="javascript:;" class="del" rel="${roles.id}">删除</a>
                                 </td>
                             </tr>
                         </c:forEach>

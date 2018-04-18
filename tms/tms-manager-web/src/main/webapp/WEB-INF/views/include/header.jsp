@@ -45,9 +45,6 @@
               <li class="user-header">
                 <img src="/static/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
-                <p>
-                  ${acc.accName}
-                </p>
               </li>
               <!-- Menu Footer-->
               <li class="user-footer">

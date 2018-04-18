@@ -1,3 +1,4 @@
+<%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!-- 左侧菜单栏 -->
 <style>
@@ -16,7 +17,11 @@
             <li class="header">系统管理</li>
             <li class="${param.menu == 'manager_account' ? 'active' : ''}"><a href="/manager/account"><i class="fa fa-circle-o"></i> <span>账号管理</span></a></li>
             <li class="${param.menu == 'manager_roles' ? 'active' : ''}"><a href="/manager/roles"><i class="fa fa-circle-o"></i> <span>角色管理</span></a></li>
-            <li class="${param.menu == 'manager_power' ? 'active' : ''}"><a href="/manager/power"><i class="fa fa-circle-o"></i> <span>权限管理</span></a></li>
+            <shiro:hasPermission name="manager:param">
+                <li class="${param.menu == 'manager_power' ? 'active' : ''}"><a href="/manager/power"><i class="fa fa-circle-o"></i> <span>权限管理</span></a></li>
+
+            </shiro:hasPermission>
+
 
             <%--<!-- 普通菜单 -->
             <li class="treeview">

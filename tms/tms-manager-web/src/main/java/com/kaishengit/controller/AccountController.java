@@ -66,12 +66,7 @@ public class AccountController {
         return result;
     }
 
-/*    @GetMapping("/account")
-    public String home(Model model){
-        List<Account> accountList = accountService.findAll();
-        model.addAttribute("accountList",accountList);
-        return "/manager/account/home";
-    }*/
+
     @GetMapping("/account")
     public String home(Model model, @RequestParam(required = false) Integer rolesId,
                                      @RequestParam(required = false) String mobile){

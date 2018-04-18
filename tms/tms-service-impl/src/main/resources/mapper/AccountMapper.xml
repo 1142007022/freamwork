@@ -2,17 +2,45 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kaishengit.mapper.AccountMapper">
 
-  <select id="findByMobile" parameterType="string" resultMap="BaseAccountWithRoles">
-      SELECT
-          id AS account_id,
-          mobile,
-          `password`,
-          `status`,
-          acc_name
-      FROM
-          account
-      WHERE
-          mobile = #{mobile}
+
+  <select id="findRolesOfAccountByAcctId" parameterType="int" resultMap="findRolesOfAccountByAcctId">
+
+    SELECT
+        roles_id,
+        roles_code,
+        roles_name
+    FROM
+        account
+    INNER JOIN (
+        SELECT
+            *
+        FROM
+            account_roles
+        INNER JOIN roles ON account_roles.roles_id = roles.id
+    ) AS t ON t.account_id = account.id
+    WHERE
+        account.id = #{id}
+
+  </select>
+
+
+  <resultMap id="findRolesOfAccountByAcctId" type="Roles">
+    <id property="id" column="roles_id"/>
+    <result property="rolesCode" column="roles_code"/>
+    <result property="rolesName" column="roles_name"/>
+  </resultMap>
+
+  <select id="findByMobile" parameterType="string" resultType="Account">
+          SELECT
+              id ,
+              mobile,
+              `password`,
+              `status`,
+              acc_name
+          FROM
+              account
+          WHERE
+              mobile = #{mobile}
   </select>
 
   <select id="findAccountWithParam" parameterType="map" resultMap="BaseAccountWithRoles">
