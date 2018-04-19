@@ -9,4 +9,10 @@ public interface TicketofficeService {
     List<Ticketoffice> findAll();
 
     void saveTicketofficeAndSaleAccount(Ticketoffice ticketoffice, SaleAccount saleAccount);
+
+    void delTickAndAccountByTickId(Integer id);
+
+    Ticketoffice findById(Integer id);
+
+    void update(Ticketoffice ticketoffice);
 }

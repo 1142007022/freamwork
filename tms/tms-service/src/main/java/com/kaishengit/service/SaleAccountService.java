@@ -6,4 +6,8 @@ import java.util.List;
 
 public interface SaleAccountService {
     List<SaleAccount> findAll();
+
+    SaleAccount findByTickId(Integer id);
+
+    void update(SaleAccount saleAccount);
 }

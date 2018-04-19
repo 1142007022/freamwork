@@ -27,7 +27,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                权限管理
+                销售点管理
             </h1>
         </section>
 
@@ -35,45 +35,36 @@
         <section class="content">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">修改权限</h3>
+                    <h3 class="box-title">修改销售点</h3>
                     <div class="box-tools">
-                        <a href="/manager/power" class="btn btn-success btn-sm">返回</a>
+                        <a href="/manager/ticketoffice" class="btn btn-success btn-sm">返回</a>
                     </div>
                 </div>
                 <div class="box-body">
                     <form method="post" id="saveForm">
                         <div class="form-group">
-                            <label>权限名称</label>
-                            <input type="text" name="powerName" class="form-control" value="${power.powerName}">
+                            <label>销售点名称</label>
+                            <input type="text" name="name" class="form-control" value="${ticketoffice.name}">
                         </div>
                         <div class="form-group">
-                        <label>权限代号</label>
-                        <input type="text" name="powerCode" class="form-control" value="${power.powerCode}">
+                        <label>销售点所在地</label>
+                        <input type="text" name="place" class="form-control" value="${ticketoffice.place}">
                     </div>
                         <div class="form-group">
-                            <label>权限路径(URL)</label>
-                            <input type="text" name="url" class="form-control" value="${power.url}">
+                            <label>营业状态</label>
+                            <input type="text" name="status" value="${ticketoffice.status}" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>权限类型</label>
-                            <select name="powerType" class="form-control">
-                                <option value="${power.powerType}">${power.powerType}</option>
-                                <c:if test="${power.powerType  == '菜单'}">
-                                    <option value="按钮">按钮</option>
-                                </c:if>
-                                <c:if test="${power.powerType == '按钮'}">
-                                    <option value="菜单">菜单</option>
-                                </c:if>
-                            </select>
+                            <label>法人姓名</label>
+                            <input type="text" name="accountName" value="${saleAccount.accountName}" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>父权限</label>
-                            <select name="parentId" class="form-control">
-                                <option value="0">顶级菜单</option>
-                                <c:forEach items="${powerList}" var="power1">
-                                    <option value="${power1.id}" ${power1.id == power.parentId ? 'selected' : ''}>${power1.powerName}</option>
-                                </c:forEach>
-                            </select>
+                            <label>年票数量</label>
+                            <input type="text" name="ticketNum" value="${ticketoffice.ticketNum}" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>法人手机号</label>
+                            <input type="text" name="mobile" value="${saleAccount.mobile}" class="form-control">
                         </div>
                     </form>
                 </div>

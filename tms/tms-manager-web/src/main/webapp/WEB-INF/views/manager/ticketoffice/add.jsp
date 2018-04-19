@@ -53,24 +53,27 @@
                 <div class="box-body">
                     <form method="post" id="saveForm">
                         <div class="form-group">
+                            <label>${message}</label>
+                        </div>
+                        <div class="form-group">
                             <label>售票点名称</label>
-                            <input type="text" name="name" class="form-control">
+                            <input type="text" value="${ticketoffice.name}" name="name" class="form-control">
                         </div>
                         <div class="form-group">
                         <label>售票点所在地</label>
-                        <input type="text" name="place" class="form-control">
+                        <input type="text" name="place" value="${ticketoffice.place}" class="form-control">
                     </div>
                         <div class="form-group">
                             <label>营业状态</label>
-                            <input type="text" name="status" class="form-control">
+                            <input type="text" name="status" value="${ticketoffice.status}" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>法人姓名</label>
-                            <input type="text" name="accountName" class="form-control">
+                            <input type="text" name="accountName" value="${account.accountName}" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>法人手机号</label>
-                            <input type="text" name="mobile" class="form-control">
+                            <input type="text" name="mobile" value="${account.mobile}" class="form-control">
                         </div>
 
 

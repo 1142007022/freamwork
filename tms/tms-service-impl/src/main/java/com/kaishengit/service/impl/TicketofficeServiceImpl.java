@@ -1,7 +1,9 @@
 package com.kaishengit.service.impl;
 
 import com.kaishengit.entitys.SaleAccount;
+import com.kaishengit.entitys.SaleAccountExample;
 import com.kaishengit.entitys.Ticketoffice;
+import com.kaishengit.entitys.TicketofficeExample;
 import com.kaishengit.mapper.SaleAccountMapper;
 import com.kaishengit.mapper.TicketofficeMapper;
 import com.kaishengit.service.TicketofficeService;
@@ -31,6 +33,28 @@ public class TicketofficeServiceImpl implements TicketofficeService {
         saleAccount.setTicketofficeId(ticketoffice.getId());
         saleAccountMapper.insert(saleAccount);
         ticketoffice.setSaleAccountId(saleAccount.getId());
+        ticketofficeMapper.updateByPrimaryKeySelective(ticketoffice);
+    }
+
+    @Override
+    @Transactional(rollbackFor = RuntimeException.class)
+    public void delTickAndAccountByTickId(Integer id) {
+        TicketofficeExample ticketofficeExample = new TicketofficeExample();
+        ticketofficeExample.createCriteria().andIdEqualTo(id);
+        ticketofficeMapper.deleteByExample(ticketofficeExample);
+
+        SaleAccountExample saleAccountExample = new SaleAccountExample();
+        saleAccountExample.createCriteria().andTicketofficeIdEqualTo(id);
+        saleAccountMapper.deleteByExample(saleAccountExample);
+    }
+
+    @Override
+    public Ticketoffice findById(Integer id) {
+        return ticketofficeMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public void update(Ticketoffice ticketoffice) {
         ticketofficeMapper.updateByPrimaryKeySelective(ticketoffice);
     }
 }

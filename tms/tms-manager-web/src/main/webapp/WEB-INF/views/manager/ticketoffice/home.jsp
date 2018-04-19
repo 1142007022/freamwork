@@ -96,11 +96,9 @@
             var id = $(this).attr("rel");
             layer.confirm("你确定要删除么？",function (){
                 $.ajax({
-                    url : "/manager/power/del/"+id,
+                    url : "/manager/ticketoffice/del/"+id,
                     type : "get",
-                    data : {
-                        "id": id
-                    },
+
                     success : function (data) {
                         if(data.state == 'success'){
                             history.go(0);
