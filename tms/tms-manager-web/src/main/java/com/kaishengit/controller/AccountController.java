@@ -95,7 +95,7 @@ public class AccountController {
             Account accountNew = accountService.addAccount(account);
             accountRolesKeyService.addAccountRoles(accountNew,rolesIds);
             Result result = Result.success();
-            logger.info("����û�{}",account);
+            logger.info("添加账户{}",account);
             return result;
         }catch (ServiceException e){
             Result result = Result.error(e.getMessage());

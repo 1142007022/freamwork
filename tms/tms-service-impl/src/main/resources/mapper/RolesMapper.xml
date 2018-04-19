@@ -10,7 +10,7 @@
 		roles_id
         FROM
         power
-        INNER JOIN (
+        RIGHT JOIN (
         SELECT
 		roles.id AS roles_id,
         roles.roles_name,
@@ -18,7 +18,7 @@
         roles_power.power_id
         FROM
         roles
-        INNER JOIN roles_power ON roles.id = roles_power.roles_id
+        LEFT JOIN roles_power ON roles.id = roles_power.roles_id
         ) AS t ON power.id = t.power_id;
     </select>
     <resultMap id="findAllRoles" type="Roles">

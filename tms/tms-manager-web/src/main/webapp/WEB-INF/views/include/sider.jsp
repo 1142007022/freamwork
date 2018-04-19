@@ -19,8 +19,8 @@
             <li class="${param.menu == 'manager_roles' ? 'active' : ''}"><a href="/manager/roles"><i class="fa fa-circle-o"></i> <span>角色管理</span></a></li>
             <shiro:hasPermission name="manager:param">
                 <li class="${param.menu == 'manager_power' ? 'active' : ''}"><a href="/manager/power"><i class="fa fa-circle-o"></i> <span>权限管理</span></a></li>
-
             </shiro:hasPermission>
+            <li class="${param.menu == 'manager_ticketoffice' ? 'active' : ''}"><a href="/manager/ticketoffice"><i class="fa fa-circle-o"></i> <span>售票点管理</span></a></li>
 
 
             <%--<!-- 普通菜单 -->

@@ -7,6 +7,12 @@
     <!--开启静态资源-->
     <mvc:default-servlet-handler/>
 
+    <!--文件上传解析器-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--不设置的话都是有默认值的  但是默认大小仅为1M-->
+        <property name="maxUploadSize" value="10485760"/>
+    </bean>
+
     <!--开启自动扫描-->
     <context:component-scan base-package="com.kaishengit.controller"/>
     <!--开启基于注解的mvc-->

@@ -1,4 +1,6 @@
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\Roles.java
+D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\SaleAccountExample.java
+D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\TicketofficeExample.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\exception\ServiceException.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\RolesExample.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\AccountExample.java
@@ -9,6 +11,8 @@ D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\RolesPowerExample.j
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\PowerExample.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\Power.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\Account.java
+D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\SaleAccount.java
+D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\Ticketoffice.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\AccountLoginLog.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\AccountLoginLogExample.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\AccountRolesExample.java
