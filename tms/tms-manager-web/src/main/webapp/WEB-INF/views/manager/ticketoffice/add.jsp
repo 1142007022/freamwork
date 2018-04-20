@@ -64,10 +64,6 @@
                         <input type="text" name="place" value="${ticketoffice.place}" class="form-control">
                     </div>
                         <div class="form-group">
-                            <label>营业状态</label>
-                            <input type="text" name="status" value="${ticketoffice.status}" class="form-control">
-                        </div>
-                        <div class="form-group">
                             <label>法人姓名</label>
                             <input type="text" name="accountName" value="${account.accountName}" class="form-control">
                         </div>
@@ -76,15 +72,34 @@
                             <input type="text" name="mobile" value="${account.mobile}" class="form-control">
                         </div>
 
+                        <div class="form-group">
+                            <label>营业状态</label>
+
+                            <select name="status" class="form-control">
+                                <c:choose>
+                                    <c:when test="${ticketoffice.status} == '禁用'">
+                                        <option value="正常" >正常</option>
+                                        <option value="禁用" selected>禁用</option>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <option value="正常" selected>正常</option>
+                                        <option value="禁用" >禁用</option>
+                                    </c:otherwise>
+                                </c:choose>
+                            </select>
+                        </div>
 
                             <div class="col-md-6">
                                 <div id="picker">选择联系人身份证照片</div>
                                 <div class="photo" id="idCardKey"></div>
                             </div>
-                            <div class="col-md-6">
+
+
+                        <div class="col-md-6">
                                 <div id="picker2">选择营业执照照片</div>
                                 <div class="photo" id="businessLicenceKey"></div>
                             </div>
+
                     </form>
                 </div>
                 <div class="box-footer">

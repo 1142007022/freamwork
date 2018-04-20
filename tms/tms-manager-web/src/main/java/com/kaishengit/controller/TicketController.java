@@ -1,5 +1,6 @@
 package com.kaishengit.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.kaishengit.dto.Result;
 import com.kaishengit.entitys.SaleAccount;
 import com.kaishengit.entitys.Ticketoffice;
@@ -14,6 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.jws.WebParam;
+import javax.xml.bind.SchemaOutputResolver;
 import java.util.List;
 
 @Controller
@@ -24,6 +26,16 @@ public class TicketController {
     private TicketofficeService ticketofficeService;
     @Autowired
     private SaleAccountService saleAccountService;
+
+
+    @GetMapping("/ticketoffice/{id}")
+    public String info(@PathVariable Integer id,Model model){
+        Ticketoffice ticketoffice = ticketofficeService.findById(id);
+        SaleAccount saleAccount = saleAccountService.findByTickId(id);
+        model.addAttribute("ticketoffice",ticketoffice);
+        model.addAttribute("saleAccount",saleAccount);
+        return "manager/ticketoffice/info";
+    }
 
 
     @PostMapping("/ticketoffice/update/{tickId}")
@@ -54,9 +66,10 @@ public class TicketController {
 
 
     @GetMapping("/ticketoffice")
-    public String home(Model model) {
-        List<Ticketoffice> ticketofficeList = ticketofficeService.findAll();
-        model.addAttribute("ticketofficeList", ticketofficeList);
+    public String home(Model model,@RequestParam(defaultValue = "1",required = false) Integer p) {
+        PageInfo<Ticketoffice> pageInfo = ticketofficeService.findAll(p);
+        System.out.println("p-------"+p);
+        model.addAttribute("pageInfo", pageInfo);
         return "manager/ticketoffice/home";
     }
 
@@ -80,6 +93,7 @@ public class TicketController {
             String password = saleAccount.getMobile().substring(5);
             String md5Password = DigestUtils.md5Hex(password);
             saleAccount.setPassword(md5Password);
+            ticketoffice.setTicketNum(Ticketoffice.default_ticket_num);
         }
 
         ticketofficeService.saveTicketofficeAndSaleAccount(ticketoffice, saleAccount);

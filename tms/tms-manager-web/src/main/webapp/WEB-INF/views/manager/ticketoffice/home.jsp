@@ -52,11 +52,11 @@
                             <th>售票点地址</th>
                             <th>年票数量</th>
                             <th>证明文件</th>
-                            <th>#</th>
+                            <th>操作</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <c:forEach items="${ticketofficeList}" var="ticketoffice">
+                        <c:forEach items="${pageInfo.list}" var="ticketoffice">
 
                                     <tr class="treegrid-${power.id} treegrid-expanded">
                                         <td>${ticketoffice.name}</td>
@@ -71,12 +71,17 @@
                                         <td>
                                             <a href="/manager/ticketoffice/update/${ticketoffice.id}">修改</a>
                                             <a href="javascript:;" class="del" rel="${ticketoffice.id}">删除</a>
+                                            <a href="javascript:;" class="info" rel="${ticketoffice.id}">详情</a>
                                         </td>
 
                                     </tr>
                         </c:forEach>
+                        <label ><strong>${pageInfo.total}条数据</strong></label>
+                        <ul id="pagination-demo" class="pagination pull-right"></ul>
                         </tbody>
+
                     </table>
+
                 </div>
             </div>
         </section>
@@ -87,11 +92,31 @@
 <!-- ./wrapper -->
 
 <%@include file="../../include/js.jsp"%>
+<script src="/static/plugins/jQuery/jquery.twbsPagination.js"></script>
 <script src="/static/plugins/treegrid/js/jquery.treegrid.min.js"></script>
 <script src="/static/plugins/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
 <script>
     $(function () {
         $('.tree').treegrid();
+
+
+        $('#pagination-demo').twbsPagination({
+            totalPages:${pageInfo.pages},
+            visiblePages: 5,
+            first:'首页',
+            last:'末页',
+            prev:'上一页',
+            next:'下一页',
+            href:"/manager/ticketoffice?p={{number}}"
+        });
+
+
+        $(".info").click(function(){
+            var id = $(this).attr("rel");
+             window.location.href='/manager/ticketoffice/'+id;
+        })
+
+
         $(".del").click(function () {
             var id = $(this).attr("rel");
             layer.confirm("你确定要删除么？",function (){

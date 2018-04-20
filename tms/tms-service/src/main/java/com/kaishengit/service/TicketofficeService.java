@@ -1,12 +1,13 @@
 package com.kaishengit.service;
 
+import com.github.pagehelper.PageInfo;
 import com.kaishengit.entitys.SaleAccount;
 import com.kaishengit.entitys.Ticketoffice;
 
 import java.util.List;
 
 public interface TicketofficeService {
-    List<Ticketoffice> findAll();
+    PageInfo<Ticketoffice> findAll(Integer p);
 
     void saveTicketofficeAndSaleAccount(Ticketoffice ticketoffice, SaleAccount saleAccount);
 

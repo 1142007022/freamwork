@@ -8,6 +8,8 @@ import java.io.Serializable;
 public class Ticketoffice implements Serializable {
     private Integer id;
 
+    public static final Integer default_ticket_num = 0;
+
     public SaleAccount getSaleAccount() {
         return saleAccount;
     }

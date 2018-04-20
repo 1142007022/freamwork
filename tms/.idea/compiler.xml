@@ -16,7 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="tms-commons" target="1.5" />
-      <module name="tms-finance" target="1.5" />
+      <module name="tms-finance" target="1.8" />
       <module name="tms-finance-web" target="1.8" />
       <module name="tms-manager-web" target="1.8" />
       <module name="tms-parent" target="1.5" />

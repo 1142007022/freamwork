@@ -1,5 +1,7 @@
 package com.kaishengit.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.kaishengit.entitys.SaleAccount;
 import com.kaishengit.entitys.SaleAccountExample;
 import com.kaishengit.entitys.Ticketoffice;
@@ -22,8 +24,10 @@ public class TicketofficeServiceImpl implements TicketofficeService {
     @Autowired
     private SaleAccountMapper saleAccountMapper;
     @Override
-    public List<Ticketoffice> findAll() {
-        return ticketofficeMapper.findAll();
+    public PageInfo<Ticketoffice> findAll(Integer p) {
+        PageHelper.startPage(p,5);
+        List<Ticketoffice> ticketofficeList = ticketofficeMapper.findAll();
+        return new PageInfo<>(ticketofficeList);
     }
 
     @Override

@@ -7,20 +7,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76d8577e-2f46-4521-ae55-57b63f988c92" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_google_code_gson_gson_2_6_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_qiniu_happy_dns_java_0_1_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_2_8.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_3_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_squareup_okio_okio_1_8_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_4.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/.idea/artifacts/tms_finance_web_war_exploded.xml" afterPath="$PROJECT_DIR$/../tms/.idea/artifacts/tms_finance_web_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/.idea/artifacts/tms_manager_web_war_exploded.xml" afterPath="$PROJECT_DIR$/../tms/.idea/artifacts/tms_manager_web_war_exploded.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../tms/.idea/artifacts/tms_finance_war_exploded.xml" afterPath="$PROJECT_DIR$/../tms/.idea/artifacts/tms_finance_war_exploded.xml" />
+      <change beforePath="$PROJECT_DIR$/../tms/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../tms/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/../tms/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../tms/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../tms/tms-commons/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/tms-commons-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../tms/tms-commons/target/tms-commons-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-finance-web/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../tms/tms-finance-web/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-finance-web/target/tms-finance-web-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/../tms/tms-finance-web/target/tms-finance-web-1.0-SNAPSHOT.war" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-finance-web/target/tms-finance-web-1.0-SNAPSHOT/WEB-INF/lib/tms-commons-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../tms/tms-finance-web/target/tms-finance-web-1.0-SNAPSHOT/WEB-INF/lib/tms-commons-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-finance-web/target/tms-finance-web-1.0-SNAPSHOT/WEB-INF/lib/tms-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../tms/tms-finance-web/target/tms-finance-web-1.0-SNAPSHOT/WEB-INF/lib/tms-service-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-finance-web/target/tms-finance-web-1.0-SNAPSHOT/WEB-INF/lib/tms-service-impl-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../tms/tms-finance-web/target/tms-finance-web-1.0-SNAPSHOT/WEB-INF/lib/tms-service-impl-1.0-SNAPSHOT.jar" />
       <change beforePath="$PROJECT_DIR$/../tms/tms-finance-web/tms-finance.iml" afterPath="$PROJECT_DIR$/../tms/tms-finance-web/tms-finance.iml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/java/com/kaishengit/shiro/CustomerFilterChainDefinition.java" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/java/com/kaishengit/shiro/CustomerFilterChainDefinition.java" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/java/com/kaishengit/controller/TicketController.java" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/java/com/kaishengit/controller/TicketController.java" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/manager/ticketoffice/home.jsp" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/manager/ticketoffice/home.jsp" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/static/plugins/jQuery/jquery.twbsPagination.js" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/static/plugins/jQuery/jquery.twbsPagination.js" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/classes/com/kaishengit/controller/TicketController.class" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/classes/com/kaishengit/controller/TicketController.class" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/classes/com/kaishengit/shiro/CustomerFilterChainDefinition.class" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/classes/com/kaishengit/shiro/CustomerFilterChainDefinition.class" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/logs/access_log.2018-04-19" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/sider_jsp.java" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/sider_jsp.java" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/login_jsp.java" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/login_jsp.java" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/manager/power/home_jsp.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/manager/power/home_jsp.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/manager/ticketoffice/home_jsp.class" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/manager/ticketoffice/home_jsp.class" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/manager/ticketoffice/home_jsp.java" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/manager/ticketoffice/home_jsp.java" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/manager/ticketoffice/update_jsp.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/manager/ticketoffice/update_jsp.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/tms-manager-web.iml" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/tms-manager-web.iml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/pom.xml" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/java/com/kaishengit/service/impl/TicketofficeServiceImpl.java" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/java/com/kaishengit/service/impl/TicketofficeServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/com/kaishengit/service/impl/TicketofficeServiceImpl.class" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/com/kaishengit/service/impl/TicketofficeServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/target/surefire-reports/Test.txt" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/target/surefire-reports/Test.txt" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/target/tms-service-impl-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/target/tms-service-impl-1.0-SNAPSHOT.jar" />
       <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/tms-service-impl.iml" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/tms-service-impl.iml" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-service/pom.xml" afterPath="$PROJECT_DIR$/../tms/tms-service/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-service/src/main/java/com/kaishengit/service/TicketofficeService.java" afterPath="$PROJECT_DIR$/../tms/tms-service/src/main/java/com/kaishengit/service/TicketofficeService.java" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-service/target/classes/com/kaishengit/service/TicketofficeService.class" afterPath="$PROJECT_DIR$/../tms/tms-service/target/classes/com/kaishengit/service/TicketofficeService.class" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../tms/tms-service/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-service/target/tms-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../tms/tms-service/target/tms-service-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-service/tms-service.iml" afterPath="$PROJECT_DIR$/../tms/tms-service/tms-service.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -84,31 +109,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="54" column="62" lean-forward="true" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
+            <state relative-caret-position="892">
+              <caret line="54" column="59" lean-forward="false" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/ProductService.java">
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/impl/ProductServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="62" column="29" lean-forward="false" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+            <state relative-caret-position="-180">
+              <caret line="61" column="3" lean-forward="false" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -235,9 +250,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -345,13 +357,35 @@
               <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
               <item name="ssm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -633,11 +667,18 @@
       <workItem from="1523626406587" duration="44000" />
       <workItem from="1524014922248" duration="1045000" />
       <workItem from="1524148595091" duration="116000" />
+      <workItem from="1524188394775" duration="119000" />
+      <workItem from="1524188968257" duration="67000" />
+      <workItem from="1524189072660" duration="63000" />
+      <workItem from="1524189221914" duration="7000" />
+      <workItem from="1524189996808" duration="165000" />
+      <workItem from="1524190293358" duration="5000" />
+      <workItem from="1524190682004" duration="79000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48538000" />
+    <option name="totallyTimeSpent" value="49043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -658,7 +699,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17633587" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05572519" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -871,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/product.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/plugins/flot/jquery.flot.pie.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -977,13 +1011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2124">
-          <caret line="59" column="16" lean-forward="false" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5148">
@@ -1031,17 +1058,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="54" column="62" lean-forward="true" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/ProductService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="504">
           <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding />
         </state>
@@ -1049,8 +1068,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/impl/ProductServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
+        <state relative-caret-position="1512">
           <caret line="62" column="29" lean-forward="false" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/product.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-854">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="61" column="3" lean-forward="false" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="892">
+          <caret line="54" column="59" lean-forward="false" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
           <folding />
         </state>
       </provider>
