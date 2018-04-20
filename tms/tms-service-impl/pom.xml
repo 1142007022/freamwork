@@ -31,7 +31,11 @@
 
     <dependencies>
 
-
+        <dependency>
+            <groupId>com.qiniu</groupId>
+            <artifactId>qiniu-java-sdk</artifactId>
+            <version>7.2.8</version>
+        </dependency>
         <dependency>
             <groupId>com.kaishengit</groupId>
             <artifactId>tms-service</artifactId>

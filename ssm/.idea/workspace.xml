@@ -7,53 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76d8577e-2f46-4521-ae55-57b63f988c92" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_google_code_gson_gson_2_6_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_qiniu_happy_dns_java_0_1_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_2_8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_3_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_squareup_okio_okio_1_8_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_4.xml" />
+      <change beforePath="$PROJECT_DIR$/../tms/.idea/artifacts/tms_finance_web_war_exploded.xml" afterPath="$PROJECT_DIR$/../tms/.idea/artifacts/tms_finance_web_war_exploded.xml" />
+      <change beforePath="$PROJECT_DIR$/../tms/.idea/artifacts/tms_manager_web_war_exploded.xml" afterPath="$PROJECT_DIR$/../tms/.idea/artifacts/tms_manager_web_war_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/../tms/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../tms/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/dto/Result.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/Account.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountLoginLog.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountLoginLogExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountLoginLogExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountLoginLogExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountLoginLogExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountRolesExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountRolesExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountRolesExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountRolesExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountRolesKey.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/Power.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/PowerExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/PowerExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/PowerExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/PowerExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/Roles.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesPowerExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesPowerExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesPowerExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesPowerExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesPowerKey.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/exception/ServiceException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/resources/spring-shiro.xml" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/resources/spring-shiro.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/mvc-servlet.xml" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/mvc-servlet.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/classes/spring-shiro.xml" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/classes/spring-shiro.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/logs/access_log.2018-04-17" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/home_jsp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/home_jsp.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/sider_jsp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/sider_jsp.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/login_jsp.java" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/login_jsp.java" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/manager/account/home_jsp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/manager/account/home_jsp.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/manager/roles/home_jsp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/manager/roles/home_jsp.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-finance-web/tms-finance.iml" afterPath="$PROJECT_DIR$/../tms/tms-finance-web/tms-finance.iml" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/java/com/kaishengit/shiro/CustomerFilterChainDefinition.java" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/java/com/kaishengit/shiro/CustomerFilterChainDefinition.java" />
       <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/tms-manager-web.iml" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/tms-manager-web.iml" />
+      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/pom.xml" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/pom.xml" />
       <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/tms-service-impl.iml" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/tms-service-impl.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -104,7 +70,7 @@
       <file leaf-file-name="productMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/productMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
+            <state relative-caret-position="2376">
               <caret line="66" column="34" lean-forward="false" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
               <folding>
                 <marker date="1523432482656" expanded="true" signature="320:358" ph="SELECT * FRO... product" />
@@ -118,11 +84,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="97" column="1" lean-forward="true" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
+            <state relative-caret-position="262">
+              <caret line="54" column="62" lean-forward="true" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/ProductService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/impl/ProductServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="62" column="29" lean-forward="false" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -249,10 +235,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -366,6 +351,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -646,11 +632,12 @@
       <workItem from="1523493469258" duration="62000" />
       <workItem from="1523626406587" duration="44000" />
       <workItem from="1524014922248" duration="1045000" />
+      <workItem from="1524148595091" duration="116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48422000" />
+    <option name="totallyTimeSpent" value="48538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -671,7 +658,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34732825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17633587" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -976,24 +963,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.0.0/pagehelper-5.0.0.jar!/com/github/pagehelper/PageInfo.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7416">
           <caret line="279" column="16" lean-forward="false" selection-start-line="279" selection-start-column="16" selection-end-line="279" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="65" column="36" lean-forward="false" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1045,7 +1018,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/productMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
+        <state relative-caret-position="2376">
           <caret line="66" column="34" lean-forward="false" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
           <folding>
             <marker date="1523432482656" expanded="true" signature="320:358" ph="SELECT * FRO... product" />
@@ -1060,8 +1033,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="97" column="1" lean-forward="true" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
+        <state relative-caret-position="262">
+          <caret line="54" column="62" lean-forward="true" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="62" column="29" lean-forward="false" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
           <folding />
         </state>
       </provider>
