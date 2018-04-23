@@ -9,6 +9,8 @@ import java.util.List;
 public interface TicketofficeService {
     PageInfo<Ticketoffice> findAll(Integer p);
 
+    List<Ticketoffice> findAll();
+
     void saveTicketofficeAndSaleAccount(Ticketoffice ticketoffice, SaleAccount saleAccount);
 
     void delTickAndAccountByTickId(Integer id);

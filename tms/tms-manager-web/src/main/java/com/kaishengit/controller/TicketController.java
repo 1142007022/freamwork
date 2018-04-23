@@ -4,6 +4,7 @@ import com.github.pagehelper.PageInfo;
 import com.kaishengit.dto.Result;
 import com.kaishengit.entitys.SaleAccount;
 import com.kaishengit.entitys.Ticketoffice;
+import com.kaishengit.qiniu.QIniuUtils;
 import com.kaishengit.service.SaleAccountService;
 import com.kaishengit.service.TicketofficeService;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -22,6 +23,8 @@ import java.util.List;
 @RequestMapping("/manager")
 public class TicketController {
 
+    @Autowired
+    private QIniuUtils qIniuUtils;
     @Autowired
     private TicketofficeService ticketofficeService;
     @Autowired
@@ -53,6 +56,8 @@ public class TicketController {
         SaleAccount saleAccount = saleAccountService.findByTickId(id);
         model.addAttribute("ticketoffice",ticketoffice);
         model.addAttribute("saleAccount",saleAccount);
+        String upToken = qIniuUtils.getUploadToken();
+        model.addAttribute("upToken",upToken);
         return "manager/ticketoffice/update";
     }
 
@@ -78,6 +83,8 @@ public class TicketController {
     public String add(Model model) {
         List<SaleAccount> saleAccountList = saleAccountService.findAll();
         model.addAttribute("saleAccountList", saleAccountList);
+        String upToken = qIniuUtils.getUploadToken();
+        model.addAttribute("upToken",upToken);
         return "manager/ticketoffice/add";
     }
 

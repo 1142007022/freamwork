@@ -1,3 +1,4 @@
+com\kaishengit\service\TicketStateService.class
 com\kaishengit\service\RolesService.class
 com\kaishengit\service\TicketofficeService.class
 com\kaishengit\service\AccountLoginLogService.class
@@ -5,4 +6,7 @@ com\kaishengit\service\AccountRolesKeyService.class
 com\kaishengit\service\AccountService.class
 com\kaishengit\service\PowerService.class
 com\kaishengit\service\SaleAccountService.class
+com\kaishengit\service\TicketOutLogService.class
 com\kaishengit\service\RolesPowerKeyService.class
+com\kaishengit\service\TicketInLogService.class
+com\kaishengit\service\TicketService.class

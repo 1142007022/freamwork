@@ -41,12 +41,6 @@ public class CustomerFilterChainDefinition {
         this.shiroFilter = shiroFilter;
     }
 
-    /**
-     *@author 姜东
-     *@date 2018/4/18 0018
-     *@return void
-     * 设置在spring容器开始时就加载
-     */
     @PostConstruct
     public void innit(){
         getDefaultFilterChainManager().getFilterChains().clear();
