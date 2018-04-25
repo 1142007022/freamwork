@@ -39,13 +39,13 @@ public class AccountServiceImpl implements AccountService {
                     accountLoginLogMapper.insertSelective(accountLoginLog);
                     return account;
                 }else {
-                    throw new ServiceException("ÕÊºÅ×´Ì¬Òì³£");
+                    throw new ServiceException("å¸å·æˆ–é¢è†œé”™è¯¯");
                 }
             }else{
-                throw new ServiceException("ÕÊºÅ»òÕßÃÜÂë´íÎó");
+                throw new ServiceException("è´¦å·å¼‚å¸¸");
             }
         }else{
-            throw new ServiceException("ÕÊºÅ²»´æÔÚ");
+            throw new ServiceException("è´¦å·å¼‚å¸¸");
         }
     }
 
@@ -56,7 +56,7 @@ public class AccountServiceImpl implements AccountService {
 
         List<Account> accountList = accountMapper.selectByExample(accountExample);
         if(accountList != null && accountList.size() != 0) {
-            throw new ServiceException("ÊÖ»úºÅÒÑ´æÔÚ£¡");
+            throw new ServiceException("å¸å·å·²å­˜åœ¨");
         }
 
         String password = DigestUtils.md5Hex(account.getPassword());

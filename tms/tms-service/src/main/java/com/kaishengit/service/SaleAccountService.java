@@ -10,4 +10,6 @@ public interface SaleAccountService {
     SaleAccount findByTickId(Integer id);
 
     void update(SaleAccount saleAccount);
+
+    SaleAccount findByMobile(String mobile);
 }

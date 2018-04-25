@@ -32,4 +32,13 @@ public class SaleAccountServiceImpl implements SaleAccountService {
     public void update(SaleAccount saleAccount) {
         saleAccountMapper.updateByPrimaryKeySelective(saleAccount);
     }
+
+    @Override
+    public SaleAccount findByMobile(String mobile) {
+        SaleAccountExample saleAccountExample = new SaleAccountExample();
+        saleAccountExample.createCriteria().andMobileEqualTo(mobile);
+        return saleAccountMapper.selectByExample(saleAccountExample).get(0);
+    }
+
+
 }

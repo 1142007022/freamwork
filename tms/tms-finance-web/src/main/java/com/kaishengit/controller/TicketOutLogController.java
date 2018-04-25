@@ -2,11 +2,14 @@ package com.kaishengit.controller;
 
 import com.github.pagehelper.PageInfo;
 import com.kaishengit.dto.Result;
+import com.kaishengit.entitys.Account;
 import com.kaishengit.entitys.TicketOutLog;
 import com.kaishengit.entitys.Ticketoffice;
 import com.kaishengit.exception.ServiceException;
 import com.kaishengit.service.TicketOutLogService;
 import com.kaishengit.service.TicketofficeService;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,6 +29,9 @@ public class TicketOutLogController {
 
     @PostMapping("/ticket/out/update/{id}")
     public String update(TicketOutLog ticketOutLog){
+        Subject subject = SecurityUtils.getSubject();
+        Account account = (Account) subject.getPrincipal();
+        ticketOutLog.setOutAccountName(account.getAccName());
         ticketOutLogService.update(ticketOutLog);
         return "redirect:/store/ticket/out";
     }
@@ -52,6 +58,9 @@ public class TicketOutLogController {
     @PostMapping("/ticket/out/add")
     public String add(TicketOutLog ticketOutLog,RedirectAttributes redirectAttributes){
         try {
+            Subject subject = SecurityUtils.getSubject();
+            Account account = (Account) subject.getPrincipal();
+            ticketOutLog.setOutAccountName(account.getAccName());
             ticketOutLogService.add(ticketOutLog);
         }catch (ServiceException e){
             redirectAttributes.addFlashAttribute("message",e.getMessage());

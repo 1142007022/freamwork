@@ -48,7 +48,7 @@ public class TicketInLogServiceImpl implements TicketInLogService {
         for (int i = 0; i < ticketInLog.getTotalNum(); i++) {
             Ticket ticket = ticketMapper.findByNum(Integer.parseInt(ticketInLog.getStartNum()) + i);
             if (ticket != null) {
-                throw new ServiceException("ÓÐÆ±ºÅÒÑ´æÔÚ£¡");
+                throw new ServiceException("ï¿½ï¿½Æ±ï¿½ï¿½ï¿½Ñ´ï¿½ï¿½Ú£ï¿½");
             }
         }
 
@@ -61,11 +61,11 @@ public class TicketInLogServiceImpl implements TicketInLogService {
     public PageInfo<TicketInLog> findAll(Integer p) {
         List<TicketInLog> ticketInLogList = ticketInLogMapper.selectByExample(null);
         for (int i = 0;i < ticketInLogList.size();i++){
-            //¸ù¾ÝÃ¿ÌõÈë¿â¼ÇÂ¼È¥²éÕÒÓÉÕâÌõ¼ÇÂ¼²úÉúµÄÄêÆ±
+            //ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ±
             TicketExample ticketExample = new TicketExample();
             ticketExample.createCriteria().andTicketInLogIdEqualTo(ticketInLogList.get(i).getId());
             List<Ticket> ticketList = ticketMapper.selectByExample(ticketExample);
-            //ÅÐ¶ÏÕâÐ©ÄêÆ±ÀïÃæÊÇ·ñÓÐÒÑ¾­ÏÂ·¢µÄ
+            //ï¿½Ð¶ï¿½ï¿½ï¿½Ð©ï¿½ï¿½Æ±ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½Â·ï¿½ï¿½ï¿½
             int total = 0;
             for (int j = 0;j<ticketList.size();j++){
                 total = total + ticketList.get(j).getTicketofficeId();
@@ -80,7 +80,6 @@ public class TicketInLogServiceImpl implements TicketInLogService {
 
         PageHelper.startPage(p,10);
         List<TicketInLog> ticketInLogList1 = ticketInLogMapper.selectByExample(null);
-         //ÖØÐÂ²éÕÒËùÓÐµÄÈë¿â¼ÇÂ¼
         return new PageInfo<>(ticketInLogList1);
     }
 
@@ -110,8 +109,6 @@ public class TicketInLogServiceImpl implements TicketInLogService {
     @Override
     public void update(TicketInLog ticketInLog) {
 
-        Subject subject = SecurityUtils.getSubject();
-        Account account = (Account) subject.getPrincipal();
         List<Ticket> ticketList = new ArrayList<>();
 
 
@@ -137,7 +134,7 @@ public class TicketInLogServiceImpl implements TicketInLogService {
             Ticket ticket = new Ticket();
             ticket.setInTime(new Date());
             ticket.setTicketInLogId(ticketInLog.getId());
-            ticket.setContent(account.getAccName() + "ÐÂÔöÈë¿â");
+            ticket.setContent("æ–°å¢žå…¥åº“");
             ticket.setTicketofficeId(Ticket.default_ticketOffice_id);
             ticket.setNum(start.add(new BigInteger(String.valueOf(i))).toString());
             ticketList.add(ticket);

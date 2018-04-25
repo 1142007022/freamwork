@@ -2,7 +2,6 @@ package com.kaishengit.controller;
 
 import com.kaishengit.dto.Result;
 import com.kaishengit.entitys.Account;
-import com.kaishengit.entitys.AccountRolesKey;
 import com.kaishengit.entitys.Roles;
 import com.kaishengit.exception.ServiceException;
 import com.kaishengit.service.AccountRolesKeyService;
@@ -12,13 +11,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import javax.jws.WebParam;
-import javax.management.relation.Role;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -56,7 +52,6 @@ public class AccountController {
 
     @GetMapping("/account/del/{id}")
     @ResponseBody
-    @Transactional(rollbackFor = RuntimeException.class)
     public Result delById(@PathVariable Integer id){
         Account account = accountService.findById(id);
         logger.info("删除用户{}",account);
@@ -89,7 +84,6 @@ public class AccountController {
 
     @PostMapping("/account/add")
     @ResponseBody
-    @Transactional(rollbackFor = RuntimeException.class)
     public Result addAccount(Account account, RedirectAttributes redirectAttributes,Integer[] rolesIds){
         try {
             Account accountNew = accountService.addAccount(account);

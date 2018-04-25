@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/tms-finance-web/tms-finance.iml" filepath="$PROJECT_DIR$/tms-finance-web/tms-finance.iml" />
       <module fileurl="file://$PROJECT_DIR$/tms-manager-web/tms-manager-web.iml" filepath="$PROJECT_DIR$/tms-manager-web/tms-manager-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/tms-parent.iml" filepath="$PROJECT_DIR$/tms-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tms-sale-web/tms-sale-web.iml" filepath="$PROJECT_DIR$/tms-sale-web/tms-sale-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/tms-service/tms-service.iml" filepath="$PROJECT_DIR$/tms-service/tms-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/tms-service-impl/tms-service-impl.iml" filepath="$PROJECT_DIR$/tms-service-impl/tms-service-impl.iml" />
     </modules>

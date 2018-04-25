@@ -15,4 +15,8 @@ public interface TicketOutLogService {
     TicketOutLog findById(Integer id);
 
     void update(TicketOutLog ticketOutLog);
+
+    List<TicketOutLog> findAll();
+
+    void updatePayType(TicketOutLog ticketOutLog);
 }

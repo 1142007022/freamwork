@@ -50,6 +50,246 @@ under the License.
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/qiniu/qiniu-java-sdk/7.2.8/qiniu-java-sdk-7.2.8.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/squareup/okhttp3/okhttp/3.3.1/okhttp-3.3.1.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/squareup/okio/okio/1.8.0/okio-1.8.0.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/qiniu/happy-dns-java/0.1.6/happy-dns-java-0.1.6.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/jboss/netty/netty/3.2.5.Final/netty-3.2.5.Final.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/curator/curator-framework/2.12.0/curator-framework-2.12.0.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/curator/curator-client/2.12.0/curator-client-2.12.0.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/zookeeper/zookeeper/3.4.8/zookeeper-3.4.8.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/log4j/log4j/1.2.17/log4j-1.2.17.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/jline/jline/0.9.94/jline-0.9.94.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/google/guava/guava/23.0/guava-23.0.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/qcloud/cos_api/5.2.4/cos_api-5.2.4.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/commons-codec/commons-codec/1.10/commons-codec-1.10.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/joda-time/joda-time/2.9.6/joda-time-2.9.6.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/fasterxml/jackson/core/jackson-databind/2.9.4/jackson-databind-2.9.4.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/fasterxml/jackson/core/jackson-core/2.9.4/jackson-core-2.9.4.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
           <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar!/"/>
         </CLASSES>
         <SOURCES/>
@@ -59,14 +299,6 @@ under the License.
       <library>
         <CLASSES>
           <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/"/>
         </CLASSES>
         <SOURCES/>
       </library>
@@ -151,81 +383,8 @@ under the License.
         <SOURCES/>
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module" module-name="tms-service-impl"/>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/qiniu/qiniu-java-sdk/7.2.8/qiniu-java-sdk-7.2.8.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/squareup/okhttp3/okhttp/3.3.1/okhttp-3.3.1.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/squareup/okio/okio/1.8.0/okio-1.8.0.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/qiniu/happy-dns-java/0.1.6/happy-dns-java-0.1.6.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
     <orderEntry type="module" module-name="tms-service"/>
     <orderEntry type="module" module-name="tms-commons"/>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/fasterxml/jackson/core/jackson-databind/2.9.4/jackson-databind-2.9.4.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/fasterxml/jackson/core/jackson-core/2.9.4/jackson-core-2.9.4.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -242,10 +401,10 @@ under the License.
         <SOURCES/>
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry scope="PROVIDED" type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/google/guava/guava/23.0/guava-23.0.jar!/"/>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/"/>
         </CLASSES>
         <SOURCES/>
       </library>
@@ -253,39 +412,7 @@ under the License.
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/commons-codec/commons-codec/1.10/commons-codec-1.10.jar!/"/>
+          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/jstl/jstl/1.2/jstl-1.2.jar!/"/>
         </CLASSES>
         <SOURCES/>
       </library>
@@ -341,86 +468,6 @@ under the License.
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-test/4.3.14.RELEASE/spring-test-4.3.14.RELEASE.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-tx/4.3.14.RELEASE/spring-tx-4.3.14.RELEASE.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-jdbc/4.3.14.RELEASE/spring-jdbc-4.3.14.RELEASE.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/mysql/mysql-connector-java/5.1.41/mysql-connector-java-5.1.41.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/mybatis/mybatis-spring/1.3.1/mybatis-spring-1.3.1.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry scope="PROVIDED" type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/jstl/jstl/1.2/jstl-1.2.jar!/"/>
-        </CLASSES>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
           <root url="jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar!/"/>
         </CLASSES>
         <SOURCES/>
@@ -466,13 +513,63 @@ under the License.
   <component name="WebModuleProperties">
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/cos_api-5.2.4.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/qcloud/cos_api/5.2.4/cos_api-5.2.4.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/httpclient-4.5.3.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/httpcore-4.4.6.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
       <attribute name="URI" value="/WEB-INF/lib/commons-logging-1.2.jar"/>
       <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/</url>
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/jstl-1.2.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/jstl/jstl/1.2/jstl-1.2.jar!/</url>
+      <attribute name="URI" value="/WEB-INF/lib/slf4j-log4j12-1.7.21.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/slf4j-api-1.7.25.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/log4j-1.2.17.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/log4j/log4j/1.2.17/log4j-1.2.17.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/commons-codec-1.10.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/commons-codec/commons-codec/1.10/commons-codec-1.10.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/joda-time-2.9.6.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/joda-time/joda-time/2.9.6/joda-time-2.9.6.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/jackson-databind-2.9.4.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/fasterxml/jackson/core/jackson-databind/2.9.4/jackson-databind-2.9.4.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/jackson-annotations-2.9.0.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/jackson-core-2.9.4.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/fasterxml/jackson/core/jackson-core/2.9.4/jackson-core-2.9.4.jar!/</url>
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
@@ -486,8 +583,43 @@ under the License.
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/slf4j-api-1.7.25.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/</url>
+      <attribute name="URI" value="/WEB-INF/lib/qiniu-java-sdk-7.2.8.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/qiniu/qiniu-java-sdk/7.2.8/qiniu-java-sdk-7.2.8.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/okhttp-3.3.1.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/squareup/okhttp3/okhttp/3.3.1/okhttp-3.3.1.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/okio-1.8.0.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/squareup/okio/okio/1.8.0/okio-1.8.0.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/gson-2.6.2.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/happy-dns-java-0.1.6.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/qiniu/happy-dns-java/0.1.6/happy-dns-java-0.1.6.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/javax.servlet-api-3.1.0.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/commons-lang3-3.5.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/jstl-1.2.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/jstl/jstl/1.2/jstl-1.2.jar!/</url>
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
@@ -539,43 +671,6 @@ under the License.
       <attribute name="URI" value="/WEB-INF/lib/commons-io-2.4.jar"/>
       <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/commons-io/commons-io/2.4/commons-io-2.4.jar!/</url>
     </containerElement>
-    <containerElement type="module" name="tms-service-impl">
-      <attribute name="method" value="5"/>
-      <attribute name="URI" value="/WEB-INF/lib/tms-service-impl-1.0-SNAPSHOT.jar"/>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/qiniu-java-sdk-7.2.8.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/qiniu/qiniu-java-sdk/7.2.8/qiniu-java-sdk-7.2.8.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/okhttp-3.3.1.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/squareup/okhttp3/okhttp/3.3.1/okhttp-3.3.1.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/okio-1.8.0.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/squareup/okio/okio/1.8.0/okio-1.8.0.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/gson-2.6.2.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/happy-dns-java-0.1.6.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/qiniu/happy-dns-java/0.1.6/happy-dns-java-0.1.6.jar!/</url>
-    </containerElement>
-    <containerElement type="module" name="tms-service">
-      <attribute name="method" value="5"/>
-      <attribute name="URI" value="/WEB-INF/lib/tms-service-1.0-SNAPSHOT.jar"/>
-    </containerElement>
-    <containerElement type="module" name="tms-commons">
-      <attribute name="method" value="5"/>
-      <attribute name="URI" value="/WEB-INF/lib/tms-commons-1.0-SNAPSHOT.jar"/>
-    </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
       <attribute name="URI" value="/WEB-INF/lib/shiro-all-1.3.2.jar"/>
@@ -618,28 +713,28 @@ under the License.
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/jackson-databind-2.9.4.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/fasterxml/jackson/core/jackson-databind/2.9.4/jackson-databind-2.9.4.jar!/</url>
+      <attribute name="URI" value="/WEB-INF/lib/curator-framework-2.12.0.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/curator/curator-framework/2.12.0/curator-framework-2.12.0.jar!/</url>
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/jackson-annotations-2.9.0.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar!/</url>
+      <attribute name="URI" value="/WEB-INF/lib/curator-client-2.12.0.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/curator/curator-client/2.12.0/curator-client-2.12.0.jar!/</url>
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/jackson-core-2.9.4.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/fasterxml/jackson/core/jackson-core/2.9.4/jackson-core-2.9.4.jar!/</url>
+      <attribute name="URI" value="/WEB-INF/lib/zookeeper-3.4.8.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/zookeeper/zookeeper/3.4.8/zookeeper-3.4.8.jar!/</url>
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/pagehelper-5.0.0.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/github/pagehelper/pagehelper/5.0.0/pagehelper-5.0.0.jar!/</url>
+      <attribute name="URI" value="/WEB-INF/lib/jline-0.9.94.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/jline/jline/0.9.94/jline-0.9.94.jar!/</url>
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/jsqlparser-0.9.5.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/github/jsqlparser/jsqlparser/0.9.5/jsqlparser-0.9.5.jar!/</url>
+      <attribute name="URI" value="/WEB-INF/lib/netty-3.7.0.Final.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar!/</url>
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
@@ -668,58 +763,36 @@ under the License.
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/commons-lang3-3.5.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar!/</url>
+      <attribute name="URI" value="/WEB-INF/lib/dubbo-2.6.1.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/alibaba/dubbo/2.6.1/dubbo-2.6.1.jar!/</url>
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/commons-codec-1.10.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/commons-codec/commons-codec/1.10/commons-codec-1.10.jar!/</url>
+      <attribute name="URI" value="/WEB-INF/lib/javassist-3.20.0-GA.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar!/</url>
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/spring-test-4.3.14.RELEASE.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-test/4.3.14.RELEASE/spring-test-4.3.14.RELEASE.jar!/</url>
+      <attribute name="URI" value="/WEB-INF/lib/netty-3.2.5.Final.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/jboss/netty/netty/3.2.5.Final/netty-3.2.5.Final.jar!/</url>
+    </containerElement>
+    <containerElement type="module" name="tms-service">
+      <attribute name="method" value="5"/>
+      <attribute name="URI" value="/WEB-INF/lib/tms-service-1.0-SNAPSHOT.jar"/>
+    </containerElement>
+    <containerElement type="module" name="tms-commons">
+      <attribute name="method" value="5"/>
+      <attribute name="URI" value="/WEB-INF/lib/tms-commons-1.0-SNAPSHOT.jar"/>
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/spring-tx-4.3.14.RELEASE.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-tx/4.3.14.RELEASE/spring-tx-4.3.14.RELEASE.jar!/</url>
+      <attribute name="URI" value="/WEB-INF/lib/pagehelper-5.0.0.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/github/pagehelper/pagehelper/5.0.0/pagehelper-5.0.0.jar!/</url>
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/spring-jdbc-4.3.14.RELEASE.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/springframework/spring-jdbc/4.3.14.RELEASE/spring-jdbc-4.3.14.RELEASE.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/mysql-connector-java-5.1.41.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/mysql/mysql-connector-java/5.1.41/mysql-connector-java-5.1.41.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/mybatis-3.4.0.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/mybatis-spring-1.3.1.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/mybatis/mybatis-spring/1.3.1/mybatis-spring-1.3.1.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/commons-dbcp2-2.1.1.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/commons-pool2-2.4.2.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0"/>
-      <attribute name="URI" value="/WEB-INF/lib/javax.servlet-api-3.1.0.jar"/>
-      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/</url>
+      <attribute name="URI" value="/WEB-INF/lib/jsqlparser-0.9.5.jar"/>
+      <url>jar://D:/kaishengJAVA/jars/bendicang/maven_libs/com/github/jsqlparser/jsqlparser/0.9.5/jsqlparser-0.9.5.jar!/</url>
     </containerElement>
     <deploymentDescriptor version="2.3" name="web.xml" optional="false" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml"/>
     <webroots>

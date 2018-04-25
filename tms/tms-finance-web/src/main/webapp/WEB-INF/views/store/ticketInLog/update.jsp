@@ -18,7 +18,7 @@
     <!-- =============================================== -->
 
     <jsp:include page="../../include/sider.jsp">
-        <jsp:param name="menu" value="manager_account"/>
+        <jsp:param name="menu" value="ticket_in"/>
     </jsp:include>
 
     <!-- =============================================== -->

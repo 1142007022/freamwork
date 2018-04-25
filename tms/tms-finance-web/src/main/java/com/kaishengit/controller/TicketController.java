@@ -12,9 +12,11 @@ import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.Date;
@@ -32,7 +34,6 @@ public class TicketController {
     private TicketInLogService ticketInLogService;
 
     @PostMapping("/ticket/in/add")
-    @Transactional(rollbackFor = RuntimeException.class)
     public String addInLog(TicketInLog ticketInLog,RedirectAttributes redirectAttributes){
         Subject subject = SecurityUtils.getSubject();
         Account account = (Account)subject.getPrincipal();
@@ -40,6 +41,7 @@ public class TicketController {
 
         try {
             TicketInLog ticketInLog1 = ticketInLogService.add(ticketInLog);
+
             ticketService.add(ticketInLog1);
         }catch (ServiceException e){
             redirectAttributes.addFlashAttribute("message",e.getMessage());

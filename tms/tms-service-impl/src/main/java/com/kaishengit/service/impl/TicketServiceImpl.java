@@ -29,8 +29,6 @@ public class TicketServiceImpl implements TicketService {
     @Override
     @Transactional(rollbackFor = RuntimeException.class)
     public void add(TicketInLog ticketInLog1) {
-        Subject subject = SecurityUtils.getSubject();
-        Account account = (Account)subject.getPrincipal();
 
         List<Ticket> ticketList = new ArrayList<>();
 
@@ -42,7 +40,7 @@ public class TicketServiceImpl implements TicketService {
             ticket.setInTime(new Date());
             ticket.setTicketofficeId(Ticket.default_ticketOffice_id);
             ticket.setTicketInLogId(ticketInLog1.getId());
-            ticket.setContent(account.getAccName()+"ÐÂÔöÈë¿â");
+            ticket.setContent("æ–°å¢žå…¥åº“");
             ticket.setNum(start.add(new BigInteger(String.valueOf(i))).toString());
             ticketList.add(ticket);
             TicketState ticketState = new TicketState();

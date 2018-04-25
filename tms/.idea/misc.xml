@@ -4,6 +4,7 @@
     <file type="web" url="file://$PROJECT_DIR$/tms-finance-web" />
     <file type="web" url="file://$PROJECT_DIR$/tms-finances-web" />
     <file type="web" url="file://$PROJECT_DIR$/tms-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/tms-sale-web" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

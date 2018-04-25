@@ -16,7 +16,7 @@
     <!-- =============================================== -->
 
     <jsp:include page="../../include/sider.jsp">
-        <jsp:param name="menu" value="ticket_chart"/>
+        <jsp:param name="menu" value="count"/>
     </jsp:include>
 
     <!-- =============================================== -->

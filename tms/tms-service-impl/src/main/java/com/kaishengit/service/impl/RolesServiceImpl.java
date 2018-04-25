@@ -52,7 +52,7 @@ public class RolesServiceImpl implements RolesService {
         accountRolesExample.createCriteria().andRolesIdEqualTo(id);
         List<AccountRolesKey> accountRolesKeysList = accountRolesMapper.selectByExample(accountRolesExample);
         if (accountRolesKeysList != null && accountRolesKeysList.size() != 0) {
-            throw new ServiceException("该角色有用户正在使用删除失败！");
+            throw new ServiceException("鏈夎鑹茶鍗犵敤涓嶅彲鍒犻櫎");
         } else {
             RolesPowerExample rolesPowerExample = new RolesPowerExample();
             rolesPowerExample.createCriteria().andRolesIdEqualTo(id);

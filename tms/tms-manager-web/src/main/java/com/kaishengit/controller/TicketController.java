@@ -23,8 +23,7 @@ import java.util.List;
 @RequestMapping("/manager")
 public class TicketController {
 
-    @Autowired
-    private QIniuUtils qIniuUtils;
+    private QIniuUtils qIniuUtils = new QIniuUtils();
     @Autowired
     private TicketofficeService ticketofficeService;
     @Autowired
@@ -93,7 +92,7 @@ public class TicketController {
 
         if (saleAccount.getMobile().length() != 11){
             model.addAttribute("ticketoffice",ticketoffice);
-            model.addAttribute("message","ÇëÊäÈëÕıÈ·µÄÊÖ»úºÅ");
+            model.addAttribute("message","è¯·è¾“å…¥æ­£ç¡®çš„æ‰‹æœºå·");
             model.addAttribute("account",saleAccount);
             return "manager/ticketoffice/add";
         }else{

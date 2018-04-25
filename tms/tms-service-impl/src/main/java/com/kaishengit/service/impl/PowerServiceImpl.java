@@ -70,7 +70,7 @@ public class PowerServiceImpl implements PowerService {
         rolesPowerExample.createCriteria().andPowerIdEqualTo(id);
         List<RolesPowerKey> rolesPowerKeyList = rolesPowerMapper.selectByExample(rolesPowerExample);
         if (rolesPowerKeyList != null && rolesPowerKeyList.size() != 0) {
-            throw new ServiceException("¸ÃÈ¨ÏŞÓĞ½ÇÉ«ÕıÔÚÊ¹ÓÃÉ¾³ıÊ§°Ü£¡");
+            throw new ServiceException("æœ‰æƒé™æ­£åœ¨ä½¿ç”¨ä¸å¯åˆ é™¤");
         } else {
             PowerExample powerExample = new PowerExample();
             powerExample.createCriteria().andParentIdEqualTo(id);

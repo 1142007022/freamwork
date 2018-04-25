@@ -18,4 +18,6 @@ public interface TicketofficeService {
     Ticketoffice findById(Integer id);
 
     void update(Ticketoffice ticketoffice);
+
+    Ticketoffice findBySaleAccountId(Integer id);
 }

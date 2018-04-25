@@ -1,7 +1,8 @@
+com\kaishengit\controller\FinanceController.class
+com\kaishengit\controller\TicketCountController.class
+com\kaishengit\shiro\CustomerFilterChainDefinition.class
 com\kaishengit\controller\TicketInLogController.class
 com\kaishengit\controller\TicketOutLogController.class
-com\kaishengit\controller\TicketCountController.class
 com\kaishengit\controller\HomeController.class
 com\kaishengit\shiro\ShiroRealm.class
 com\kaishengit\controller\TicketController.class
-com\kaishengit\shiro\CustomerFilterChainDefinition.class

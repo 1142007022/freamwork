@@ -1,7 +1,6 @@
 package com.kaishengit.controller;
 
 import com.kaishengit.service.AccountService;
-import com.kaishengit.shiro.CustomerFilterChainDefinition;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
@@ -17,7 +16,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.logging.Logger;
 
 
 @Controller

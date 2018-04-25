@@ -4,9 +4,9 @@ import com.kaishengit.entitys.Account;
 import com.kaishengit.entitys.AccountLoginLog;
 import com.kaishengit.entitys.Power;
 import com.kaishengit.entitys.Roles;
-import com.kaishengit.mapper.AccountLoginLogMapper;
-import com.kaishengit.mapper.PowerMapper;
+import com.kaishengit.service.AccountLoginLogService;
 import com.kaishengit.service.AccountService;
+import com.kaishengit.service.PowerService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
@@ -16,7 +16,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.management.relation.Role;
 import java.util.*;
 
 public class ShiroRealm extends AuthorizingRealm{
@@ -27,9 +26,9 @@ public class ShiroRealm extends AuthorizingRealm{
     @Autowired
     private AccountService accountService;
     @Autowired
-    private AccountLoginLogMapper accountLoginLogMapper;
+    private AccountLoginLogService accountLoginLogService;
     @Autowired
-    private PowerMapper powerMapper;
+    private PowerService powerService;
 
 
     /*
@@ -46,7 +45,7 @@ public class ShiroRealm extends AuthorizingRealm{
         for (Roles roles : rolesList) {
             System.out.println("拥有的角色：------"+roles.getRolesCode());
             System.out.println("角色id：------"+roles.getId());
-            List<Power> rolesPowerList = powerMapper.findMyPowerById(roles.getId());
+            List<Power> rolesPowerList = powerService.findMyPowerById(roles.getId());
             powerList.addAll(rolesPowerList);
         }
 
@@ -86,7 +85,7 @@ public class ShiroRealm extends AuthorizingRealm{
                     accountLoginLog.setLoginTime(new Date());
                     accountLoginLog.setLoginIp(usernamePasswordToken.getHost());
                     accountLoginLog.setAccountId(account.getId());
-                    accountLoginLogMapper.insertSelective(accountLoginLog);
+                    accountLoginLogService.insertSelective(accountLoginLog);
                     return new SimpleAuthenticationInfo(account,account.getPassword(),getName());
                 }else{
                     throw new LockedAccountException("账户异常");

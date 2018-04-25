@@ -37,8 +37,6 @@ public class TicketOutLogServiceImpl implements TicketOutLogService{
     @Override
     public void add(TicketOutLog ticketOutLog) {
 
-        Subject subject = SecurityUtils.getSubject();
-        Account account = (Account) subject.getPrincipal();
 
         BigInteger start = new BigInteger(ticketOutLog.getStartNum());
         BigInteger end = new BigInteger(ticketOutLog.getEndNum());
@@ -48,16 +46,14 @@ public class TicketOutLogServiceImpl implements TicketOutLogService{
         ticketOutLog.setToatlPrice(totalPrice);
         ticketOutLog.setCreateTime(new Date());
         ticketOutLog.setPayType(TicketOutLog.default_pay_status);
-        ticketOutLog.setOutAccountName(account.getAccName());
 
         List<Ticket> tickets = new ArrayList<>();
 
-        //ÅÐ¶Ïµ±Ç°µÄÆ±ºÅÄÚÊ±ºòÓÐÒÑ¾­ÏÂ·¢¹ýµÄÄêÆ±
         for (int i = 0;i < ticketOutLog.getTotalNum();i++) {
             Ticket ticket = ticketMapper.findByNum(Integer.parseInt(ticketOutLog.getStartNum())+i);
             System.out.println("-----"+ticketOutLog.getStartNum() + i);
                 if (ticket.getTicketofficeId() != 0){
-                    throw new ServiceException("µ±Ç°Æ±¶ÎÖÐÓÐÄêÆ±ÒÑÏÂ·¢");
+                    throw new ServiceException("æœ‰ç¥¨å·å·²ä¸‹å‘");
                 }
             tickets.add(ticket);
         }
@@ -83,7 +79,7 @@ public class TicketOutLogServiceImpl implements TicketOutLogService{
         ticketofficeMapper.updateByPrimaryKeySelective(ticketoffice);
 
         TicketInLog ticketInLog = ticketInLogMapper.selectByPrimaryKey(ticketInLogId);
-        ticketInLog.setState("ÒÑÏÂ·¢");
+        ticketInLog.setState("å·²ä¸‹å‘");
         ticketInLogMapper.updateByPrimaryKeySelective(ticketInLog);
 
     }
@@ -98,9 +94,7 @@ public class TicketOutLogServiceImpl implements TicketOutLogService{
     @Override
     @Transactional(rollbackFor = RuntimeException.class)
     public void del(Integer id) {
-        //¸ù¾Ýid²éÕÒµ½Òª²Ù×÷µÄÏÂ·¢¼ÇÂ¼
         TicketOutLog ticketOutLog = ticketOutLogMapper.selectByPrimaryKey(id);
-        //²éÕÒ¶ÔÓ¦µÄÊÛÆ±µã
         Ticketoffice ticketoffice = ticketofficeMapper.selectByPrimaryKey(ticketOutLog.getTicketofficeId());
         ticketoffice.setTicketNum(ticketoffice.getTicketNum() - ticketOutLog.getTotalNum());
         ticketofficeMapper.updateByPrimaryKeySelective(ticketoffice);
@@ -115,9 +109,6 @@ public class TicketOutLogServiceImpl implements TicketOutLogService{
     @Override
     @Transactional(rollbackFor = RuntimeException.class)
     public void update(TicketOutLog ticketOutLog) {
-        //·â×°µ±Ç°µÄ·¢·Å¼ÇÂ¼¶ÔÏó
-        Subject subject = SecurityUtils.getSubject();
-        Account account = (Account) subject.getPrincipal();
         BigInteger start = new BigInteger(ticketOutLog.getStartNum());
         BigInteger end = new BigInteger(ticketOutLog.getEndNum());
         BigInteger totalNum = end.subtract(start);
@@ -126,12 +117,9 @@ public class TicketOutLogServiceImpl implements TicketOutLogService{
         ticketOutLog.setToatlPrice(totalPrice);
         ticketOutLog.setCreateTime(new Date());
         ticketOutLog.setPayType(TicketOutLog.default_pay_status);
-        ticketOutLog.setOutAccountName(account.getAccName());
 
-        // ´¦ÀíÊÛÆ±µã  Ê×ÏÈÅÐ¶ÏÄ¿Ç°Ñ¡ÖÐµÄÊÛÆ±µãºÍÖ®Ç°±£´æµÄÊÛÆ±µãÊÇ²»ÊÇÒ»¸ö
         TicketOutLog ticketOutLogOld = ticketOutLogMapper.selectByPrimaryKey(ticketOutLog.getId());
         if (ticketOutLog.getTicketofficeId().equals(ticketOutLogOld.getTicketofficeId())){
-            //¸úÐÂÇ°ºóÑ¡ÔñµÄÊÇÍ¬Ò»¸öÊÛÆ±µã ÅÐ¶ÏÆ±µÄÊýÁ¿ÊÇÔö¼ÓÁË»¹ÊÇ¼õÉÙÁË
             Ticketoffice ticketoffice = ticketofficeMapper.selectByPrimaryKey(ticketOutLog.getTicketofficeId());
             if (ticketOutLogOld.getTotalNum()>ticketOutLog.getTotalNum()){
                 ticketoffice.setTicketNum(ticketoffice.getTicketNum() - (ticketOutLogOld.getTotalNum() - ticketOutLog.getTotalNum()));
@@ -140,7 +128,6 @@ public class TicketOutLogServiceImpl implements TicketOutLogService{
             }
             ticketofficeMapper.updateByPrimaryKeySelective(ticketoffice);
         }else{
-            //ÏÖÔÚÑ¡ÔñµÄºÍÉÏ´ÎÏÂ·¢µÄ²»ÊÇÍ¬Ò»¸öÊÛÆ±µã
             Ticketoffice ticketofficeNew = ticketofficeMapper.selectByPrimaryKey(ticketOutLog.getTicketofficeId());
             Ticketoffice ticketofficeOld = ticketofficeMapper.selectByPrimaryKey(ticketOutLogOld.getTicketofficeId());
             ticketofficeOld.setTicketNum(ticketofficeOld.getTicketNum() - ticketOutLogOld.getTotalNum());
@@ -150,7 +137,6 @@ public class TicketOutLogServiceImpl implements TicketOutLogService{
         }
 
 
-        //´¦ÀíÄêÆ±Æ±ÐÅÏ¢
         List<Ticket> tickets = new ArrayList<>();
         for (int i = 0;i < ticketOutLogOld.getTotalNum();i++) {
             Ticket ticket = ticketMapper.findByNum(Integer.parseInt(ticketOutLog.getStartNum())+i);
@@ -190,5 +176,17 @@ public class TicketOutLogServiceImpl implements TicketOutLogService{
         ticketOutLogOld = null;
         ticketOutLogMapper.updateByPrimaryKeySelective(ticketOutLog);
 
+    }
+
+    @Override
+    public List<TicketOutLog> findAll() {
+        return ticketOutLogMapper.selectByExample(null);
+    }
+
+    @Override
+    public void updatePayType(TicketOutLog ticketOutLog) {
+        TicketOutLog ticketOutLog1 = ticketOutLogMapper.selectByPrimaryKey(ticketOutLog.getId());
+        ticketOutLog1.setPayType(ticketOutLog.getPayType());
+        ticketOutLogMapper.updateByPrimaryKeySelective(ticketOutLog1);
     }
 }

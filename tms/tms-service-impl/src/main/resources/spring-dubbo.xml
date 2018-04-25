@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="TmsService"/>
+    <dubbo:registry address="zookeeper://localhost:2181"/>
+
+    <dubbo:protocol host="localhost" port="20880"/>
+
+    <dubbo:service interface="com.kaishengit.service.RolesPowerKeyService" ref="rolesPowerKeyServiceImpl"/>
+    <dubbo:service interface="com.kaishengit.service.PowerService" ref="powerServiceImpl"/>
+    <dubbo:service interface="com.kaishengit.service.AccountService" ref="accountServiceImpl"/>
+    <dubbo:service interface="com.kaishengit.service.TicketofficeService" ref="ticketofficeServiceImpl"/>
+    <dubbo:service interface="com.kaishengit.service.TicketService" ref="ticketServiceImpl"/>
+    <dubbo:service interface="com.kaishengit.service.TicketOutLogService" ref="ticketOutLogServiceImpl"/>
+    <dubbo:service interface="com.kaishengit.service.TicketStateService" ref="ticketStateServiceImpl"/>
+    <dubbo:service interface="com.kaishengit.service.TicketInLogService" ref="ticketInLogServiceImpl"/>
+    <dubbo:service interface="com.kaishengit.service.SaleAccountService" ref="saleAccountServiceImpl"/>
+    <dubbo:service interface="com.kaishengit.service.PowerService" ref="powerServiceImpl"/>
+    <dubbo:service interface="com.kaishengit.service.AccountRolesKeyService" ref="accountRolesKeyServiceImpl"/>
+    <dubbo:service interface="com.kaishengit.service.RolesService" ref="rolesServiceImpl"/>
+    <dubbo:service interface="com.kaishengit.service.AccountLoginLogService" ref="accountLoginLogServiceImpl"/>
+</beans>

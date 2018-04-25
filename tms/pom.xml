@@ -19,6 +19,7 @@
         <module>./tms-service-impl</module>
         <module>./tms-manager-web</module>
         <module>./tms-finance-web</module>
+        <module>tms-sale-web</module>
 
     </modules>
 

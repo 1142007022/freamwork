@@ -13,7 +13,7 @@
 <div class="wrapper">
 	<%@ include file="include/header.jsp"%>
 		<jsp:include page="include/sider.jsp">
-			<jsp:param value="${isAdmin}" name="param" />
+			<jsp:param value="menu" name="home" />
 		</jsp:include>
 
   <!-- 右侧内容部分 -->
