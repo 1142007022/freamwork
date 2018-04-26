@@ -8,6 +8,12 @@
 
     <dubbo:protocol host="localhost" port="20880"/>
 
+
+    <!--<dubbo:registry address="zookeeper://192.168.238.131:2181"/>
+
+    <dubbo:protocol host="192.168.238.130" port="20880"/>-->
+
+    <dubbo:service interface="com.kaishengit.service.TicketSaleService" ref="ticketSaleServiceImpl"/>
     <dubbo:service interface="com.kaishengit.service.RolesPowerKeyService" ref="rolesPowerKeyServiceImpl"/>
     <dubbo:service interface="com.kaishengit.service.PowerService" ref="powerServiceImpl"/>
     <dubbo:service interface="com.kaishengit.service.AccountService" ref="accountServiceImpl"/>

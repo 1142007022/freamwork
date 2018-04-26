@@ -201,8 +201,24 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="tms-service" />
-    <orderEntry type="module" module-name="tms-commons" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/com/kaishengit/tms-service/1.0-SNAPSHOT/tms-service-1.0-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/com/kaishengit/tms-commons/1.0-SNAPSHOT/tms-commons-1.0-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -491,22 +507,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="tms-service" />
-    <orderEntry type="module" module-name="tms-commons" />
-    <orderEntry type="module" module-name="tms-service" />
-    <orderEntry type="module" module-name="tms-commons" />
-    <orderEntry type="module" module-name="tms-service" />
-    <orderEntry type="module" module-name="tms-commons" />
-    <orderEntry type="module" module-name="tms-service" />
-    <orderEntry type="module" module-name="tms-commons" />
-    <orderEntry type="module" module-name="tms-service" />
-    <orderEntry type="module" module-name="tms-commons" />
-    <orderEntry type="module" module-name="tms-service" />
-    <orderEntry type="module" module-name="tms-commons" />
-    <orderEntry type="module" module-name="tms-service" />
-    <orderEntry type="module" module-name="tms-commons" />
-    <orderEntry type="module" module-name="tms-service" />
-    <orderEntry type="module" module-name="tms-commons" />
     <orderEntry type="library" name="Maven: com.alibaba:dubbo:2.6.1" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.20.0-GA" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.netty:netty:3.2.5.Final" level="project" />

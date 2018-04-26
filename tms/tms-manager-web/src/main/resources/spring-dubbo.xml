@@ -5,8 +5,8 @@
 
 
     <dubbo:application name="TmsManagerWeb"/>
-
     <dubbo:registry address="zookeeper://localhost:2181"/>
+    <!--<dubbo:registry address="zookeeper://192.168.238.131:2181"/>-->
     <dubbo:reference interface="com.kaishengit.service.RolesPowerKeyService" id="rolesPowerKeyService"/>
     <dubbo:reference interface="com.kaishengit.service.AccountLoginLogService" id="accountLoginLogService"/>
     <dubbo:reference interface="com.kaishengit.service.PowerService" id="powerService"/>

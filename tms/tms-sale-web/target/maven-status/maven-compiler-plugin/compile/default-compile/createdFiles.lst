@@ -1,3 +1,4 @@
+com\kaishengit\controller\TicketSaleController.class
 com\kaishengit\controller\HomeController.class
 com\kaishengit\shiro\ShiroRealm.class
 com\kaishengit\shiro\CustomerFilterChainDefinition.class

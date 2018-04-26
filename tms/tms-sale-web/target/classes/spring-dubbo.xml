@@ -14,6 +14,8 @@
     <dubbo:reference interface="com.kaishengit.service.AccountService" id="accountService"/>
     <dubbo:reference interface="com.kaishengit.service.TicketService" id="ticketService"/>
 
+
+    <dubbo:reference interface="com.kaishengit.service.TicketSaleService" id="ticketSaleService"/>
     <dubbo:reference interface="com.kaishengit.service.TicketOutLogService" id="ticketOutLogService"/>
     <dubbo:reference interface="com.kaishengit.service.TicketStateService" id="ticketStateService"/>
     <dubbo:reference interface="com.kaishengit.service.SaleAccountService" id="saleAccountService"/>

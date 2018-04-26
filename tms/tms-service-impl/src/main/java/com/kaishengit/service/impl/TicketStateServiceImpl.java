@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -37,5 +38,12 @@ public class TicketStateServiceImpl implements TicketStateService {
         count.put("all",all);
 
         return count;
+    }
+
+    @Override
+    public List<TicketState> findAll() {
+        TicketStateExample ticketStateExample = new TicketStateExample();
+        ticketStateExample.createCriteria().andStateEqualTo("已下发");
+        return ticketStateMapper.selectByExample(null);
     }
 }

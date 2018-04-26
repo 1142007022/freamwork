@@ -1,6 +1,8 @@
 com\kaishengit\mapper\RolesMapper.class
 com\kaishengit\mapper\PowerMapper.class
 com\kaishengit\mapper\SaleAccountMapper.class
+com\kaishengit\service\impl\TicketSaleServiceImpl.class
+com\kaishengit\mapper\TicketSaleMapper.class
 com\kaishengit\mapper\AccountMapper.class
 com\kaishengit\Start.class
 com\kaishengit\mapper\TicketMapper.class

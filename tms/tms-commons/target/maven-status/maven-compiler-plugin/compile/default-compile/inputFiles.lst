@@ -6,6 +6,7 @@ D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\RolesExample.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\dto\Result.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\TicketState.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\AccountRolesKey.java
+D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\TicketSaleExample.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\TicketInLog.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\TicketOutLogExample.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\RolesPowerExample.java
@@ -17,6 +18,7 @@ D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\RolesPowerKey.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\TicketOutLog.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\Ticket.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\TicketExample.java
+D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\TicketSale.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\Account.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\SaleAccount.java
 D:\code\tms\tms-commons\src\main\java\com\kaishengit\entitys\Ticketoffice.java

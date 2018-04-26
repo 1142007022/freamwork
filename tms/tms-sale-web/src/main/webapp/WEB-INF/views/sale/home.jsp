@@ -55,12 +55,10 @@
             </div>
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">帐号列表</h3>
-                    <shiro:hasPermission name="account:add">
+                    <h3 class="box-title">销售历史列表</h3>
                         <div class="box-tools">
-                            <a href="/manager/account/add" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> 新增用户</a>
+                            <a href="/ticket/sale/add" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> 年票销售</a>
                         </div>
-                    </shiro:hasPermission>
 
                 </div>
                 <div class="box-body">
@@ -68,20 +66,12 @@
                         <tbody>
                             <c:forEach items="${accountList}" var="account">
                                 <tr id="roles">
-                                    <td>用户名称：<strong>${account.accName}</strong></td>
-                                    <td>用户手机号：<strong>${account.mobile}</strong></td>
-                                    <td>角色:
-                                        <c:forEach items="${account.roles}" var="roles">
-                                            <strong>${roles.rolesName}</strong>
-                                        </c:forEach>
-                                    </td>
-                                    <td>用户状态：<strong>${account.status}</strong></td>
-                                    <shiro:hasPermission name="account:del">
-                                        <td><strong><a href="javascript:;" class="del" rel="${account.id}">删除</a></strong></td>
-                                    </shiro:hasPermission>
-                                    <shiro:hasPermission name="account:update">
-                                        <td><strong><a href="/manager/account/update/${account.id}">修改</a></strong></td>
-                                    </shiro:hasPermission>
+                                    <td>票号：<strong>${account.accName}</strong></td>
+                                    <td>销售日期：<strong>${account.mobile}</strong></td>
+                                    <td>顾客姓名：<strong>${account.status}</strong></td>
+                                    <td>：<strong>${account.status}</strong></td>
+                                    <td><strong><a href="javascript:;" class="del" rel="${account.id}">删除</a></strong></td>
+                                    <td><strong><a href="/manager/account/update/${account.id}">修改</a></strong></td>
 
 
                                 </tr>

@@ -10,7 +10,7 @@
     <build>
 
         <!--打成jar的名称-->
-        <finalName>tms-service-provider</finalName>
+        <finalName>tms-service-impl</finalName>
         <resources>
             <!--打jar包时包含resources文件夹中的所有xml和properties文件-->
             <resource>
@@ -32,6 +32,7 @@
                 <filtering>true</filtering>
                 <includes>
                     <include>spring.xml</include>
+                    <include>spring-dubbo.xml</include>
                 </includes>
             </resource>
 
