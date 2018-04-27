@@ -66,8 +66,8 @@
                         <div class="form-group">
                             <label>请选择年票号</label>
                             <select name="ticketNum"class="form-control">
-                                <c:forEach items="${ticketStateList}" var="ticketState">
-                                    <option value="${ticketState.ticketNum}">${ticketState.ticketNum}</option>
+                                <c:forEach items="${list}" var="ticket">
+                                    <option value="${ticket.num}">${ticket.num}</option>
                                 </c:forEach>
                             </select>
                         </div>

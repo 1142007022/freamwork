@@ -7,15 +7,19 @@ import com.kaishengit.entitys.TicketSaleExample;
 import com.kaishengit.entitys.TicketState;
 import com.kaishengit.entitys.TicketStateExample;
 import com.kaishengit.exception.ServiceException;
+import com.kaishengit.mapper.TicketMapper;
 import com.kaishengit.mapper.TicketSaleMapper;
 import com.kaishengit.mapper.TicketStateMapper;
 import com.kaishengit.service.TicketSaleService;
+import com.kaishengit.service.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import sun.security.krb5.internal.Ticket;
 
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 @Service
@@ -25,6 +29,8 @@ public class TicketSaleServiceImpl implements TicketSaleService {
     private TicketSaleMapper ticketSaleMapper;
     @Autowired
     private TicketStateMapper ticketStateMapper;
+    @Autowired
+    private TicketMapper ticketMapper;
 
     @Override
     @Transactional(rollbackFor = RuntimeException.class)
@@ -46,6 +52,16 @@ public class TicketSaleServiceImpl implements TicketSaleService {
 
             ticketState.setState(TicketState.saled_state);
             ticketStateMapper.updateByPrimaryKeySelective(ticketState);
+
+            //更新年票的过期时间
+            com.kaishengit.entitys.Ticket ticket = ticketMapper.findByNum(Integer.parseInt(ticketSale.getTicketNum()));
+            Date date = new Date();
+            Calendar calendar = new GregorianCalendar();
+            calendar.setTime(date);
+            calendar.add(Calendar.YEAR,1);
+            ticket.setOverDataTime(calendar.getTime());
+            ticketMapper.updateByPrimaryKeySelective(ticket);
+
         }
 
     }

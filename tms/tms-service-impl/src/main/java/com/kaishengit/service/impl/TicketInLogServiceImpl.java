@@ -48,7 +48,7 @@ public class TicketInLogServiceImpl implements TicketInLogService {
         for (int i = 0; i < ticketInLog.getTotalNum(); i++) {
             Ticket ticket = ticketMapper.findByNum(Integer.parseInt(ticketInLog.getStartNum()) + i);
             if (ticket != null) {
-                throw new ServiceException("��Ʊ���Ѵ��ڣ�");
+                throw new ServiceException("有票号已存在");
             }
         }
 
@@ -61,11 +61,9 @@ public class TicketInLogServiceImpl implements TicketInLogService {
     public PageInfo<TicketInLog> findAll(Integer p) {
         List<TicketInLog> ticketInLogList = ticketInLogMapper.selectByExample(null);
         for (int i = 0;i < ticketInLogList.size();i++){
-            //����ÿ������¼ȥ������������¼��������Ʊ
             TicketExample ticketExample = new TicketExample();
             ticketExample.createCriteria().andTicketInLogIdEqualTo(ticketInLogList.get(i).getId());
             List<Ticket> ticketList = ticketMapper.selectByExample(ticketExample);
-            //�ж���Щ��Ʊ�����Ƿ����Ѿ��·���
             int total = 0;
             for (int j = 0;j<ticketList.size();j++){
                 total = total + ticketList.get(j).getTicketofficeId();

@@ -185,66 +185,6 @@ public class TicketExample {
             return (Criteria) this;
         }
 
-        public Criteria andInTimeIsNull() {
-            addCriterion("in_time is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andInTimeIsNotNull() {
-            addCriterion("in_time is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andInTimeEqualTo(Date value) {
-            addCriterion("in_time =", value, "inTime");
-            return (Criteria) this;
-        }
-
-        public Criteria andInTimeNotEqualTo(Date value) {
-            addCriterion("in_time <>", value, "inTime");
-            return (Criteria) this;
-        }
-
-        public Criteria andInTimeGreaterThan(Date value) {
-            addCriterion("in_time >", value, "inTime");
-            return (Criteria) this;
-        }
-
-        public Criteria andInTimeGreaterThanOrEqualTo(Date value) {
-            addCriterion("in_time >=", value, "inTime");
-            return (Criteria) this;
-        }
-
-        public Criteria andInTimeLessThan(Date value) {
-            addCriterion("in_time <", value, "inTime");
-            return (Criteria) this;
-        }
-
-        public Criteria andInTimeLessThanOrEqualTo(Date value) {
-            addCriterion("in_time <=", value, "inTime");
-            return (Criteria) this;
-        }
-
-        public Criteria andInTimeIn(List<Date> values) {
-            addCriterion("in_time in", values, "inTime");
-            return (Criteria) this;
-        }
-
-        public Criteria andInTimeNotIn(List<Date> values) {
-            addCriterion("in_time not in", values, "inTime");
-            return (Criteria) this;
-        }
-
-        public Criteria andInTimeBetween(Date value1, Date value2) {
-            addCriterion("in_time between", value1, value2, "inTime");
-            return (Criteria) this;
-        }
-
-        public Criteria andInTimeNotBetween(Date value1, Date value2) {
-            addCriterion("in_time not between", value1, value2, "inTime");
-            return (Criteria) this;
-        }
-
         public Criteria andOutTimeIsNull() {
             addCriterion("out_time is null");
             return (Criteria) this;
@@ -302,6 +242,66 @@ public class TicketExample {
 
         public Criteria andOutTimeNotBetween(Date value1, Date value2) {
             addCriterion("out_time not between", value1, value2, "outTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andInTimeIsNull() {
+            addCriterion("in_time is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andInTimeIsNotNull() {
+            addCriterion("in_time is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andInTimeEqualTo(Date value) {
+            addCriterion("in_time =", value, "inTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andInTimeNotEqualTo(Date value) {
+            addCriterion("in_time <>", value, "inTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andInTimeGreaterThan(Date value) {
+            addCriterion("in_time >", value, "inTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andInTimeGreaterThanOrEqualTo(Date value) {
+            addCriterion("in_time >=", value, "inTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andInTimeLessThan(Date value) {
+            addCriterion("in_time <", value, "inTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andInTimeLessThanOrEqualTo(Date value) {
+            addCriterion("in_time <=", value, "inTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andInTimeIn(List<Date> values) {
+            addCriterion("in_time in", values, "inTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andInTimeNotIn(List<Date> values) {
+            addCriterion("in_time not in", values, "inTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andInTimeBetween(Date value1, Date value2) {
+            addCriterion("in_time between", value1, value2, "inTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andInTimeNotBetween(Date value1, Date value2) {
+            addCriterion("in_time not between", value1, value2, "inTime");
             return (Criteria) this;
         }
 
@@ -562,6 +562,66 @@ public class TicketExample {
 
         public Criteria andTicketInLogIdNotBetween(Integer value1, Integer value2) {
             addCriterion("ticket_in_log_id not between", value1, value2, "ticketInLogId");
+            return (Criteria) this;
+        }
+
+        public Criteria andOverDataTimeIsNull() {
+            addCriterion("over_data_time is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andOverDataTimeIsNotNull() {
+            addCriterion("over_data_time is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andOverDataTimeEqualTo(Date value) {
+            addCriterion("over_data_time =", value, "overDataTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andOverDataTimeNotEqualTo(Date value) {
+            addCriterion("over_data_time <>", value, "overDataTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andOverDataTimeGreaterThan(Date value) {
+            addCriterion("over_data_time >", value, "overDataTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andOverDataTimeGreaterThanOrEqualTo(Date value) {
+            addCriterion("over_data_time >=", value, "overDataTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andOverDataTimeLessThan(Date value) {
+            addCriterion("over_data_time <", value, "overDataTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andOverDataTimeLessThanOrEqualTo(Date value) {
+            addCriterion("over_data_time <=", value, "overDataTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andOverDataTimeIn(List<Date> values) {
+            addCriterion("over_data_time in", values, "overDataTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andOverDataTimeNotIn(List<Date> values) {
+            addCriterion("over_data_time not in", values, "overDataTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andOverDataTimeBetween(Date value1, Date value2) {
+            addCriterion("over_data_time between", value1, value2, "overDataTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andOverDataTimeNotBetween(Date value1, Date value2) {
+            addCriterion("over_data_time not between", value1, value2, "overDataTime");
             return (Criteria) this;
         }
     }

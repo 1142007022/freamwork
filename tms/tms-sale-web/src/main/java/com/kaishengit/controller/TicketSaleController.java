@@ -1,13 +1,11 @@
 package com.kaishengit.controller;
 
 import com.github.pagehelper.PageInfo;
-import com.kaishengit.entitys.Customer;
-import com.kaishengit.entitys.TicketSale;
-import com.kaishengit.entitys.TicketState;
-import com.kaishengit.entitys.Ticketoffice;
+import com.kaishengit.entitys.*;
 import com.kaishengit.exception.ServiceException;
 import com.kaishengit.service.CustomerService;
 import com.kaishengit.service.TicketSaleService;
+import com.kaishengit.service.TicketService;
 import com.kaishengit.service.TicketStateService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
@@ -20,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -27,6 +26,8 @@ import java.util.List;
 @RequestMapping("/ticket")
 public class TicketSaleController  {
 
+    @Autowired
+    private TicketService ticketService;
     @Autowired
     private TicketStateService ticketStateService;
     @Autowired
@@ -59,8 +60,20 @@ public class TicketSaleController  {
 
     @GetMapping("/sale/add")
     public String add(Model model){
-        List<TicketState> ticketStateList = ticketStateService.findAll();
-        model.addAttribute("ticketStateList",ticketStateList);
+        //获取当前售票点的年票
+        Subject subject = SecurityUtils.getSubject();
+        Ticketoffice ticketoffice = (Ticketoffice)subject.getPrincipal();
+        List<Ticket> ticketList = ticketService.findByTicketofficeId(ticketoffice.getId());
+        List<TicketState> ticketStates = ticketStateService.findAll();
+        List<Ticket> list = new ArrayList<>();
+        for (int i = 0; i < ticketList.size();i++){
+            for (int j = 0;j < ticketStates.size();j++){
+                if (ticketList.get(i).getNum().equals(ticketStates.get(j).getTicketNum()) && ticketStates.get(j).getState().equals(TicketState.gived_state)){
+                    list.add(ticketList.get(i));
+                }
+            }
+        }
+        model.addAttribute("list",list);
         return "sale/add";
     }
 

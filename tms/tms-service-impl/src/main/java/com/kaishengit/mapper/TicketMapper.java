@@ -6,6 +6,9 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface TicketMapper {
+
+    void insertCount(@Param("list") List<Ticket> list);
+
     long countByExample(TicketExample example);
 
     int deleteByExample(TicketExample example);
@@ -27,8 +30,6 @@ public interface TicketMapper {
     int updateByPrimaryKeySelective(Ticket record);
 
     int updateByPrimaryKey(Ticket record);
-
-    void insertCount(List<Ticket> ticketList);
 
     Ticket findByNum(int num);
 }

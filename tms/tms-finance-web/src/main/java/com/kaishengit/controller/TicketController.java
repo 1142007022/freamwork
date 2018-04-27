@@ -42,7 +42,7 @@ public class TicketController {
         try {
             TicketInLog ticketInLog1 = ticketInLogService.add(ticketInLog);
 
-            ticketService.add(ticketInLog1);
+            ticketService.add(ticketInLog1,account.getAccName());
         }catch (ServiceException e){
             redirectAttributes.addFlashAttribute("message",e.getMessage());
         }

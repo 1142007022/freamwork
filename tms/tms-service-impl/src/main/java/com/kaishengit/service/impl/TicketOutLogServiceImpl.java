@@ -173,7 +173,6 @@ public class TicketOutLogServiceImpl implements TicketOutLogService{
             ticketStateMapper.updateByPrimaryKeySelective(ticketState);
         }
 
-        ticketOutLogOld = null;
         ticketOutLogMapper.updateByPrimaryKeySelective(ticketOutLog);
 
     }

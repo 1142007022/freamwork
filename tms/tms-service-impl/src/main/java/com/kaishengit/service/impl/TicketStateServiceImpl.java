@@ -1,5 +1,7 @@
 package com.kaishengit.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.kaishengit.entitys.TicketState;
 import com.kaishengit.entitys.TicketStateExample;
 import com.kaishengit.mapper.TicketStateMapper;
@@ -41,9 +43,19 @@ public class TicketStateServiceImpl implements TicketStateService {
     }
 
     @Override
+    public PageInfo<TicketState> findAll(Integer p) {
+
+        PageHelper.startPage(p,10);
+        TicketStateExample ticketStateExample = new TicketStateExample();
+        ticketStateExample.createCriteria().andStateEqualTo(TicketState.saled_state);
+        List<TicketState> ticketStates = ticketStateMapper.selectByExample(ticketStateExample);
+        return new PageInfo<>(ticketStates);
+    }
+
+    @Override
     public List<TicketState> findAll() {
         TicketStateExample ticketStateExample = new TicketStateExample();
-        ticketStateExample.createCriteria().andStateEqualTo("已下发");
+        ticketStateExample.createCriteria().andStateEqualTo(TicketState.gived_state);
         return ticketStateMapper.selectByExample(null);
     }
 }

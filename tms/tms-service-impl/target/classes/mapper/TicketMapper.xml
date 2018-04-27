@@ -2,32 +2,31 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kaishengit.mapper.TicketMapper">
 
-
-  <select id="findByNum" resultType="Ticket" >
-    SELECT
-        *
-    FROM
-        `ticket`
-    WHERE
-        num = #{num};
-  </select>
-
-  <insert id="insertCount">
-    insert into ticket (in_time,content,num,ticketoffice_id,ticket_in_log_id)
+  <insert id="insertCount" parameterType="list">
+     insert into ticket (out_time, in_time,
+      content, num, ticketoffice_id,
+      ticket_in_log_id, over_data_time)
     values
     <foreach collection="list" item="ticket" separator=",">
-      (#{ticket.inTime},#{ticket.content},#{ticket.num},#{ticket.ticketofficeId},#{ticket.ticketInLogId})
+      (#{ticket.outTime},#{ticket.inTime},#{ticket.content},${ticket.num},#{ticket.ticketofficeId},#{ticket.ticketInLogId},#{ticket.overDataTime})
     </foreach>
+
   </insert>
+
+  <select id="findByNum"  parameterType="integer" resultType="Ticket">
+    SELECT * FROM ticket
+    where num = #{num}
+  </select>
 
   <resultMap id="BaseResultMap" type="com.kaishengit.entitys.Ticket">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="in_time" jdbcType="TIMESTAMP" property="inTime" />
     <result column="out_time" jdbcType="TIMESTAMP" property="outTime" />
+    <result column="in_time" jdbcType="TIMESTAMP" property="inTime" />
     <result column="content" jdbcType="VARCHAR" property="content" />
     <result column="num" jdbcType="VARCHAR" property="num" />
     <result column="ticketoffice_id" jdbcType="INTEGER" property="ticketofficeId" />
     <result column="ticket_in_log_id" jdbcType="INTEGER" property="ticketInLogId" />
+    <result column="over_data_time" jdbcType="TIMESTAMP" property="overDataTime" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -88,7 +87,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, in_time, out_time, content, num, ticketoffice_id, ticket_in_log_id
+    id, out_time, in_time, content, num, ticketoffice_id, ticket_in_log_id, over_data_time
   </sql>
   <select id="selectByExample" parameterType="com.kaishengit.entitys.TicketExample" resultMap="BaseResultMap">
     select
@@ -129,12 +128,12 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.kaishengit.entitys.Ticket">
-    insert into ticket (id, in_time, out_time, 
+    insert into ticket (id, out_time, in_time, 
       content, num, ticketoffice_id, 
-      ticket_in_log_id)
-    values (#{id,jdbcType=INTEGER}, #{inTime,jdbcType=TIMESTAMP}, #{outTime,jdbcType=TIMESTAMP}, 
+      ticket_in_log_id, over_data_time)
+    values (#{id,jdbcType=INTEGER}, #{outTime,jdbcType=TIMESTAMP}, #{inTime,jdbcType=TIMESTAMP}, 
       #{content,jdbcType=VARCHAR}, #{num,jdbcType=VARCHAR}, #{ticketofficeId,jdbcType=INTEGER}, 
-      #{ticketInLogId,jdbcType=INTEGER})
+      #{ticketInLogId,jdbcType=INTEGER}, #{overDataTime,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.kaishengit.entitys.Ticket">
     insert into ticket
@@ -142,11 +141,11 @@
       <if test="id != null">
         id,
       </if>
-      <if test="inTime != null">
-        in_time,
-      </if>
       <if test="outTime != null">
         out_time,
+      </if>
+      <if test="inTime != null">
+        in_time,
       </if>
       <if test="content != null">
         content,
@@ -160,16 +159,19 @@
       <if test="ticketInLogId != null">
         ticket_in_log_id,
       </if>
+      <if test="overDataTime != null">
+        over_data_time,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="inTime != null">
-        #{inTime,jdbcType=TIMESTAMP},
-      </if>
       <if test="outTime != null">
         #{outTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="inTime != null">
+        #{inTime,jdbcType=TIMESTAMP},
       </if>
       <if test="content != null">
         #{content,jdbcType=VARCHAR},
@@ -182,6 +184,9 @@
       </if>
       <if test="ticketInLogId != null">
         #{ticketInLogId,jdbcType=INTEGER},
+      </if>
+      <if test="overDataTime != null">
+        #{overDataTime,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
@@ -197,11 +202,11 @@
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.inTime != null">
-        in_time = #{record.inTime,jdbcType=TIMESTAMP},
-      </if>
       <if test="record.outTime != null">
         out_time = #{record.outTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.inTime != null">
+        in_time = #{record.inTime,jdbcType=TIMESTAMP},
       </if>
       <if test="record.content != null">
         content = #{record.content,jdbcType=VARCHAR},
@@ -215,6 +220,9 @@
       <if test="record.ticketInLogId != null">
         ticket_in_log_id = #{record.ticketInLogId,jdbcType=INTEGER},
       </if>
+      <if test="record.overDataTime != null">
+        over_data_time = #{record.overDataTime,jdbcType=TIMESTAMP},
+      </if>
     </set>
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -223,12 +231,13 @@
   <update id="updateByExample" parameterType="map">
     update ticket
     set id = #{record.id,jdbcType=INTEGER},
-      in_time = #{record.inTime,jdbcType=TIMESTAMP},
       out_time = #{record.outTime,jdbcType=TIMESTAMP},
+      in_time = #{record.inTime,jdbcType=TIMESTAMP},
       content = #{record.content,jdbcType=VARCHAR},
       num = #{record.num,jdbcType=VARCHAR},
       ticketoffice_id = #{record.ticketofficeId,jdbcType=INTEGER},
-      ticket_in_log_id = #{record.ticketInLogId,jdbcType=INTEGER}
+      ticket_in_log_id = #{record.ticketInLogId,jdbcType=INTEGER},
+      over_data_time = #{record.overDataTime,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -236,11 +245,11 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.kaishengit.entitys.Ticket">
     update ticket
     <set>
-      <if test="inTime != null">
-        in_time = #{inTime,jdbcType=TIMESTAMP},
-      </if>
       <if test="outTime != null">
         out_time = #{outTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="inTime != null">
+        in_time = #{inTime,jdbcType=TIMESTAMP},
       </if>
       <if test="content != null">
         content = #{content,jdbcType=VARCHAR},
@@ -254,17 +263,21 @@
       <if test="ticketInLogId != null">
         ticket_in_log_id = #{ticketInLogId,jdbcType=INTEGER},
       </if>
+      <if test="overDataTime != null">
+        over_data_time = #{overDataTime,jdbcType=TIMESTAMP},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.kaishengit.entitys.Ticket">
     update ticket
-    set in_time = #{inTime,jdbcType=TIMESTAMP},
-      out_time = #{outTime,jdbcType=TIMESTAMP},
+    set out_time = #{outTime,jdbcType=TIMESTAMP},
+      in_time = #{inTime,jdbcType=TIMESTAMP},
       content = #{content,jdbcType=VARCHAR},
       num = #{num,jdbcType=VARCHAR},
       ticketoffice_id = #{ticketofficeId,jdbcType=INTEGER},
-      ticket_in_log_id = #{ticketInLogId,jdbcType=INTEGER}
+      ticket_in_log_id = #{ticketInLogId,jdbcType=INTEGER},
+      over_data_time = #{overDataTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

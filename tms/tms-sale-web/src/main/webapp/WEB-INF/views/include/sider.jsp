@@ -15,7 +15,7 @@
         <ul class="sidebar-menu">
             <li class="header">销售管理</li>
             <li class="${param.menu == 'ticket_storage' ? 'active' : ''}"><a href="/ticket/sale"><i class="fa fa-circle-o"></i> <span>年票办理</span></a></li>
-            <li class="${param.menu == 'ticket_out' ? 'active' : ''}"><a href="/ticket/out"><i class="fa fa-circle-o"></i> <span>年票续费</span></a></li>
+            <li class="${param.menu == 'ticket_out' ? 'active' : ''}"><a href="/ticket/overdate"><i class="fa fa-circle-o"></i> <span>年票续费</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> <span>年票挂失</span></a></li>
             <li class="${param.menu == 'ticket_chart' ? 'active' : ''}"><a href="/ticket/chart"><i class="fa fa-circle-o"></i> <span>年票解挂</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> <span>年票补办</span></a></li>
