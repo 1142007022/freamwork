@@ -52,12 +52,12 @@
                         <tbody>
                             <c:forEach items="${pageInfo.list}" var="ticketState">
                                 <tr id="roles">
-                                    <td>票号：<strong>${ticketState.ticketNum}</strong></td>
                                     <c:forEach items="${ticketList}" var="ticket">
                                         <c:if test="${ticket.num == ticketState.ticketNum}">
-                                            <td>有效期至：<strong>${ticket.overDataTime}</strong></td>
                                             <c:forEach items="${ticketofficeList}" var="ticketoffice">
                                                 <c:if test="${ticketoffice.id == ticket.ticketofficeId}">
+                                                    <td>票号：<strong>${ticketState.ticketNum}</strong></td>
+                                                    <td>有效期至：<strong>${ticket.overDataTime}</strong></td>
                                                     <td>销售网点：<strong>${ticketoffice.name}</strong></td>
                                                 </c:if>
                                             </c:forEach>

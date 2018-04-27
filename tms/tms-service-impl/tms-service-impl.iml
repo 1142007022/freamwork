@@ -190,24 +190,8 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/com/kaishengit/tms-service/1.0-SNAPSHOT/tms-service-1.0-SNAPSHOT.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/com/kaishengit/tms-commons/1.0-SNAPSHOT/tms-commons-1.0-SNAPSHOT.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="module" module-name="tms-service" />
+    <orderEntry type="module" module-name="tms-commons" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>

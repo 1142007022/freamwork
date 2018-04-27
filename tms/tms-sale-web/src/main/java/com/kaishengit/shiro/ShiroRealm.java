@@ -42,6 +42,7 @@ public class ShiroRealm extends AuthorizingRealm{
                 throw new UnknownAccountException("账户或者密码错误" + mobile);
             }else{
                 Ticketoffice ticketoffice = ticketofficeService.findBySaleAccountId(saleAccount.getId());
+                System.out.println("-------------"+ticketoffice.getId());
                 return new SimpleAuthenticationInfo(ticketoffice,saleAccount.getPassword(),getName());
             }
         }

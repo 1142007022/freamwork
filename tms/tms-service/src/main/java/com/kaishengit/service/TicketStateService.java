@@ -11,4 +11,8 @@ public interface TicketStateService {
 
     PageInfo<TicketState> findAll(Integer p);
     List<TicketState> findAll();
+
+    void miss(String ticketNum);
+
+    PageInfo<TicketState> findAllTicketStateOfTicketoffice(Integer p);
 }

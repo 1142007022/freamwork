@@ -9,6 +9,7 @@ import com.kaishengit.service.TicketStateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -57,5 +58,26 @@ public class TicketStateServiceImpl implements TicketStateService {
         TicketStateExample ticketStateExample = new TicketStateExample();
         ticketStateExample.createCriteria().andStateEqualTo(TicketState.gived_state);
         return ticketStateMapper.selectByExample(null);
+    }
+
+    @Override
+    public void miss(String ticketNum) {
+        TicketStateExample ticketStateExample = new TicketStateExample();
+        ticketStateExample.createCriteria().andTicketNumEqualTo(ticketNum);
+        TicketState ticketState = ticketStateMapper.selectByExample(ticketStateExample).get(0);
+        ticketState.setState(TicketState.miss_state);
+        ticketStateMapper.updateByPrimaryKeySelective(ticketState);
+    }
+
+    @Override
+    public PageInfo<TicketState> findAllTicketStateOfTicketoffice(Integer p) {
+        PageHelper.startPage(p,10);
+        List<String> lists = new ArrayList<>();
+        lists.add(TicketState.saled_state);
+        lists.add(TicketState.miss_state);
+        TicketStateExample ticketStateExample = new TicketStateExample();
+        ticketStateExample.createCriteria().andStateIn(lists);
+        List<TicketState> ticketStates = ticketStateMapper.selectByExample(ticketStateExample);
+        return new PageInfo<>(ticketStates);
     }
 }

@@ -7,6 +7,8 @@ import com.kaishengit.entitys.Ticketoffice;
 import com.kaishengit.service.TicketService;
 import com.kaishengit.service.TicketStateService;
 import com.kaishengit.service.TicketofficeService;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -29,9 +31,14 @@ public class TicketOverDateController {
 
     @GetMapping("/overdate")
     public String overDate(@RequestParam(defaultValue = "1",required = false) Integer p, Model model){
+
+        Subject subject = SecurityUtils.getSubject();
+        Ticketoffice ticketoffice = (Ticketoffice)subject.getPrincipal();
+
+
         PageInfo<TicketState> pageInfo = ticketStateService.findAll(p);
         model.addAttribute("pageInfo",pageInfo);
-        List<Ticket> ticketList = ticketService.findAll();
+        List<Ticket> ticketList = ticketService.findByTicketofficeId(ticketoffice.getId());
         model.addAttribute("ticketList",ticketList);
         List<Ticketoffice> ticketofficeList = ticketofficeService.findAll();
         model.addAttribute("ticketofficeList",ticketofficeList);

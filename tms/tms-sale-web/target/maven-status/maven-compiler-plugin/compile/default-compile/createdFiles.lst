@@ -3,6 +3,7 @@ com\kaishengit\controller\TicketOverDateController.class
 com\kaishengit\controller\Test.class
 com\kaishengit\shiro\CustomerFilterChainDefinition.class
 com\kaishengit\controller\TicketSaleController.class
+com\kaishengit\controller\TicketMissController.class
 com\kaishengit\controller\HomeController.class
 com\kaishengit\shiro\ShiroRealm.class
 com\kaishengit\controller\RenewController.class

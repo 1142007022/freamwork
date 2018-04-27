@@ -398,24 +398,8 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/com/kaishengit/tms-service/1.0-SNAPSHOT/tms-service-1.0-SNAPSHOT.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/com/kaishengit/tms-commons/1.0-SNAPSHOT/tms-commons-1.0-SNAPSHOT.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="module" module-name="tms-service" />
+    <orderEntry type="module" module-name="tms-commons" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -808,15 +792,13 @@
       <attribute name="URI" value="/WEB-INF/lib/netty-3.2.5.Final.jar" />
       <url>jar://$MAVEN_REPOSITORY$/org/jboss/netty/netty/3.2.5.Final/netty-3.2.5.Final.jar!/</url>
     </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
+    <containerElement type="module" name="tms-service">
+      <attribute name="method" value="5" />
       <attribute name="URI" value="/WEB-INF/lib/tms-service-1.0-SNAPSHOT.jar" />
-      <url>jar://$MAVEN_REPOSITORY$/com/kaishengit/tms-service/1.0-SNAPSHOT/tms-service-1.0-SNAPSHOT.jar!/</url>
     </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
+    <containerElement type="module" name="tms-commons">
+      <attribute name="method" value="5" />
       <attribute name="URI" value="/WEB-INF/lib/tms-commons-1.0-SNAPSHOT.jar" />
-      <url>jar://$MAVEN_REPOSITORY$/com/kaishengit/tms-commons/1.0-SNAPSHOT/tms-commons-1.0-SNAPSHOT.jar!/</url>
     </containerElement>
     <containerElement type="library" level="module">
       <attribute name="method" value="1" />

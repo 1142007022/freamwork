@@ -35,17 +35,13 @@ public class HomeController {
 
         Subject subject = SecurityUtils.getSubject();
         if (subject.isAuthenticated()) {
-            //Èç¹û³ÉÁ¢µÄ»°´ú±íÓÃ»§ÊÇµÇÂ½¹ıµÄ ÊÇÏëÍË³öµÇÂ¼
-            System.out.println("°²È«ÍË³ö");
             subject.logout();
         }
 
         if (subject.isRemembered()) {
-            //Èç¹û³ÉÁ¢µÄ»°´ú±íÓÃ»§ÊÇµã»÷ÁË¼Ç×¡ÎÒ  ÄÇÃ´´Ë´¦¾ÍÓ¦¸ÃÖ±½ÓÌø×ªµ½Ö÷Ò³
-            System.out.println("Ö±½Ó½øÈëÖ÷Ò³");
+            System.out.println("Ö±ï¿½Ó½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³");
             return "redirect:/home";
         }
-        //ÒÔÉÏÁ½Õß¶¼²»³ÉÁ¢µÄ»°  Õı³£µÇÂ¼
         return "login";
     }
 
@@ -67,17 +63,17 @@ public class HomeController {
                 if (savedRequest != null) {
                     url = savedRequest.getRequestUrl();
                 }
-                logger.info("{} µÇÂ¼¸ÃÏµÍ³",mobile);
+                logger.info("{} ç™»å½•",mobile);
                 return "redirect:" + url;
 
 
         } catch (UnknownAccountException | IncorrectCredentialsException ex) {
 
-            redirectAttributes.addFlashAttribute("message", "ÕË»§»òÃÜÂë´íÎó");
+            redirectAttributes.addFlashAttribute("message", "ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
         } catch (LockedAccountException ex) {
-            redirectAttributes.addFlashAttribute("message", "ÕË»§×´Ì¬Òì³£");
+            redirectAttributes.addFlashAttribute("message", "ï¿½Ë»ï¿½×´Ì¬ï¿½ì³£");
         } catch (AuthenticationException ex) {
-            redirectAttributes.addFlashAttribute("message", "ÕË»§»òÃÜÂë´íÎó");
+            redirectAttributes.addFlashAttribute("message", "ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
         }
         return "redirect:/";
     }
