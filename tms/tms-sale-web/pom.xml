@@ -15,7 +15,12 @@
     <packaging>war</packaging>
 
     <dependencies>
-
+        <!--fastDFSjava客户端-->
+        <dependency>
+            <groupId>org.csource</groupId>
+            <artifactId>fastdfs-client-java</artifactId>
+            <version>1.27-SNAPSHOT</version>
+        </dependency>
 
         <!--qiniu-->
         <dependency>

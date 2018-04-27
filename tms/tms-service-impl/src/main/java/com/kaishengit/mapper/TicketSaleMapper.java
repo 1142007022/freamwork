@@ -28,4 +28,6 @@ public interface TicketSaleMapper {
     int updateByPrimaryKeySelective(TicketSale record);
 
     int updateByPrimaryKey(TicketSale record);
+
+    TicketSale findByCustomerId(@Param("customerId") String customerId);
 }

@@ -1,5 +1,7 @@
 package com.kaishengit.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.kaishengit.entitys.TicketSale;
 import com.kaishengit.entitys.TicketSaleExample;
 import com.kaishengit.entitys.TicketState;
@@ -32,10 +34,8 @@ public class TicketSaleServiceImpl implements TicketSaleService {
         ticketSale.setState(TicketSale.default_state);
 
         //查询该身份信息是否已经在此之前买过年票
-        TicketSaleExample ticketSaleExample = new TicketSaleExample();
-        ticketSaleExample.createCriteria().andCustomerIdEqualTo(ticketSale.getCustomerId());
-        List<TicketSale> ticketSaleList = ticketSaleMapper.selectByExample(ticketSaleExample);
-        if (ticketSaleList != null){
+        TicketSale sale = ticketSaleMapper.findByCustomerId(ticketSale.getCustomerId());
+        if (sale != null){
             throw new ServiceException("该顾客已购买过年票！");
         }else {
             ticketSaleMapper.insertSelective(ticketSale);
@@ -48,5 +48,12 @@ public class TicketSaleServiceImpl implements TicketSaleService {
             ticketStateMapper.updateByPrimaryKeySelective(ticketState);
         }
 
+    }
+
+    @Override
+    public PageInfo<TicketSale> findAll(Integer p) {
+        PageHelper.startPage(p,10);
+        List<TicketSale> ticketSaleList = ticketSaleMapper.selectByExample(null);
+        return new PageInfo<>(ticketSaleList);
     }
 }

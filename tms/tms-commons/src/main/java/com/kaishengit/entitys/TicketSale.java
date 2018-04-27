@@ -19,7 +19,7 @@ public class TicketSale implements Serializable {
 
     private Integer ticketofficeId;
 
-    public static final String default_state = "Õý³£";
+    public static final String default_state = "æ­£å¸¸";
 
     private String ticketNum;
 

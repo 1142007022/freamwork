@@ -11,6 +11,12 @@
     <result column="ticket_num" jdbcType="VARCHAR" property="ticketNum" />
     <result column="state" jdbcType="VARCHAR" property="state" />
   </resultMap>
+
+  <select id="findByCustomerId" resultType="TicketSale">
+    SELECT * from ticket_sale
+    WHERE customer_id = #{customerId}
+  </select>
+
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">

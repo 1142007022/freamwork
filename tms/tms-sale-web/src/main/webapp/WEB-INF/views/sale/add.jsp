@@ -9,6 +9,16 @@
     <%@include file="../include/css.jsp"%>
     <link rel="stylesheet" href="/static/plugins/treegrid/css/jquery.treegrid.css">
 </head>
+<style>
+    .photo {
+        width: 100%;
+        height: 300px;
+        border: 2px dashed #ccc;
+        margin-top: 20px;
+        text-align: center;
+        line-height: 300px;
+    }
+</style>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
@@ -44,6 +54,7 @@
                 </div>
                 <div class="box-body">
                     <form method="post" id="saveForm">
+                        <input type="hidden" id="storeManagerAttachment" name="idCardKey">
                         <div class="form-group">
                             <label>顾客身份证号</label>
                             <input type="text" name="customerId" class="form-control">
@@ -60,9 +71,21 @@
                                 </c:forEach>
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label>性别</label>
+                            <select name="sex"class="form-control">
+                                    <option value="男">男</option>
+                                    <option value="女">女</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div id="picker">顾客一寸照片</div>
+                            <div class="photo" id="idCardKey"></div>
+                        </div>
                         <div class="box-footer">
                             <button class="btn pull-right btn-primary"  id="saveBtn">保存</button>
                         </div>
+
                     </form>
                 </div>
 
@@ -75,9 +98,52 @@
 <!-- ./wrapper -->
 
 <%@include file="../include/js.jsp"%>
+<script src="../../../../static/plugins/uploader/webuploader.js"></script>
 <script src="/static/plugins/treegrid/js/jquery.treegrid.min.js"></script>
 <script src="/static/plugins/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
 <script>
+
+    // 初始化Web Uploader
+    var uploader = WebUploader.create({
+        // 选完文件后，是否自动上传。
+        auto: true,
+        // swf文件路径
+        swf: '../../../../static/plugins/uploader/Uploader.swf',
+        // 文件接收服务端。
+        server: '/file/upload',
+        fileVal:'file',
+        formData:{
+            "name":"jpg"
+        },
+        // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+        pick: '#picker',
+        // 只允许选择图片文件。
+        accept: {
+            title: 'Images',
+            extensions: 'gif,jpg,jpeg,bmp,png',
+            mimeTypes: 'image/*'
+        }
+    });
+    var index = -1;
+    uploader.on( 'uploadStart', function( file ) {
+        index = layer.load(1);
+    });
+    uploader.on( 'uploadSuccess', function( file,response ) {
+        $("#idCardKey").html("");
+        var fileName = response.value;
+        var $img = $("<img>").attr("src",fileName);
+        $img.appendTo($("#idCardKey"));
+        //将key存放到隐藏域中
+        $("#storeManagerAttachment").val(fileName);
+        layer.msg("上传成功");
+    });
+    uploader.on( 'uploadError', function( file ) {
+        layer.msg("服务器异常");
+    });
+    uploader.on( 'uploadComplete', function( file ) {
+        layer.close(index);
+    });
+
 </script>
 </body>
 </html>

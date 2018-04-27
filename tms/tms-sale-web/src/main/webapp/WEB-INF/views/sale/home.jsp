@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TMS - 系统管理 - 用户管理</title>
+    <title>TMS - 系统管理 - 销售历史</title>
     <%@include file="../include/css.jsp"%>
     <link rel="stylesheet" href="/static/plugins/treegrid/css/jquery.treegrid.css">
     <style>
@@ -33,26 +33,12 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                帐号管理
+                销售历史
             </h1>
         </section>
 
         <!-- Main content -->
         <section class="content">
-            <div class="box no-border">
-                <div class="box-body">
-                    <form class="form-inline">
-                        <input type="text" name="mobile" placeholder="手机号码" class="form-control" value="${param.mobile}">
-                        <select name="rolesId" class="form-control">
-                            <option value="">所有账号</option>
-                            <c:forEach items="${rolesList}" var="roles">
-                                <option value="${roles.id}" ${param.relesId == roles.id ? 'selected' : ''}>${roles.rolesName}</option>
-                            </c:forEach>
-                        </select>
-                        <button class="btn btn-default">搜索</button>
-                    </form>
-                </div>
-            </div>
             <div class="box">
                 <div class="box-header">
                     <h3 class="box-title">销售历史列表</h3>
@@ -64,19 +50,18 @@
                 <div class="box-body">
                     <table class="table table-bordered table-hover">
                         <tbody>
-                            <c:forEach items="${accountList}" var="account">
+                            <c:forEach items="${pageInfo.list}" var="sale">
                                 <tr id="roles">
-                                    <td>票号：<strong>${account.accName}</strong></td>
-                                    <td>销售日期：<strong>${account.mobile}</strong></td>
-                                    <td>顾客姓名：<strong>${account.status}</strong></td>
-                                    <td>：<strong>${account.status}</strong></td>
-                                    <td><strong><a href="javascript:;" class="del" rel="${account.id}">删除</a></strong></td>
-                                    <td><strong><a href="/manager/account/update/${account.id}">修改</a></strong></td>
-
-
+                                    <td>票号：<strong>${sale.ticketNum}</strong></td>
+                                    <td>销售日期：<strong>${sale.ceateTime}</strong></td>
+                                    <td>顾客姓名：<strong>${sale.customerName}</strong></td>
+                                    <td>顾客身份证号：<strong>${sale.customerId}</strong></td>
                                 </tr>
                             </c:forEach>
+                            <label ><strong>${pageInfo.total}条数据</strong></label>
+
                         </tbody>
+                        <ul id="pagination-demo" class="pagination pull-right"></ul>
                     </table>
                 </div>
             </div>
@@ -88,39 +73,25 @@
 <!-- ./wrapper -->
 
 <%@include file="../include/js.jsp"%>
-<script src="/static/plugins/treegrid/js/jquery.treegrid.min.js"></script>
-<script src="/static/plugins/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+<script src="../../../static/plugins/jQuery/jquery.twbsPagination.min.js"></script>
+<script src="../../../static/plugins/treegrid/js/jquery.treegrid.min.js"></script>
+<script src="../../../static/plugins/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
 <script>
-    $(function () {
+        $(function () {
         $('.tree').treegrid();
-    });
 
-    $(".del").click(function () {
-        var id = $(this).attr("rel");
-        layer.confirm("你确定要删除么？",function (){
-            $.ajax({
-                url : "/manager/account/del/"+id,
-                type : "get",
-                data : {
-                    "id": id
-                },
-                success : function (data) {
-                    if(data.state == 'success'){
-                        history.go(0);
-                    }else{
-                        layer.confirm(data.message,function () {
-                            history.go(0);
-                        })
-                    }
-
-                },
-                error : function(){
-                    alert("系统繁忙")
-                }
+            $('#pagination-demo').twbsPagination({
+                totalPages:${pageInfo.pages},
+                visiblePages: 5,
+                first:'首页',
+                last:'末页',
+                prev:'上一页',
+                next:'下一页',
+                href:"/ticket/sale?p={{number}}"
             })
-        })
-    })
 
+
+    });
 </script>
 </body>
 </html>

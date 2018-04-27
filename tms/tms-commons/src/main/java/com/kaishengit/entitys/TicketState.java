@@ -12,7 +12,7 @@ public class TicketState implements Serializable {
     public static final String gived_state = "已下发";
     public static final String saled_state = "已销售";
     public static final String miss_state = "已挂失";
-    public static final String overDate_state = "已挂失";
+    public static final String overDate_state = "已过期";
 
     private String ticketNum;
 

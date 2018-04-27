@@ -8,6 +8,7 @@ D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\mapper\PowerMapper.jav
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\service\impl\AccountLoginLogServiceImpl.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\mapper\TicketofficeMapper.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\service\impl\TicketSaleServiceImpl.java
+D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\service\impl\CustomerServiceImpl.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\mapper\TicketStateMapper.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\service\impl\RolesServiceImpl.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\mapper\SaleAccountMapper.java
@@ -24,4 +25,5 @@ D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\mapper\RolesMapper.jav
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\service\impl\TicketStateServiceImpl.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\mapper\TicketInLogMapper.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\service\impl\TicketofficeServiceImpl.java
+D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\mapper\CustomerMapper.java
 D:\code\tms\tms-service-impl\src\main\java\com\kaishengit\mapper\TicketSaleMapper.java
