@@ -98,9 +98,7 @@
 <!-- ./wrapper -->
 
 <%@include file="../include/js.jsp"%>
-<script src="../../../../static/plugins/uploader/webuploader.js"></script>
-<script src="/static/plugins/treegrid/js/jquery.treegrid.min.js"></script>
-<script src="/static/plugins/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+<script src="../../../static/plugins/uploader/webuploader.js"></script>
 <script>
 
     // 初始化Web Uploader
@@ -108,7 +106,7 @@
         // 选完文件后，是否自动上传。
         auto: true,
         // swf文件路径
-        swf: '../../../../static/plugins/uploader/Uploader.swf',
+        swf: '../../../static/plugins/uploader/Uploader.swf',
         // 文件接收服务端。
         server: '/file/upload',
         fileVal:'file',
@@ -130,8 +128,8 @@
     });
     uploader.on( 'uploadSuccess', function( file,response ) {
         $("#idCardKey").html("");
-        var fileName = response.value;
-        var $img = $("<img>").attr("src",fileName);
+        var fileName = response.data;
+        var $img = $("<img>").attr("src","/file/download?fileName="+fileName);
         $img.appendTo($("#idCardKey"));
         //将key存放到隐藏域中
         $("#storeManagerAttachment").val(fileName);

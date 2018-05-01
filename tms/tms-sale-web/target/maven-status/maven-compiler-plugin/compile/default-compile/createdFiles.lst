@@ -1,3 +1,6 @@
+com\kaishengit\controller\TicketCountController.class
+com\kaishengit\shiro\ShiroUtil.class
+com\kaishengit\controller\RegetController.class
 com\kaishengit\controller\FileController.class
 com\kaishengit\controller\TicketOverDateController.class
 com\kaishengit\controller\Test.class

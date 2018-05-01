@@ -1,15 +1,17 @@
 package com.kaishengit.controller;
 
+import com.kaishengit.dto.Result;
 import org.apache.commons.io.IOUtils;
 import org.csource.common.MyException;
 import org.csource.fastdfs.*;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -19,7 +21,11 @@ import java.util.Properties;
 public class FileController {
 
     @PostMapping("/upload")
-    public String upload(InputStream inputStream, String name) throws IOException, MyException {
+    public @ResponseBody Result upload(MultipartFile  file) throws IOException, MyException {
+
+        InputStream inputStream = file.getInputStream();
+        String name = file.getOriginalFilename();
+        String exName = name.substring(name.lastIndexOf(".") + 1);
         //配置tracker
         Properties properties = new Properties();
         properties.setProperty(ClientGlobal.PROP_KEY_TRACKER_SERVERS,"192.168.238.132:22122");
@@ -32,26 +38,31 @@ public class FileController {
         StorageClient storageClient = new StorageClient(trackerServer,storageServer);
 
         List<String> resList = new ArrayList<>();
-        String[] result = storageClient.upload_file(IOUtils.toByteArray(inputStream),name,null);
+        String[] res = storageClient.upload_file(IOUtils.toByteArray(inputStream),exName,null);
         StringBuffer stringBuffer = new StringBuffer();
-        for (String str : result) {
+        for (String str : res) {
             stringBuffer.append(str).append("/");
         }
-        return stringBuffer.toString().substring(0,stringBuffer.toString().lastIndexOf("/"));
+        String fileId = stringBuffer.toString().substring(0,stringBuffer.toString().lastIndexOf("/"));
+        Result result = Result.success(fileId);
+        return result;
     }
 
 
-    @PostMapping("/downlad")
-    public byte[] download(String fileId) throws IOException, MyException {
+    @GetMapping("/download")
+    public void download(@RequestParam String fileName, HttpServletResponse response) throws IOException, MyException {
 
-        String groupName = fileId.substring(0,fileId.indexOf("/"));
-        String filePath = fileId.substring(fileId.indexOf("/")+1);
+        String groupName = fileName.substring(0,fileName.indexOf("/"));
+        String filePath = fileName.substring(fileName.indexOf("/")+1);
         TrackerClient trackerClient = new TrackerClient();
         TrackerServer trackerServer = trackerClient.getConnection();
         StorageServer storageServer = null;
         StorageClient storageClient = new StorageClient(trackerServer,storageServer);
         byte[] bytes = storageClient.download_file(groupName,filePath);
-        return bytes;
+        OutputStream outputStream = response.getOutputStream();
+        outputStream.write(bytes);
+        outputStream.flush();
+        outputStream.close();
     }
 
 }

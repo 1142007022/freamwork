@@ -22,7 +22,6 @@ com\kaishengit\service\impl\PowerServiceImpl.class
 com\kaishengit\mapper\TicketInLogMapper.class
 com\kaishengit\service\impl\RolesPowerKeyServiceImpl.class
 com\kaishengit\service\impl\TicketInLogServiceImpl.class
-com\kaishengit\service\impl\TicketServiceImpl.class
 com\kaishengit\service\impl\AccountRolesKeyServiceImpl.class
 com\kaishengit\service\impl\AccountServiceImpl.class
 com\kaishengit\mapper\AccountLoginLogMapper.class

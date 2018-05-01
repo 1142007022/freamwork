@@ -35,7 +35,6 @@ public class ShiroRealm extends AuthorizingRealm{
         UsernamePasswordToken usernamePasswordToken = (UsernamePasswordToken) authenticationToken;
 
         String mobile = usernamePasswordToken.getUsername();
-        System.out.println("mobile-----"+mobile);
         if (mobile != null) {
             SaleAccount saleAccount  = saleAccountService.findByMobile(mobile);
             if (saleAccount == null) {

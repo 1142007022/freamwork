@@ -32,4 +32,6 @@ public interface TicketMapper {
     int updateByPrimaryKey(Ticket record);
 
     Ticket findByNum(int num);
+
+    Integer getCountByTicketofficeIdAndState(@Param("id") Integer id, @Param("state") String saled_state);
 }
