@@ -45,6 +45,7 @@ public class ShiroRealm extends AuthorizingRealm{
         for (Roles roles : rolesList) {
             System.out.println("拥有的角色：------"+roles.getRolesCode());
             System.out.println("角色id：------"+roles.getId());
+            //获得这个角色拥有的所有权限
             List<Power> rolesPowerList = powerService.findMyPowerById(roles.getId());
             powerList.addAll(rolesPowerList);
         }
