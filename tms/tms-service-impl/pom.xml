@@ -39,6 +39,7 @@
         </resources>
 
         <plugins>
+            <!--编译插件-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -231,8 +232,6 @@
             <version>5.0.0</version>
         </dependency>
     </dependencies>
-
-
 
 
 </project>
