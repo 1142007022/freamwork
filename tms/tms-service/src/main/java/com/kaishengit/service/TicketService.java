@@ -20,4 +20,6 @@ public interface TicketService {
     void getAgain(String ticketNum);
 
     Map<String,Integer> count(Integer id);
+
+    List<Ticket> findTicketByState(String saled_state);
 }

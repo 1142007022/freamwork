@@ -138,4 +138,24 @@ public class TicketServiceImpl implements TicketService {
         return map;
     }
 
+    @Override
+    public List<Ticket> findTicketByState(String saled_state) {
+        TicketStateExample ticketStateExample = new TicketStateExample();
+        ticketStateExample.createCriteria().andStateEqualTo(TicketState.saled_state);
+        List<TicketState> ticketStateList = ticketStateMapper.selectByExample(ticketStateExample);
+
+        List<Ticket> res = new ArrayList<>();
+
+        if (ticketStateList != null) {
+            for (int i = 0;i < ticketStateList.size();i++) {
+                TicketExample ticketExample = new TicketExample();
+                ticketExample.createCriteria().andNumEqualTo(ticketStateList.get(i).getTicketNum());
+                Ticket ticket = ticketMapper.selectByExample(ticketExample).get(0);
+                res.add(ticket);
+            }
+            return res;
+        }
+        return null;
+    }
+
 }

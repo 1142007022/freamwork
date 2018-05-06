@@ -9,6 +9,7 @@ import redis.clients.jedis.JedisCluster;
 
 import java.io.IOException;
 
+/*使用了spring和集群的方式进行连接*/
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:spring-redis.xml")
 public class SpringRedisTest {

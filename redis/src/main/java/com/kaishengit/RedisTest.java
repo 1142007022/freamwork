@@ -7,6 +7,7 @@ import redis.clients.jedis.JedisPool;
 
 public class RedisTest {
 
+    /*普通的redis连接  是没有使用连接池的*/
     @Test
     public void test(){
         Jedis jedis = new Jedis("192.168.238.133",6379);
@@ -15,6 +16,7 @@ public class RedisTest {
         System.out.println(name);
         jedis.close();
     }
+    /*普通的redis连接池连接连接  是没有集群的方式进行的 也没有spring的配置 */
     @Test
     public void pool() {
         GenericObjectPoolConfig config = new GenericObjectPoolConfig();

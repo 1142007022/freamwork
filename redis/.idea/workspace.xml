@@ -2,94 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e92d284b-ce5e-494e-ad13-66ae567979e6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_41.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__org_mybatis_mybatis_3_4_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_14_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__org_springframework_spring_test_4_3_14_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__org_springframework_spring_tx_4_3_14_RELEASE.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/redis.iml" afterPath="$PROJECT_DIR$/redis.iml" />
-      <change beforePath="$PROJECT_DIR$/../tms/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../tms/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../tms/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/dto/Result.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/Account.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountLoginLog.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountLoginLogExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountLoginLogExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountLoginLogExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountLoginLogExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountRolesExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountRolesExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountRolesExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountRolesExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/AccountRolesKey.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/Customer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/CustomerExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/CustomerExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/CustomerExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/CustomerExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/Power.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/PowerExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/PowerExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/PowerExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/PowerExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/Roles.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesPowerExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesPowerExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesPowerExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesPowerExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/RolesPowerKey.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/SaleAccount.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/SaleAccountExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/SaleAccountExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/SaleAccountExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/SaleAccountExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/Ticket.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketInLog.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketInLogExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketInLogExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketInLogExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketInLogExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketOutLog.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketOutLogExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketOutLogExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketOutLogExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketOutLogExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketSale.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketSaleExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketSaleExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketSaleExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketSaleExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketState.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketStateExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketStateExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketStateExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketStateExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/Ticketoffice.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketofficeExample$Criteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketofficeExample$Criterion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketofficeExample$GeneratedCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/entitys/TicketofficeExample.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/exception/ServiceException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/pom.xml" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/tms-service-impl.iml" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/tms-service-impl.iml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kaishengit/RedisTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/RedisTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedis.java" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedis.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedisTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedisTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-redis.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-redis.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -102,24 +19,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="spring-redis.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="spring-redis.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring-redis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
-              <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+            <state relative-caret-position="36">
+              <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpringRedisTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RedisTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/RedisTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringRedisTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringRedis.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,11 +84,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/RedisTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/User.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedis.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedisTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedis.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/RedisTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-redis.xml" />
       </list>
     </option>
@@ -174,7 +111,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="336" />
     <option name="y" value="117" />
     <option name="width" value="846" />
@@ -184,7 +121,7 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -197,65 +134,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="redis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kaishengit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -518,7 +397,10 @@
       <workItem from="1525312640730" duration="3134000" />
       <workItem from="1525350940975" duration="685000" />
       <workItem from="1525400049664" duration="2713000" />
-      <workItem from="1525417163887" duration="1675000" />
+      <workItem from="1525417163887" duration="2349000" />
+      <workItem from="1525432809429" duration="2541000" />
+      <workItem from="1525438437539" duration="587000" />
+      <workItem from="1525480085055" duration="563000" />
     </task>
     <servers />
   </component>
@@ -555,46 +437,46 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10838000" />
+    <option name="totallyTimeSpent" value="15203000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5755518" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38539898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40237692" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12224109" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40237692" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11603054" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0740458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5755518" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -603,21 +485,21 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15449916" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2557252" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5755518" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12224109" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40237692" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0740458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,6 +513,58 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-redis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/RedisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-redis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-redis.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -669,7 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1044">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -692,7 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -707,18 +639,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Test.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/RedisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
@@ -730,33 +654,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1044">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-redis.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+        <state relative-caret-position="36">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/RedisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedisTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/SpringRedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

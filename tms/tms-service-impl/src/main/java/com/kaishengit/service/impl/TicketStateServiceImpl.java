@@ -80,4 +80,11 @@ public class TicketStateServiceImpl implements TicketStateService {
         List<TicketState> ticketStates = ticketStateMapper.selectByExample(ticketStateExample);
         return new PageInfo<>(ticketStates);
     }
+
+    @Override
+    public TicketState findByNum(String num) {
+        TicketStateExample ticketStateExample = new TicketStateExample();
+        ticketStateExample.createCriteria().andTicketNumEqualTo(num);
+        return ticketStateMapper.selectByExample(ticketStateExample).get(0);
+    }
 }

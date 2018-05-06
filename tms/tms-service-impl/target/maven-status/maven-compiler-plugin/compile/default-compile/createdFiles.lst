@@ -17,6 +17,7 @@ com\kaishengit\mapper\AccountRolesMapper.class
 com\kaishengit\service\impl\SaleAccountServiceImpl.class
 com\kaishengit\mapper\RolesPowerMapper.class
 com\kaishengit\service\impl\CustomerServiceImpl.class
+com\kaishengit\service\quartz\CheckTicketJob.class
 com\kaishengit\mapper\TicketOutLogMapper.class
 com\kaishengit\service\impl\PowerServiceImpl.class
 com\kaishengit\mapper\TicketInLogMapper.class

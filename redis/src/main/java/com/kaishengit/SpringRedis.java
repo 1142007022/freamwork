@@ -8,7 +8,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
-
+/*使用了spring的方式进行连接  但是没有使用集群*/
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:spring-redis.xml")
 public class SpringRedis {
