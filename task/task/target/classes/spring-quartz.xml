@@ -7,16 +7,9 @@
 
     <bean id="jobDetail" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
         <!--固定重复的Job-->
-        <property name="durability" value="true"/>
+        <property name="durability" value="false"/>
         <!--Job类的完全限定名称 Job接口的实现类-->
         <property name="jobClass" value="com.kaishengit.MyJob"/>
-        <!--JobMapDate 需要时设定-->
-        <property name="jobDataAsMap">
-            <map>
-                <entry key="to" value="1"/>
-                <entry key="message" value="init message ........."/>
-            </map>
-        </property>
     </bean>
 
     <!--定义trgger-->

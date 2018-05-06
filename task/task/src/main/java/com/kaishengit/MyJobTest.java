@@ -28,8 +28,8 @@ public class MyJobTest {
     public void addJob() throws SchedulerException, IOException {
         JobDataMap jobDataMap = new JobDataMap();
         jobDataMap.put("test","jiang");
-        JobDetail jobDetail =  JobBuilder.newJob(MyJob.class).withIdentity("test","1.0").setJobData(jobDataMap).build();
-        String cron = "0/1 * * * * ? *";
+        JobDetail jobDetail =  JobBuilder.newJob(MyJob.class).withIdentity("gfhgfd","1.0").setJobData(jobDataMap).build();
+        String cron = "0/5 * * * * ? *";
         CronScheduleBuilder cronScheduleBuilder = CronScheduleBuilder.cronSchedule(cron);
         Trigger trigger = TriggerBuilder.newTrigger().withSchedule(cronScheduleBuilder).build();
 

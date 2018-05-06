@@ -6,10 +6,8 @@ import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 
 public class MyJob implements Job{
-    public void run(){
 
-    }
-
+    @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
         JobDataMap jobDataMap = jobExecutionContext.getMergedJobDataMap();
         System.out.println("hello word---"+jobDataMap.get("test"));

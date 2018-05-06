@@ -7,49 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e6354a6-e4bb-46ae-8660-98afa08054ff" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_jobs_2_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_14_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/service/quartz/CheckTicketJob.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/quartz.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/spring-quartz.xml" />
-      <change beforePath="$PROJECT_DIR$/../redis/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../redis/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../redis/src/main/java/com/kaishengit/RedisTest.java" afterPath="$PROJECT_DIR$/../redis/src/main/java/com/kaishengit/RedisTest.java" />
-      <change beforePath="$PROJECT_DIR$/../redis/src/main/java/com/kaishengit/SpringRedis.java" afterPath="$PROJECT_DIR$/../redis/src/main/java/com/kaishengit/SpringRedis.java" />
-      <change beforePath="$PROJECT_DIR$/../redis/src/main/java/com/kaishengit/SpringRedisTest.java" afterPath="$PROJECT_DIR$/../redis/src/main/java/com/kaishengit/SpringRedisTest.java" />
-      <change beforePath="$PROJECT_DIR$/../redis/src/main/resources/spring-redis.xml" afterPath="$PROJECT_DIR$/../redis/src/main/resources/spring-redis.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/pom.xml" afterPath="$PROJECT_DIR$/tms-service-impl/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/service/impl/TicketServiceImpl.java" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/service/impl/TicketServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/service/impl/TicketStateServiceImpl.java" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/service/impl/TicketStateServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/Start.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/mapper/AccountLoginLogMapper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/mapper/AccountMapper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/mapper/CustomerMapper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/mapper/RolesMapper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/mapper/TicketInLogMapper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/mapper/TicketOutLogMapper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/mapper/TicketofficeMapper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/service/impl/AccountLoginLogServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/service/impl/AccountServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/service/impl/CustomerServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/service/impl/RolesPowerKeyServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/service/impl/RolesServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/service/impl/SaleAccountServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/service/impl/TicketInLogServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/service/impl/TicketOutLogServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/service/impl/TicketStateServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/kaishengit/service/impl/TicketofficeServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/tms-service-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/tms-service-impl.iml" afterPath="$PROJECT_DIR$/tms-service-impl/tms-service-impl.iml" />
-      <change beforePath="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/service/TicketService.java" afterPath="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/service/TicketService.java" />
-      <change beforePath="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/service/TicketStateService.java" afterPath="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/service/TicketStateService.java" />
-      <change beforePath="$PROJECT_DIR$/tms-service/target/classes/com/kaishengit/service/TicketService.class" afterPath="$PROJECT_DIR$/tms-service/target/classes/com/kaishengit/service/TicketService.class" />
-      <change beforePath="$PROJECT_DIR$/tms-service/target/classes/com/kaishengit/service/TicketStateService.class" afterPath="$PROJECT_DIR$/tms-service/target/classes/com/kaishengit/service/TicketStateService.class" />
-      <change beforePath="$PROJECT_DIR$/tms-service/target/tms-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/tms-service/target/tms-service-1.0-SNAPSHOT.jar" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/tms-commons/target/" />
@@ -88,17 +46,17 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tms-service-impl/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
+            <state relative-caret-position="6876">
               <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckTicketJob.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CheckTicketJob.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/service/quartz/CheckTicketJob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
+            <state relative-caret-position="1692">
               <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -107,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring-quartz.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="spring-quartz.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/spring-quartz.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-818">
+            <state relative-caret-position="36">
               <caret line="11" column="85" lean-forward="false" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
               <folding />
             </state>
@@ -130,7 +88,7 @@
       <file leaf-file-name="TicketStateService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/service/TicketStateService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="504">
               <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="15" />
               <folding />
             </state>
@@ -140,7 +98,7 @@
       <file leaf-file-name="TicketStateServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/service/impl/TicketStateServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
+            <state relative-caret-position="2736">
               <caret line="88" column="5" lean-forward="false" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
               <folding />
             </state>
@@ -150,7 +108,7 @@
       <file leaf-file-name="TicketService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/service/TicketService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
+            <state relative-caret-position="576">
               <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding />
             </state>
@@ -160,7 +118,7 @@
       <file leaf-file-name="TicketServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/service/impl/TicketServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state relative-caret-position="5040">
               <caret line="155" column="23" lean-forward="false" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
               <folding />
             </state>
@@ -291,7 +249,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="336" />
     <option name="y" value="117" />
     <option name="width" value="846" />
@@ -340,8 +298,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -429,8 +388,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -929,15 +887,17 @@
       <workItem from="1525351642829" duration="1116000" />
       <workItem from="1525393736570" duration="841000" />
       <workItem from="1525598558482" duration="59000" />
-      <workItem from="1525598662846" duration="1976000" />
+      <workItem from="1525598662846" duration="2558000" />
+      <workItem from="1525616621301" duration="42000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="388507000" />
+    <option name="totallyTimeSpent" value="389131000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -947,14 +907,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12733446" sideWeight="0.510687" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57385397" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18854962" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18854962" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46179965" sideWeight="0.48931298" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46179965" sideWeight="0.48931298" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7589134" sideWeight="0.49694657" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12824428" sideWeight="0.49113923" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13053435" sideWeight="0.49113923" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20610687" sideWeight="0.50886077" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1307,7 +1267,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-383">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1315,7 +1274,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1345,7 +1303,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1359,7 +1316,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/service/TicketService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="576">
           <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding />
         </state>
@@ -1375,7 +1332,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/service/impl/TicketServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
+        <state relative-caret-position="5040">
           <caret line="155" column="23" lean-forward="false" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
           <folding />
         </state>
@@ -1383,7 +1340,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/service/TicketStateService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="504">
           <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="15" />
           <folding />
         </state>
@@ -1391,7 +1348,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tms-service-impl/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
+        <state relative-caret-position="6876">
           <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
           <folding />
         </state>
@@ -1401,23 +1358,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/service/quartz/CheckTicketJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/service/impl/TicketStateServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
+        <state relative-caret-position="2736">
           <caret line="88" column="5" lean-forward="false" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
           <folding />
         </state>
@@ -1433,9 +1379,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/spring-quartz.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-818">
+        <state relative-caret-position="36">
           <caret line="11" column="85" lean-forward="false" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/service/quartz/CheckTicketJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1692">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
