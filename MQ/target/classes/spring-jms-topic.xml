@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--创建连接工厂-->
+    <bean class="org.apache.activemq.ActiveMQConnectionFactory" id="mqConnectionFactory">
+        <property name="brokerURL" value="tcp://localhost:61616"/>
+    </bean>
+
+    <!--配置spring连接工厂-->
+    <bean class="org.springframework.jms.connection.SingleConnectionFactory" id="singleConnectionFactory">
+        <property name="targetConnectionFactory" ref="mqConnectionFactory"/>
+    </bean>
+
+    <!--配置jmsTemplate-->
+    <bean class="org.springframework.jms.core.JmsTemplate" id="template">
+        <property name="connectionFactory" ref="singleConnectionFactory"/>
+    </bean>
+
+    <!--配置目标对象-->
+    <bean class="org.apache.activemq.command.ActiveMQTopic" id="activeMQTopic">
+        <constructor-arg name="name" value="spring-test"/>
+    </bean>
+
+    <!--添加过滤器-->
+    <bean class="com.kaishengit.SpringJmsTopicGet" id="jmsTopicGet"/>
+    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="singleConnectionFactory"/>
+        <property name="messageListener" ref="jmsTopicGet"/>
+        <property name="destination" ref="activeMQTopic"/>
+    </bean>
+
+</beans>
