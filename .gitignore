@@ -7,12 +7,12 @@
 *.ipr
 *.iws
 out
- 
+target/
 # Eclipse Project files
 .classpath
 .project
 .settings/
- 
+target/
 bin/
 gen/
 local.properties
