@@ -68,6 +68,7 @@ public class ShiroRealm extends AuthorizingRealm{
         return simpleAuthorizationInfo;
     }
 
+    //判断登录
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
         UsernamePasswordToken usernamePasswordToken = (UsernamePasswordToken) authenticationToken;

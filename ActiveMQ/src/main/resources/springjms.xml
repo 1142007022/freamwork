@@ -18,6 +18,7 @@
         <property name="connectionFactory" ref="singleConnectionFactory"/>
     </bean>
 
+
     <bean class="com.kaishengit.SpringJmsGetTest" id="quereConsuerm"/>
     <!--Queue监听-->
     <jms:listener-container acknowledge="client" connection-factory="singleConnectionFactory">

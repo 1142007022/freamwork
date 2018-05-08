@@ -27,6 +27,7 @@
     </bean>
 
     <!--配置自定以的Realm-->
+
     <bean id="myShiroReaml" class="com.kaishengit.shiro.ShiroRealm"/>
 
     <!--配置生命周期处理器-->

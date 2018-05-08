@@ -22,10 +22,11 @@
         <property name="connectionFactory" ref="connectionFactory2"/>
     </bean>
 
+    <!--开启两个Factory 不同的是是否注入监听订阅模式 在注解使用的时候  由于存在多个  队列的注解方式要声明使用的哪个Factory-->
     <!--开启基于注解的JMS接收模式-->
     <bean id="jmsListenerContainerFactory" class="org.springframework.jms.config.DefaultJmsListenerContainerFactory">
         <property name="connectionFactory" ref="connectionFactory2"/>
-        <!--监听发布/订阅模式-->
+        <!--监听(发布/订阅)模式-->
         <property name="pubSubDomain" value="true"/>
     </bean>
     <bean id="jmsQueueListenerContainerFactory" class="org.springframework.jms.config.DefaultJmsListenerContainerFactory">

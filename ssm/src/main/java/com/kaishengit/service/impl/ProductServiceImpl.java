@@ -1,7 +1,6 @@
 package com.kaishengit.service.impl;
 
 
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.kaishengit.enitys.Product;

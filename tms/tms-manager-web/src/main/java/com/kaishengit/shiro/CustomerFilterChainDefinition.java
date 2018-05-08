@@ -18,8 +18,7 @@ import java.util.Map;
 public class CustomerFilterChainDefinition {
 
     private Logger logger = LoggerFactory.getLogger(CustomerFilterChainDefinition.class);
-    @Autowired
-    private RolesPowerKeyService rolesPowerKeyService;
+
     @Autowired
     private PowerService powerService;
     private String filterChainDefinitions;
@@ -41,15 +40,16 @@ public class CustomerFilterChainDefinition {
         this.shiroFilter = shiroFilter;
     }
 
+    //初始化注解  加锁
     @PostConstruct
     public synchronized void innit() {
         getDefaultFilterChainManager().getFilterChains().clear();
         load();
-
     }
 
     public void update() {
         getDefaultFilterChainManager().getFilterChains().clear();
+        logger.info("更新权限列表");
         load();
     }
 
