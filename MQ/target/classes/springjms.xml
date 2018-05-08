@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jms="http://www.springframework.org/schema/jms"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms.xsd">
+
+    <!--创建连接工厂-->
+    <bean class="org.apache.activemq.ActiveMQConnectionFactory" id="mqConnectionFactory">
+        <property name="brokerURL" value="tcp://localhost:61616"/>
+    </bean>
+
+    <!--配置spring连接工厂-->
+    <bean class="org.springframework.jms.connection.SingleConnectionFactory" id="singleConnectionFactory">
+        <property name="targetConnectionFactory" ref="mqConnectionFactory"/>
+    </bean>
+
+    <!--配置jmsTemplate-->
+    <bean class="org.springframework.jms.core.JmsTemplate" id="template">
+        <property name="connectionFactory" ref="singleConnectionFactory"/>
+    </bean>
+
+    <bean class="com.kaishengit.SpringJmsGetTest" id="quereConsuerm"/>
+    <!--Queue监听-->
+    <jms:listener-container acknowledge="client" connection-factory="singleConnectionFactory">
+        <jms:listener destination="test" ref="quereConsuerm"/>
+    </jms:listener-container>
+
+
+    <bean class="com.kaishengit.SpringJmsTopicGet" id="topicConsumer"/>
+    <jms:listener-container destination-type="topic" connection-factory="singleConnectionFactory" acknowledge="client">
+        <jms:listener destination="spring-test" ref="topicConsumer"/>
+    </jms:listener-container>
+
+</beans>

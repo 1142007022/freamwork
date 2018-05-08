@@ -1,6 +1,8 @@
 package com.kaishengit.enitys;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable{
 
     private Integer id;
     private String productName;
