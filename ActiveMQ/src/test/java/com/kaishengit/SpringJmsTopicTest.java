@@ -14,8 +14,9 @@ import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.Session;
 import java.io.IOException;
+
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:springjms.xml")
+@ContextConfiguration(locations = "classpath:springjms2.xml")
 public class SpringJmsTopicTest {
 
     @Autowired
@@ -28,7 +29,7 @@ public class SpringJmsTopicTest {
         jmsTemplate.send(destination, new MessageCreator() {
             @Override
             public Message createMessage(Session session) throws JMSException {
-                return session.createTextMessage("shfdabi----");
+                return session.createTextMessage("topic----");
             }
         });
         System.in.read();

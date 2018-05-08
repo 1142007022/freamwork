@@ -14,7 +14,7 @@ import javax.jms.Session;
 import java.io.IOException;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:springjms.xml")
+@ContextConfiguration(locations = "classpath:springjms2.xml")
 public class SpringJmsTest {
 
     @Autowired
@@ -25,7 +25,7 @@ public class SpringJmsTest {
         jmsTemplate.send("test", new MessageCreator() {
             @Override
             public Message createMessage(Session session) throws JMSException {
-                return session.createTextMessage("hello spring");
+                return session.createTextMessage("队列----");
             }
         });
         System.in.read();

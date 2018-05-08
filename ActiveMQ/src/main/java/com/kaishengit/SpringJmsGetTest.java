@@ -6,6 +6,7 @@ import javax.jms.MessageListener;
 import javax.jms.TextMessage;
 
 public class SpringJmsGetTest implements MessageListener {
+    @Override
     public void onMessage(Message message) {
         TextMessage textMessage = (TextMessage) message;
         try {
