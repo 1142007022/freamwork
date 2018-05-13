@@ -47,7 +47,7 @@ public class HomeController {
             return "redirect:/home";
         }
         //以上两者都不成立的话  正常登录
-        return "login";
+        return "index";
     }
 
     @GetMapping("/home")
