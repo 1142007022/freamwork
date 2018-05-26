@@ -2,13 +2,10 @@ package com.kaishengit.shiro;
 
 import com.kaishengit.entitys.Power;
 import com.kaishengit.service.PowerService;
-import com.kaishengit.service.RolesPowerKeyService;
 import org.apache.shiro.config.Ini;
 import org.apache.shiro.web.filter.mgt.DefaultFilterChainManager;
 import org.apache.shiro.web.filter.mgt.PathMatchingFilterChainResolver;
 import org.apache.shiro.web.servlet.AbstractShiroFilter;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.annotation.PostConstruct;
@@ -17,7 +14,6 @@ import java.util.Map;
 
 public class CustomerFilterChainDefinition {
 
-    private Logger logger = LoggerFactory.getLogger(CustomerFilterChainDefinition.class);
 
     @Autowired
     private PowerService powerService;
@@ -49,7 +45,6 @@ public class CustomerFilterChainDefinition {
 
     public void update() {
         getDefaultFilterChainManager().getFilterChains().clear();
-        logger.info("更新权限列表");
         load();
     }
 
