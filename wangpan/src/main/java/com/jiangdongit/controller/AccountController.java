@@ -24,6 +24,9 @@ public class AccountController {
     @PostMapping("/add")
     public Result add(Account account) {
         try {
+            if (account != null){
+                System.out.println(account.getMobile());
+            }
             accountService.add(account);
             return Result.success(null);
         } catch (Exception e) {
