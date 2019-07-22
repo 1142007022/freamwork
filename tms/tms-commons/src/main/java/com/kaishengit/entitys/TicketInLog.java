@@ -4,13 +4,14 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author 
+ * @author
  */
 public class TicketInLog implements Serializable {
+
     private Integer id;
 
-    public static final String default_state = "Î´Èë¿â";
-    public static final String gived_state = "ÒÑÏÂ·¢";
+    public static final String default_state = "Î´ï¿½ï¿½ï¿½";
+    public static final String gived_state = "ï¿½ï¿½ï¿½Â·ï¿½";
     private Date createTime;
 
     private String startNum;
@@ -94,12 +95,12 @@ public class TicketInLog implements Serializable {
         }
         TicketInLog other = (TicketInLog) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-            && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()))
-            && (this.getStartNum() == null ? other.getStartNum() == null : this.getStartNum().equals(other.getStartNum()))
-            && (this.getEndNum() == null ? other.getEndNum() == null : this.getEndNum().equals(other.getEndNum()))
-            && (this.getTotalNum() == null ? other.getTotalNum() == null : this.getTotalNum().equals(other.getTotalNum()))
-            && (this.getInAccountName() == null ? other.getInAccountName() == null : this.getInAccountName().equals(other.getInAccountName()))
-            && (this.getState() == null ? other.getState() == null : this.getState().equals(other.getState()));
+                && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()))
+                && (this.getStartNum() == null ? other.getStartNum() == null : this.getStartNum().equals(other.getStartNum()))
+                && (this.getEndNum() == null ? other.getEndNum() == null : this.getEndNum().equals(other.getEndNum()))
+                && (this.getTotalNum() == null ? other.getTotalNum() == null : this.getTotalNum().equals(other.getTotalNum()))
+                && (this.getInAccountName() == null ? other.getInAccountName() == null : this.getInAccountName().equals(other.getInAccountName()))
+                && (this.getState() == null ? other.getState() == null : this.getState().equals(other.getState()));
     }
 
     @Override

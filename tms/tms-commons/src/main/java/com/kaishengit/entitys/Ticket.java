@@ -7,6 +7,7 @@ import java.util.Date;
  * @author 
  */
 public class Ticket implements Serializable {
+
     private Integer id;
 
     private Date outTime;

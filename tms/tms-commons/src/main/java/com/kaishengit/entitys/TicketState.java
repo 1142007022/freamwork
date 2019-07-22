@@ -6,6 +6,7 @@ import java.io.Serializable;
  * @author 
  */
 public class TicketState implements Serializable {
+
     private Integer id;
 
     public static final String default_state = "ряхК©Б";

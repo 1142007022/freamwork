@@ -6,6 +6,7 @@ import java.io.Serializable;
  * @author 
  */
 public class SaleAccount implements Serializable {
+
     private Integer id;
 
     private String mobile;
