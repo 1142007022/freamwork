@@ -7,6 +7,7 @@ import java.util.Date;
  * @author 
  */
 public class AccountLoginLog implements Serializable {
+
     private Integer id;
 
     private Integer accountId;
