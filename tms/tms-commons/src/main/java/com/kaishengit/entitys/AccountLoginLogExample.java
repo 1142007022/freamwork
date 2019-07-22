@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 public class AccountLoginLogExample {
+
     protected String orderByClause;
 
     protected boolean distinct;

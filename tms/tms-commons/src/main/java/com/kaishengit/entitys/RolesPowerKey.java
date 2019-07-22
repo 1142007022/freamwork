@@ -6,6 +6,7 @@ import java.io.Serializable;
  * @author 
  */
 public class RolesPowerKey implements Serializable {
+
     private Integer rolesId;
 
     private Integer powerId;

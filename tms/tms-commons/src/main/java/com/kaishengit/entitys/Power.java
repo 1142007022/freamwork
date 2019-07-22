@@ -7,6 +7,7 @@ import java.util.Date;
  * @author 
  */
 public class Power implements Serializable {
+
     private Integer id;
 
     private String powerName;

@@ -8,6 +8,7 @@ import java.util.List;
  * @author 
  */
 public class Roles implements Serializable {
+
     private Integer id;
 
     private String rolesName;
