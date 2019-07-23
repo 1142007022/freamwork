@@ -36,7 +36,7 @@ public class HomeController {
 
         Subject subject = SecurityUtils.getSubject();
         if (subject.isAuthenticated()) {
-            //如果成立的话代表用户是登陆过的 是想退出登录
+            //如果成立的话代表用户是登陆(认证)过的 是想退出登录
             System.out.println("安全退出");
             subject.logout();
         }
