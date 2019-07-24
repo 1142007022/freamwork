@@ -29,7 +29,6 @@ public class TicketController {
     @Autowired
     private SaleAccountService saleAccountService;
 
-
     @GetMapping("/ticketoffice/{id}")
     public String info(@PathVariable Integer id,Model model){
         Ticketoffice ticketoffice = ticketofficeService.findById(id);
