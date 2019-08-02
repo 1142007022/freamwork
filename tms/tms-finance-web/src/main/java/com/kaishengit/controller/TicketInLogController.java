@@ -16,13 +16,10 @@ import java.util.List;
 @RequestMapping("/store")
 public class TicketInLogController {
 
-    private TicketController ticketController = new TicketController();
-
     @Autowired
     private TicketInLogService ticketInLogService;
     @Autowired
     private TicketofficeService ticketofficeService;
-
 
     @PostMapping("/ticketInLog/update/{id}")
     public String update(TicketInLog ticketInLog){
