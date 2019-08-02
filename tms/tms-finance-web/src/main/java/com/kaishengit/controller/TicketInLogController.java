@@ -39,7 +39,6 @@ public class TicketInLogController {
         return "store/ticketInLog/update";
     }
 
-
     @GetMapping("/ticketInLog/del/{id}")
     @ResponseBody
     public Result delById(@PathVariable Integer id){

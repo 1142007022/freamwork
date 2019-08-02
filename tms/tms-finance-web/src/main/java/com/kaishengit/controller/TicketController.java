@@ -72,5 +72,4 @@ public class TicketController {
         return "store/ticketInLog/home";
     }
 
-
 }

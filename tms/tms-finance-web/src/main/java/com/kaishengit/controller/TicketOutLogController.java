@@ -22,6 +22,7 @@ import java.util.List;
 @RequestMapping("/store")
 @Controller
 public class TicketOutLogController {
+
     @Autowired
     private TicketofficeService ticketofficeService;
     @Autowired
@@ -36,7 +37,6 @@ public class TicketOutLogController {
         return "redirect:/store/ticket/out";
     }
 
-
     @GetMapping("/ticket/out/update/{id}")
     public String update(@PathVariable Integer id,Model model){
         List<Ticketoffice> ticketofficeList = ticketofficeService.findAll();
@@ -45,7 +45,6 @@ public class TicketOutLogController {
         model.addAttribute("ticketOutLog",ticketOutLog);
         return "store/ticketOutLog/update";
     }
-
 
     @GetMapping("/ticket/out/del/{id}")
     @ResponseBody
@@ -67,6 +66,7 @@ public class TicketOutLogController {
         }
         return "redirect:/store/ticket/out";
     }
+
     @GetMapping("/ticket/out/add")
     public String add(Model model){
         List<Ticketoffice> ticketofficeList = ticketofficeService.findAll();
@@ -83,6 +83,5 @@ public class TicketOutLogController {
         model.addAttribute("ticketofficeList",ticketofficeList);
         return "store/ticketOutLog/home";
     }
-
 
 }
