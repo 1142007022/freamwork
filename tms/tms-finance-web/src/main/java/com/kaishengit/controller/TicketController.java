@@ -48,7 +48,6 @@ public class TicketController {
             redirectAttributes.addFlashAttribute("message",e.getMessage());
         }
 
-
         return "redirect:/store/ticket/in";
     }
 
