@@ -62,7 +62,6 @@ public class TicketController {
         return "store/ticketInLog/add";
     }
 
-
     @GetMapping("/ticket/in")
     public String ticketIn(Model model,@RequestParam(defaultValue = "1",required = false) Integer p){
         PageInfo<TicketInLog> pageInfo = ticketInLogService.findAll(p);
