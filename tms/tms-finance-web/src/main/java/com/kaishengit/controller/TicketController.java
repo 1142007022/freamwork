@@ -29,8 +29,10 @@ public class TicketController {
 
     @Autowired
     private TicketofficeService ticketofficeService;
+
     @Autowired
     private TicketService ticketService;
+
     @Autowired
     private TicketInLogService ticketInLogService;
 
