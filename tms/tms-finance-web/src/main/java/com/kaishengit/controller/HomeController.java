@@ -61,7 +61,7 @@ public class HomeController {
         UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken(mobile, DigestUtils.md5Hex(password), remember != null, ip);
         try {
             subject.login(usernamePasswordToken);
-            if (subject.hasRole("finance") || subject.hasRole("store")){
+            if (subject.hasRole("finance") || subject.hasRole("store")) {
                 SavedRequest savedRequest = WebUtils.getSavedRequest(request);
 
                 String url = "/home";
@@ -69,9 +69,9 @@ public class HomeController {
                     url = savedRequest.getRequestUrl();
                 }
                 return "redirect:" + url;
-            }else {
-                logger.info("{} 没有权限登录该系统",mobile);
-                redirectAttributes.addFlashAttribute("message","没有登录该系统的权限");
+            } else {
+                logger.info("{} 没有权限登录该系统", mobile);
+                redirectAttributes.addFlashAttribute("message", "没有登录该系统的权限");
             }
 
         } catch (UnknownAccountException | IncorrectCredentialsException ex) {
