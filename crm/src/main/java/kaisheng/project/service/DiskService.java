@@ -11,7 +11,7 @@ import java.util.UUID;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 
-import kaisheng.project.ao.DiskDao;
+import kaisheng.project.dao.DiskDao;
 import kaisheng.project.entitys.Disk;
 import kaisheng.project.utils.Config;
 

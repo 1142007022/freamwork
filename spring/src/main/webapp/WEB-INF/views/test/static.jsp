@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-    <h3>静态资源测试</h3>
-    <img src="/static/img/1.jpg">
+<h3>静态资源测试</h3>
+<img src="/static/img/1.jpg">
 </body>
 </html>

@@ -1,4 +1,4 @@
-package kaisheng.project.ao;
+package kaisheng.project.dao;
 
 import java.util.List;
 

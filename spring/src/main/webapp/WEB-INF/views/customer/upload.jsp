@@ -12,15 +12,15 @@
 </head>
 <body>
 
-    <
-    <form method="post" enctype="multipart/form-data">
+<
+<form method="post" enctype="multipart/form-data">
 
-        <input type="text" name="name">
-        <input type="file" name="photo">
+    <input type="text" name="name">
+    <input type="file" name="photo">
 
-        <button>上传</button>
+    <button>上传</button>
 
-    </form>
+</form>
 
 </body>
 </html>

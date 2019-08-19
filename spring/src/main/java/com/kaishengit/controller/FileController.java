@@ -16,7 +16,7 @@ import java.util.UUID;
 public class FileController {
 
     @GetMapping
-    public String file(){
+    public String file() {
         return "customer/upload";
     }
 
@@ -24,8 +24,8 @@ public class FileController {
     public String file(String name, MultipartFile photo) throws IOException {
 
         InputStream inputStream = photo.getInputStream();
-        OutputStream outputStream = new FileOutputStream(new File("D:/upload/"+ UUID.randomUUID()+photo.getOriginalFilename().substring(photo.getOriginalFilename().lastIndexOf("."))));
-        IOUtils.copy(inputStream,outputStream);
+        OutputStream outputStream = new FileOutputStream(new File("D:/upload/" + UUID.randomUUID() + photo.getOriginalFilename().substring(photo.getOriginalFilename().lastIndexOf("."))));
+        IOUtils.copy(inputStream, outputStream);
         inputStream.close();
         outputStream.close();
 

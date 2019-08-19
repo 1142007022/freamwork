@@ -1,9 +1,10 @@
 package com.kaishengit.filter;
+
 import java.io.IOException;
 
 import javax.servlet.*;
 
-public class EncodingFilter implements Filter{
+public class EncodingFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {

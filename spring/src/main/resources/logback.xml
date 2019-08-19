@@ -13,6 +13,6 @@
         </encoder>
     </appender>
     <root level="debug">
-        <appender-ref ref="rolling" />
+        <appender-ref ref="rolling"/>
     </root>
 </configuration>

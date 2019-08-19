@@ -13,11 +13,11 @@ public class ProductService {
     @Autowired
     private ProductMapper productMapper;
 
-    public Product findById(Integer id){
+    public Product findById(Integer id) {
         return productMapper.findById(id);
     }
 
-    public List<Product> findAll(){
+    public List<Product> findAll() {
         return productMapper.findAll();
     }
 
@@ -25,7 +25,7 @@ public class ProductService {
         productMapper.deleteById(id);
     }
 
-    public void update(Product product){
+    public void update(Product product) {
         productMapper.update(product);
     }
 }

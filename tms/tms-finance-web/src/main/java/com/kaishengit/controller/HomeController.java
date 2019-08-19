@@ -17,11 +17,11 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 @Controller
 public class HomeController {
 
     private org.slf4j.Logger logger = LoggerFactory.getLogger(HomeController.class);
+
     @Autowired
     public AccountService accountService;
 

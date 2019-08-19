@@ -30,7 +30,6 @@ public class ShiroRealm extends AuthorizingRealm{
     @Autowired
     private PowerService powerService;
 
-
     /*
     * 判断角色和权限
     * */
@@ -47,7 +46,7 @@ public class ShiroRealm extends AuthorizingRealm{
             System.out.println("角色id：------"+roles.getId());
             //获得这个角色拥有的所有权限
             List<Power> rolesPowerList = powerService.findMyPowerById(roles.getId());
-            powerList.addAll(rolesPowerList);
+                    powerList.addAll(rolesPowerList);
         }
 
         Set<String> rolesSet = new HashSet<>();

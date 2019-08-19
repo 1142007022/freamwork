@@ -9,7 +9,7 @@ import java.io.IOException;
 public class MyException {
 
     @ExceptionHandler(IOException.class)
-    public String ioException(){
+    public String ioException() {
         return "error/500";
     }
 

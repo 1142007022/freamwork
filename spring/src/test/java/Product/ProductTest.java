@@ -18,27 +18,27 @@ public class ProductTest {
     private ProductService productService;
 
     @Test
-    public void findById(){
+    public void findById() {
         Product product = productService.findById(23102);
         System.out.println(product);
     }
 
     @Test
-    public void findAll(){
+    public void findAll() {
         List<Product> lists = productService.findAll();
-        for(Product product:lists) {
+        for (Product product : lists) {
             System.out.println(product);
         }
     }
 
     @Test
-    public void deleteById(){
+    public void deleteById() {
         productService.deleteById(2177);
     }
 
     @Test
 
-    public void update(){
+    public void update() {
         Product product = productService.findById(2178);
         product.setProductName("机械键盘");
         productService.update(product);

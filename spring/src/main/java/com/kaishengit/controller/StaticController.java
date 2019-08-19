@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class StaticController {
 
     @GetMapping("/static")
-    public String img(){
+    public String img() {
         return "test/static";
     }
 

@@ -49,6 +49,10 @@ public class CustomerFilterChainDefinition {
     }
 
     public synchronized void load() {
+
+        /*
+        * Ini是一个map
+        * */
         Ini ini = new Ini();
         ini.load(filterChainDefinitions);
         List<Power> powerList = powerService.findAllPower();
@@ -57,6 +61,7 @@ public class CustomerFilterChainDefinition {
         for (Power power : powerList) {
             section.put(power.getUrl(), "perms[" + power.getPowerCode() + "]");
         }
+        //user这一i组的键值对必须放在section的 最后
         section.put("/**", "user");
         DefaultFilterChainManager defaultFilterChainManager = getDefaultFilterChainManager();
         for (Map.Entry<String, String> entry : section.entrySet()) {

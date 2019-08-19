@@ -16,4 +16,5 @@
 <script src="/static/plugins/jQuery/jquery.validate.js"></script>
 <!-- 分页 -->
 <script src="/static/plugins/jQuery/jquery.twbsPagination.min.js"></script>
+<!--百度统计报表插件-->
 <script src="/static/plugins/echarts/echarts.min.js"></script>

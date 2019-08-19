@@ -13,11 +13,13 @@
     </select>
 
     <delete id="deleteById" parameterType="int">
-        DELETE  FROM kaola where id = #{id}
+        DELETE FROM kaola where id = #{id}
     </delete>
-    
+
     <update id="update" parameterType="Product">
-        update kaola set product_name = #{productName},price=#{price},market_price=#{marketPrice},place=#{place},comment_num=#{commentNum},type_id=#{typeId}    where id = #{id} ;
+        update kaola set product_name =
+        #{productName},price=#{price},market_price=#{marketPrice},place=#{place},comment_num=#{commentNum},type_id=#{typeId}
+        where id = #{id} ;
     </update>
 
 

@@ -12,11 +12,11 @@
 </head>
 <body>
 
-    <form method="post" action="/customer/add">
-        <input type="text" name="name">
-        <input type="text" name="address">
-        <button>保存</button>
-    </form>
+<form method="post" action="/customer/add">
+    <input type="text" name="name">
+    <input type="text" name="address">
+    <button>保存</button>
+</form>
 
 </body>
 

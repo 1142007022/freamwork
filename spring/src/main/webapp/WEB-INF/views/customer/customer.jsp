@@ -11,9 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-    <h3>customer page</h3>
-    <h3>id:${id}</h3>
-    <%--<h3>name:${name}</h3>
-    <h3>address:${address}</h3>--%>
+<h3>customer page</h3>
+<h3>id:${id}</h3>
+<%--<h3>name:${name}</h3>
+<h3>address:${address}</h3>--%>
 </body>
 </html>

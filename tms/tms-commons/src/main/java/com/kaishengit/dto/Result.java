@@ -2,6 +2,9 @@ package com.kaishengit.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Result {
 
@@ -23,6 +26,8 @@ public class Result {
         super();
     }
     public static Result success(Object data, String message){
+        Lock lock = new ReentrantLock();
+        lock.lock();
         Result res = new Result();
         res.state = STATE_SUCCESS;
         res.setData(data);
